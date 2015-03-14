@@ -44,8 +44,7 @@
         <div class="header">Call Us to Pickup Cash/Cheque</div>
             
             <div class="editor-label" style="color:Black;font-family:Times New Roman; font-weight:bold;">This Facility is available only in the radius of 6 Km from our Office. Kindly call us at 044 - 44455566</div>
-        <%--     <div class="editor-label" style="color:Black;font-family:Times New Roman; font-weight:bold;">Or Speak to Mr. Manikandan at 044 - 44455566</div>--%>
-
+     
              <% Html.BeginForm("CallUsForPickupCash", "CandidatesVas", FormMethod.Post, new { @id = "pickupcash" });
                 { %>
                      <div class="editor-label">
