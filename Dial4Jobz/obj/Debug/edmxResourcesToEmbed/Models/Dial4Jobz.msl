@@ -1,0 +1,794 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Dial4JobzModelStoreContainer" CdmEntityContainer="Dial4JobzEntities">
+    <EntitySetMapping Name="CandidateCertifications">
+      <EntityTypeMapping TypeName="Dial4JobzModel.CandidateCertification">
+        <MappingFragment StoreEntitySet="CandidateCertifications">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="CertificationId" ColumnName="CertificationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CandidateLanguages">
+      <EntityTypeMapping TypeName="Dial4JobzModel.CandidateLanguage">
+        <MappingFragment StoreEntitySet="CandidateLanguages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CandidatePreferredFunctions">
+      <EntityTypeMapping TypeName="Dial4JobzModel.CandidatePreferredFunction">
+        <MappingFragment StoreEntitySet="CandidatePreferredFunctions">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="FunctionId" ColumnName="FunctionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CandidatePreferredLocations">
+      <EntityTypeMapping TypeName="Dial4JobzModel.CandidatePreferredLocation">
+        <MappingFragment StoreEntitySet="CandidatePreferredLocations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CandidatePreferredRoles">
+      <EntityTypeMapping TypeName="Dial4JobzModel.CandidatePreferredRole">
+        <MappingFragment StoreEntitySet="CandidatePreferredRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Candidates">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Candidate">
+        <MappingFragment StoreEntitySet="Candidates">
+          <ScalarProperty Name="ConsultantId" ColumnName="ConsultantId" />
+          <ScalarProperty Name="InternationalNumber" ColumnName="InternationalNumber" />
+          <ScalarProperty Name="VerifiedByAdmin" ColumnName="VerifiedByAdmin" />
+          <ScalarProperty Name="FourWheeler" ColumnName="FourWheeler" />
+          <ScalarProperty Name="TwoWheeler" ColumnName="TwoWheeler" />
+          <ScalarProperty Name="GeneralShift" ColumnName="GeneralShift" />
+          <ScalarProperty Name="NightShift" ColumnName="NightShift" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="PreferredTimeTo" ColumnName="PreferredTimeTo" />
+          <ScalarProperty Name="PreferredTimeFrom" ColumnName="PreferredTimeFrom" />
+          <ScalarProperty Name="IsMailVerified" ColumnName="IsMailVerified" />
+          <ScalarProperty Name="IsPhoneVerified" ColumnName="IsPhoneVerified" />
+          <ScalarProperty Name="PhoneVerificationNo" ColumnName="PhoneVerificationNo" />
+          <ScalarProperty Name="MaritalId" ColumnName="MaritalId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="NumberOfCompanies" ColumnName="NumberOfCompanies" />
+          <ScalarProperty Name="PreviousCompany" ColumnName="PreviousCompany" />
+          <ScalarProperty Name="PresentCompany" ColumnName="PresentCompany" />
+          <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+          <ScalarProperty Name="MaxExperience" ColumnName="MaxExperience" />
+          <ScalarProperty Name="MinExperience" ColumnName="MinExperience" />
+          <ScalarProperty Name="LicenseNumber" ColumnName="LicenseNumber" />
+          <ScalarProperty Name="PreferredType" ColumnName="PreferredType" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="PreferredFulltime" ColumnName="PreferredFulltime" />
+          <ScalarProperty Name="PreferredWorkFromHome" ColumnName="PreferredWorkFromHome" />
+          <ScalarProperty Name="PreferredParttime" ColumnName="PreferredParttime" />
+          <ScalarProperty Name="PreferredContract" ColumnName="PreferredContract" />
+          <ScalarProperty Name="PreferredAll" ColumnName="PreferredAll" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="TotalExperience" ColumnName="TotalExperience" />
+          <ScalarProperty Name="AnnualSalary" ColumnName="AnnualSalary" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="FunctionId" ColumnName="FunctionId" />
+          <ScalarProperty Name="IndustryId" ColumnName="IndustryId" />
+          <ScalarProperty Name="ResumeFileName" ColumnName="ResumeFileName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CandidateSkills">
+      <EntityTypeMapping TypeName="Dial4JobzModel.CandidateSkill">
+        <MappingFragment StoreEntitySet="CandidateSkills">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="SkillId" ColumnName="SkillId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Certifications">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Certification">
+        <MappingFragment StoreEntitySet="Certifications">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="Dial4JobzModel.City">
+        <MappingFragment StoreEntitySet="Cities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Country">
+        <MappingFragment StoreEntitySet="Countries">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Degrees">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Degree">
+        <MappingFragment StoreEntitySet="Degrees">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Functions">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Function">
+        <MappingFragment StoreEntitySet="Functions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Industries">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Industry">
+        <MappingFragment StoreEntitySet="Industries">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobLanguages">
+      <EntityTypeMapping TypeName="Dial4JobzModel.JobLanguage">
+        <MappingFragment StoreEntitySet="JobLanguages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobLocations">
+      <EntityTypeMapping TypeName="Dial4JobzModel.JobLocation">
+        <MappingFragment StoreEntitySet="JobLocations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobPreferredCertifications">
+      <EntityTypeMapping TypeName="Dial4JobzModel.JobPreferredCertification">
+        <MappingFragment StoreEntitySet="JobPreferredCertifications">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="CertificationId" ColumnName="CertificationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobPreferredIndustries">
+      <EntityTypeMapping TypeName="Dial4JobzModel.JobPreferredIndustry">
+        <MappingFragment StoreEntitySet="JobPreferredIndustries">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="IndustryId" ColumnName="IndustryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobRequiredQualifications">
+      <EntityTypeMapping TypeName="Dial4JobzModel.JobRequiredQualification">
+        <MappingFragment StoreEntitySet="JobRequiredQualifications">
+          <ScalarProperty Name="Specialization" ColumnName="Specialization" />
+          <ScalarProperty Name="SpecializationId" ColumnName="SpecializationId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DegreeId" ColumnName="DegreeId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobRoles">
+      <EntityTypeMapping TypeName="Dial4JobzModel.JobRole">
+        <MappingFragment StoreEntitySet="JobRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jobs">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Job">
+        <MappingFragment StoreEntitySet="Jobs">
+          <ScalarProperty Name="ConsultantId" ColumnName="ConsultantId" />
+          <ScalarProperty Name="InternationalNumber" ColumnName="InternationalNumber" />
+          <ScalarProperty Name="FourWheeler" ColumnName="FourWheeler" />
+          <ScalarProperty Name="TwoWheeler" ColumnName="TwoWheeler" />
+          <ScalarProperty Name="GeneralShift" ColumnName="GeneralShift" />
+          <ScalarProperty Name="NightShift" ColumnName="NightShift" />
+          <ScalarProperty Name="PreferredTimeTo" ColumnName="PreferredTimeTo" />
+          <ScalarProperty Name="PreferredTimeFrom" ColumnName="PreferredTimeFrom" />
+          <ScalarProperty Name="MaxPreferredTimeTo" ColumnName="MaxPreferredTimeTo" />
+          <ScalarProperty Name="MaxPreferredTimeFrom" ColumnName="MaxPreferredTimeFrom" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="HideDetails" ColumnName="HideDetails" />
+          <ScalarProperty Name="PreferredTimeToMinutes" ColumnName="PreferredTimeToMinutes" />
+          <ScalarProperty Name="PreferredTimeFromMinutes" ColumnName="PreferredTimeFromMinutes" />
+          <ScalarProperty Name="PreferredType" ColumnName="PreferredType" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="PreferredWorkFromHome" ColumnName="PreferredWorkFromHome" />
+          <ScalarProperty Name="PreferredFulltime" ColumnName="PreferredFulltime" />
+          <ScalarProperty Name="PreferredParttime" ColumnName="PreferredParttime" />
+          <ScalarProperty Name="PreferredContract" ColumnName="PreferredContract" />
+          <ScalarProperty Name="PreferredAll" ColumnName="PreferredAll" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrganizationId" ColumnName="OrganizationId" />
+          <ScalarProperty Name="FunctionId" ColumnName="FunctionId" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Male" ColumnName="Male" />
+          <ScalarProperty Name="Female" ColumnName="Female" />
+          <ScalarProperty Name="Budget" ColumnName="Budget" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="CommunicateViaSMS" ColumnName="CommunicateViaSMS" />
+          <ScalarProperty Name="CommunicateViaEmail" ColumnName="CommunicateViaEmail" />
+          <ScalarProperty Name="MinExperience" ColumnName="MinExperience" />
+          <ScalarProperty Name="MaxExperience" ColumnName="MaxExperience" />
+          <ScalarProperty Name="MaxBudget" ColumnName="MaxBudget" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobSkills">
+      <EntityTypeMapping TypeName="Dial4JobzModel.JobSkill">
+        <MappingFragment StoreEntitySet="JobSkills">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="SkillId" ColumnName="SkillId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Language">
+        <MappingFragment StoreEntitySet="Languages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locations">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Location">
+        <MappingFragment StoreEntitySet="Locations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Organizations">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Organization">
+        <MappingFragment StoreEntitySet="Organizations">
+          <ScalarProperty Name="OwnershipType" ColumnName="OwnershipType" />
+          <ScalarProperty Name="EmployerType" ColumnName="EmployerType" />
+          <ScalarProperty Name="EmployersCount" ColumnName="EmployersCount" />
+          <ScalarProperty Name="VerifiedByAdmin" ColumnName="VerifiedByAdmin" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="IsMailVerified" ColumnName="IsMailVerified" />
+          <ScalarProperty Name="IsPhoneVerified" ColumnName="IsPhoneVerified" />
+          <ScalarProperty Name="PhoneVerificationNo" ColumnName="PhoneVerificationNo" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IndustryId" ColumnName="IndustryId" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regions">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Region">
+        <MappingFragment StoreEntitySet="Regions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="HomeFlag" ColumnName="HomeFlag" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FunctionId" ColumnName="FunctionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Skills">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Skill">
+        <MappingFragment StoreEntitySet="Skills">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="States">
+      <EntityTypeMapping TypeName="Dial4JobzModel.State">
+        <MappingFragment StoreEntitySet="States">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Dial4JobzModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="IsSuperAdmin" ColumnName="IsSuperAdmin" />
+          <ScalarProperty Name="PageCode" ColumnName="PageCode" />
+          <ScalarProperty Name="Mobilenumber" ColumnName="Mobilenumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CandidateLicenseTypes">
+      <EntityTypeMapping TypeName="Dial4JobzModel.CandidateLicenseType">
+        <MappingFragment StoreEntitySet="CandidateLicenseTypes">
+          <ScalarProperty Name="LicenseTypeId" ColumnName="LicenseTypeId" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LicenseTypes">
+      <EntityTypeMapping TypeName="Dial4JobzModel.LicenseType">
+        <MappingFragment StoreEntitySet="LicenseTypes">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaritalStatuses">
+      <EntityTypeMapping TypeName="Dial4JobzModel.MaritalStatus">
+        <MappingFragment StoreEntitySet="MaritalStatuses">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Specializations">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Specialization">
+        <MappingFragment StoreEntitySet="Specializations">
+          <ScalarProperty Name="DegreeId" ColumnName="DegreeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Institutes">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Institute">
+        <MappingFragment StoreEntitySet="Institutes">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CandidateQualifications">
+      <EntityTypeMapping TypeName="Dial4JobzModel.CandidateQualification">
+        <MappingFragment StoreEntitySet="CandidateQualifications">
+          <ScalarProperty Name="PassedOutYear" ColumnName="PassedOutYear" />
+          <ScalarProperty Name="InstituteId" ColumnName="InstituteId" />
+          <ScalarProperty Name="SpecializationId" ColumnName="SpecializationId" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="DegreeId" ColumnName="DegreeId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdminUserEntries">
+      <EntityTypeMapping TypeName="Dial4JobzModel.AdminUserEntry">
+        <MappingFragment StoreEntitySet="AdminUserEntries">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="EntryType" ColumnName="EntryType" />
+          <ScalarProperty Name="EntryId" ColumnName="EntryId" />
+          <ScalarProperty Name="AdminId" ColumnName="AdminId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FunctionsForFindJobs">
+      <EntityTypeMapping TypeName="Dial4JobzModel.FunctionsForFindJob">
+        <MappingFragment StoreEntitySet="FunctionsForFindJobs">
+          <ScalarProperty Name="Functions" ColumnName="Functions" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RolesForFindJobseekers">
+      <EntityTypeMapping TypeName="Dial4JobzModel.RolesForFindJobseeker">
+        <MappingFragment StoreEntitySet="RolesForFindJobseekers">
+          <ScalarProperty Name="Functions" ColumnName="Functions" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlertsDones">
+      <EntityTypeMapping TypeName="Dial4JobzModel.AlertsDone">
+        <MappingFragment StoreEntitySet="AlertsDone">
+          <ScalarProperty Name="ConsultantId" ColumnName="ConsultantId" />
+          <ScalarProperty Name="AlertsSent" ColumnName="AlertsSent" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="EmployerId" ColumnName="EmployerId" />
+          <ScalarProperty Name="AlertsDoneId" ColumnName="AlertsDoneId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactsViewedCounts">
+      <EntityTypeMapping TypeName="Dial4JobzModel.ContactsViewedCount">
+        <MappingFragment StoreEntitySet="ContactsViewedCount">
+          <ScalarProperty Name="ConsultantId" ColumnName="ConsultantId" />
+          <ScalarProperty Name="ContactsViewed" ColumnName="ContactsViewed" />
+          <ScalarProperty Name="EmployerId" ColumnName="EmployerId" />
+          <ScalarProperty Name="ContsctsViewedId" ColumnName="ContsctsViewedId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactsViewedLogs">
+      <EntityTypeMapping TypeName="Dial4JobzModel.ContactsViewedLog">
+        <MappingFragment StoreEntitySet="ContactsViewedLog">
+          <ScalarProperty Name="ConsultantId" ColumnName="ConsultantId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="DateViewed" ColumnName="DateViewed" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="EmployerId" ColumnName="EmployerId" />
+          <ScalarProperty Name="ContactsViewedId" ColumnName="ContactsViewedId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_CheckEmployerPlanDetailstopostJob" FunctionName="Dial4JobzModel.Store.SP_CheckEmployerPlanDetailstopostJob">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dial4JobzModel.SP_CheckEmployerPlanDetailstopostJob_Result2">
+          <ScalarProperty Name="PlanId" ColumnName="PlanId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_CheckEmployerPlanDetailstopostJob_Result2" FunctionName="Dial4JobzModel.Store.SP_CheckEmployerPlanDetailstopostJob">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Dial4JobzModel.SP_CheckEmployerPlanDetailstopostJob_Result2">
+          <ScalarProperty Name="PlanId" ColumnName="PlanId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="OrderDetails">
+      <EntityTypeMapping TypeName="Dial4JobzModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetail">
+          <ScalarProperty Name="BasicCount" ColumnName="BasicCount" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="ValidityDays" ColumnName="ValidityDays" />
+          <ScalarProperty Name="TeleConference" ColumnName="TeleConference" />
+          <ScalarProperty Name="EmailRemainingCount" ColumnName="EmailRemainingCount" />
+          <ScalarProperty Name="PaymentId" ColumnName="PaymentId" />
+          <ScalarProperty Name="Vacancies" ColumnName="Vacancies" />
+          <ScalarProperty Name="PostedJobId" ColumnName="PostedJobId" />
+          <ScalarProperty Name="RemainingCount" ColumnName="RemainingCount" />
+          <ScalarProperty Name="ValidityCount" ColumnName="ValidityCount" />
+          <ScalarProperty Name="ValidityTill" ColumnName="ValidityTill" />
+          <ScalarProperty Name="ActivationDate" ColumnName="ActivationDate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PlanName" ColumnName="PlanName" />
+          <ScalarProperty Name="PlanId" ColumnName="PlanId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="OrderDetailId" ColumnName="OrderDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderMasters">
+      <EntityTypeMapping TypeName="Dial4JobzModel.OrderMaster">
+        <MappingFragment StoreEntitySet="OrderMaster">
+          <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+          <ScalarProperty Name="ConsultantId" ColumnName="ConsultantId" />
+          <ScalarProperty Name="SubscribedBy" ColumnName="SubscribedBy" />
+          <ScalarProperty Name="ActivatedBy" ColumnName="ActivatedBy" />
+          <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="OrganizationId" ColumnName="OrganizationId" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderPayments">
+      <EntityTypeMapping TypeName="Dial4JobzModel.OrderPayment">
+        <MappingFragment StoreEntitySet="OrderPayment">
+          <ScalarProperty Name="CollectedOn" ColumnName="CollectedOn" />
+          <ScalarProperty Name="CollectedBy" ColumnName="CollectedBy" />
+          <ScalarProperty Name="Regions" ColumnName="Regions" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="DepositedOn" ColumnName="DepositedOn" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="ChequeNumber" ColumnName="ChequeNumber" />
+          <ScalarProperty Name="DrawnOnBank" ColumnName="DrawnOnBank" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+          <ScalarProperty Name="TransferReference" ColumnName="TransferReference" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="PaymentId" ColumnName="PaymentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VasPlans">
+      <EntityTypeMapping TypeName="Dial4JobzModel.VasPlan">
+        <MappingFragment StoreEntitySet="VasPlans">
+          <ScalarProperty Name="EmailCount" ColumnName="EmailCount" />
+          <ScalarProperty Name="Vacancies" ColumnName="Vacancies" />
+          <ScalarProperty Name="ValidityDays" ColumnName="ValidityDays" />
+          <ScalarProperty Name="ValidityCount" ColumnName="ValidityCount" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PlanName" ColumnName="PlanName" />
+          <ScalarProperty Name="PlanId" ColumnName="PlanId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PostedJobAlerts">
+      <EntityTypeMapping TypeName="Dial4JobzModel.PostedJobAlert">
+        <MappingFragment StoreEntitySet="PostedJobAlerts">
+          <ScalarProperty Name="ConsultantId" ColumnName="ConsultantId" />
+          <ScalarProperty Name="RemainingCount" ColumnName="RemainingCount" />
+          <ScalarProperty Name="ValidityTill" ColumnName="ValidityTill" />
+          <ScalarProperty Name="AlertActivateDate" ColumnName="AlertActivateDate" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="ActivatedJobStatus" ColumnName="ActivatedJobStatus" />
+          <ScalarProperty Name="Vacancies" ColumnName="Vacancies" />
+          <ScalarProperty Name="OrganizationId" ColumnName="OrganizationId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="PostedJobId" ColumnName="PostedJobId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobLicenseTypes">
+      <EntityTypeMapping TypeName="Dial4JobzModel.JobLicenseType">
+        <MappingFragment StoreEntitySet="JobLicenseTypes">
+          <ScalarProperty Name="LicenseTypeId" ColumnName="LicenseTypeId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobsViewedLogs">
+      <EntityTypeMapping TypeName="Dial4JobzModel.JobsViewedLog">
+        <MappingFragment StoreEntitySet="JobsViewedLog">
+          <ScalarProperty Name="ConsultantId" ColumnName="ConsultantId" />
+          <ScalarProperty Name="SmsSent" ColumnName="SmsSent" />
+          <ScalarProperty Name="MailSent" ColumnName="MailSent" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="DateViewed" ColumnName="DateViewed" />
+          <ScalarProperty Name="PlanId" ColumnName="PlanId" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="JobsViewedId" ColumnName="JobsViewedId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChannelEntries">
+      <EntityTypeMapping TypeName="Dial4JobzModel.ChannelEntry">
+        <MappingFragment StoreEntitySet="ChannelEntries">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="EntryType" ColumnName="EntryType" />
+          <ScalarProperty Name="EntryId" ColumnName="EntryId" />
+          <ScalarProperty Name="ChannelUserId" ColumnName="ChannelUserId" />
+          <ScalarProperty Name="ChannelPartnerId" ColumnName="ChannelPartnerId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChannelPartners">
+      <EntityTypeMapping TypeName="Dial4JobzModel.ChannelPartner">
+        <MappingFragment StoreEntitySet="ChannelPartners">
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="IsMailVerified" ColumnName="IsMailVerified" />
+          <ScalarProperty Name="IsphoneVerified" ColumnName="IsphoneVerified" />
+          <ScalarProperty Name="PhoneVerificationNo" ColumnName="PhoneVerificationNo" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChannelUsers">
+      <EntityTypeMapping TypeName="Dial4JobzModel.ChannelUser">
+        <MappingFragment StoreEntitySet="ChannelUsers">
+          <ScalarProperty Name="IsMailVerified" ColumnName="IsMailVerified" />
+          <ScalarProperty Name="IsphoneVerified" ColumnName="IsphoneVerified" />
+          <ScalarProperty Name="PhoneVerificationNo" ColumnName="PhoneVerificationNo" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ChannelPartnerId" ColumnName="ChannelPartnerId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlertsLogs">
+      <EntityTypeMapping TypeName="Dial4JobzModel.AlertsLog">
+        <MappingFragment StoreEntitySet="AlertsLog">
+          <ScalarProperty Name="ConsultantId" ColumnName="ConsultantId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="MailSent" ColumnName="MailSent" />
+          <ScalarProperty Name="SmsSent" ColumnName="SmsSent" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="AlertSentDate" ColumnName="AlertSentDate" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="OrganizationId" ColumnName="OrganizationId" />
+          <ScalarProperty Name="AlertId" ColumnName="AlertId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Invoice">
+        <MappingFragment StoreEntitySet="Invoice">
+          <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+          <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Consultantes">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Consultante">
+        <MappingFragment StoreEntitySet="Consultantes">
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneVerificationNo" ColumnName="PhoneVerificationNo" />
+          <ScalarProperty Name="IsPhoneVerified" ColumnName="IsPhoneVerified" />
+          <ScalarProperty Name="IsMailVerified" ColumnName="IsMailVerified" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="IndustryId" ColumnName="IndustryId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeesCounts">
+      <EntityTypeMapping TypeName="Dial4JobzModel.EmployeesCount">
+        <MappingFragment StoreEntitySet="EmployeesCount">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DPRLogs">
+      <EntityTypeMapping TypeName="Dial4JobzModel.DPRLog">
+        <MappingFragment StoreEntitySet="DPRLog">
+          <ScalarProperty Name="ConsultantId" ColumnName="ConsultantId" />
+          <ScalarProperty Name="ViewedDate" ColumnName="ViewedDate" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="OrganizationId" ColumnName="OrganizationId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobsLogs">
+      <EntityTypeMapping TypeName="Dial4JobzModel.JobsLog">
+        <MappingFragment StoreEntitySet="JobsLog">
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="ConsultantId" ColumnName="ConsultantId" />
+          <ScalarProperty Name="OrganizationId" ColumnName="OrganizationId" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="JobViewedDate" ColumnName="JobViewedDate" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdminPermissions">
+      <EntityTypeMapping TypeName="Dial4JobzModel.AdminPermission">
+        <MappingFragment StoreEntitySet="AdminPermissions">
+          <ScalarProperty Name="PermissionId" ColumnName="PermissionId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Permissions">
+      <EntityTypeMapping TypeName="Dial4JobzModel.Permission">
+        <MappingFragment StoreEntitySet="Permissions">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CollectionExecutives">
+      <EntityTypeMapping TypeName="Dial4JobzModel.CollectionExecutive">
+        <MappingFragment StoreEntitySet="CollectionExecutives">
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Pincode" ColumnName="Pincode" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PickupCashAlertsLogs">
+      <EntityTypeMapping TypeName="Dial4JobzModel.PickupCashAlertsLog">
+        <MappingFragment StoreEntitySet="PickupCashAlertsLog">
+          <ScalarProperty Name="AdminMailSent" ColumnName="AdminMailSent" />
+          <ScalarProperty Name="CollectionMailSent" ColumnName="CollectionMailSent" />
+          <ScalarProperty Name="CollectionSMSSent" ColumnName="CollectionSMSSent" />
+          <ScalarProperty Name="UserMailSent" ColumnName="UserMailSent" />
+          <ScalarProperty Name="UserSMSSent" ColumnName="UserSMSSent" />
+          <ScalarProperty Name="AlertSentDate" ColumnName="AlertSentDate" />
+          <ScalarProperty Name="EmployerId" ColumnName="EmployerId" />
+          <ScalarProperty Name="ConsultId" ColumnName="ConsultId" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
+          <ScalarProperty Name="CollectionExecutiveId" ColumnName="CollectionExecutiveId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

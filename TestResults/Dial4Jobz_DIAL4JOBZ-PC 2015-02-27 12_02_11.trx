@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5f19dd37-b97a-437f-87d7-965ddaf135a8" name="Dial4Jobz@DIAL4JOBZ-PC 2015-02-27 12:02:11" runUser="Dial4Jobz-PC\Dial4Jobz" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="081b7049-36a5-4c5b-a4b9-265b3159dbc0">
+    <Deployment runDeploymentRoot="Dial4Jobz_DIAL4JOBZ-PC 2015-02-27 12_02_11">
+      <DeploymentItem filename="D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-02-27T12:02:11.6108555+05:30" queuing="2015-02-27T12:02:16.9454657+05:30" start="2015-02-27T12:02:17.1794661+05:30" finish="2015-02-27T12:02:36.5617049+05:30" />
+  <ResultSummary outcome="Error">
+    <Counters total="17" executed="11" error="0" failed="10" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="6" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="DIAL4JOBZ-PC" outcome="Error" timestamp="2015-02-27T12:02:36.5617049+05:30">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LogOff_LogsOutAndRedirects" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="34939394-7f95-033d-78d3-ee4189fe58a8">
+      <Execution id="7c4c18e1-0053-431d-8d78-bff672c07a71" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOff_LogsOutAndRedirects" />
+    </UnitTest>
+    <UnitTest name="Register_Post_ReturnsRedirectOnSuccess" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="dbfc1878-09ba-49b0-1b06-5ed7cf8bc1b0">
+      <Execution id="594d22c4-8130-4026-95b4-a39b920d9cd5" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Register_Post_ReturnsRedirectOnSuccess" />
+    </UnitTest>
+    <UnitTest name="Register_Get_ReturnsView" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="b47b0f2b-2e0c-1785-8628-2e60de42438e">
+      <Execution id="98bd8a6c-723f-4fed-9cb8-3b02b7428c77" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Register_Get_ReturnsView" />
+    </UnitTest>
+    <UnitTest name="LogOn_Post_ReturnsRedirectOnSuccess_WithoutReturnUrl" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="0a2e69cc-e55f-517c-3b91-d8f3b5887227">
+      <Execution id="dd613e4d-82cc-4914-9e01-b40a0946bfba" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Post_ReturnsRedirectOnSuccess_WithoutReturnUrl" />
+    </UnitTest>
+    <UnitTest name="LogOn_Post_ReturnsRedirectOnSuccess_WithReturnUrl" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="6cd5f15c-af3a-a13c-5eda-62a3835ebe18">
+      <Execution id="3e6853de-218b-4aa5-9aa3-4f69e7083049" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Post_ReturnsRedirectOnSuccess_WithReturnUrl" />
+    </UnitTest>
+    <UnitTest name="LogOn_Post_ReturnsViewIfModelStateIsInvalid" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="a1e3cebc-a18c-1bbe-e878-e5aac6e12e67">
+      <Execution id="7feea38e-609b-4914-aa3b-252969006a88" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Post_ReturnsViewIfModelStateIsInvalid" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordSuccess_ReturnsView" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="118521c1-fb6c-0cd0-f919-71fe1250f425">
+      <Execution id="7c11ce7a-340a-4b94-984e-ced7a318dd9a" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePasswordSuccess_ReturnsView" />
+    </UnitTest>
+    <UnitTest name="Index" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="0f4d75fd-c35c-50e4-bcbf-274733e29352">
+      <Execution id="2281c6f0-fe51-4ff0-93a9-86a3e0c7028c" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.HomeControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index" />
+    </UnitTest>
+    <UnitTest name="About" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="97377115-8f77-730e-b40c-f370f3479b61">
+      <Execution id="0748713e-f00c-4c11-917a-d59021eefaf3" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.HomeControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="About" />
+    </UnitTest>
+    <UnitTest name="LogOn_Get_ReturnsView" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="c4a50e0e-5e0b-a5ac-3bf3-3a8ea76c3904">
+      <Execution id="fc4e06fb-3136-49af-8f08-3e227a6864cf" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Get_ReturnsView" />
+    </UnitTest>
+    <UnitTest name="Register_Post_ReturnsViewIfModelStateIsInvalid" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="425a2982-2abe-aa89-cb98-83febba728bb">
+      <Execution id="a77481b1-5b0c-416c-ae3c-ebb6ab234526" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Register_Post_ReturnsViewIfModelStateIsInvalid" />
+    </UnitTest>
+    <UnitTest name="LogOn_Post_ReturnsViewIfValidateUserFails" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="d0dd70e2-6bbc-0b21-2af5-412af563a0e6">
+      <Execution id="b5e1d15f-bf8d-48c9-8ed7-a2e092c049cf" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Post_ReturnsViewIfValidateUserFails" />
+    </UnitTest>
+    <UnitTest name="ChangePassword_Post_ReturnsViewIfModelStateIsInvalid" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="a6494fca-178f-bab7-7303-58228f4f8840">
+      <Execution id="c70c765c-af3d-45db-98ee-2e607a5dcd42" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePassword_Post_ReturnsViewIfModelStateIsInvalid" />
+    </UnitTest>
+    <UnitTest name="Register_Post_ReturnsViewIfRegistrationFails" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="30ea97f5-c6a8-014a-dbe0-9500a95a0f3d">
+      <Execution id="2aa4cc9e-2bb0-4a0e-b6ab-74fa4e3d70c6" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Register_Post_ReturnsViewIfRegistrationFails" />
+    </UnitTest>
+    <UnitTest name="ChangePassword_Get_ReturnsView" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="1c36afd6-1957-5208-42e3-92c3edacad23">
+      <Execution id="c0c1e843-50c1-4bc8-b7d6-0baea450e39c" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePassword_Get_ReturnsView" />
+    </UnitTest>
+    <UnitTest name="ChangePassword_Post_ReturnsViewIfChangePasswordFails" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="480e3065-4e9d-c2e5-85e5-151883a23700">
+      <Execution id="15c51283-bf81-47d1-9212-64ba660f5815" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePassword_Post_ReturnsViewIfChangePasswordFails" />
+    </UnitTest>
+    <UnitTest name="ChangePassword_Post_ReturnsRedirectOnSuccess" storage="d:\udhaya\kannan\latest\d4j (1)\d4j\dial4jobz\dial4jobz.tests\bin\debug\dial4jobz.tests.dll" id="7b4c101a-0ba7-1901-9a66-a2f27ae7e7d2">
+      <Execution id="701667ac-909c-4547-8307-3401cef5ec98" />
+      <TestMethod codeBase="D:/udhaya/kannan/latest/D4J (1)/D4J/Dial4Jobz/Dial4Jobz.Tests/bin/Debug/Dial4Jobz.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Dial4Jobz.Tests.Controllers.AccountControllerTest, Dial4Jobz.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePassword_Post_ReturnsRedirectOnSuccess" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0a2e69cc-e55f-517c-3b91-d8f3b5887227" executionId="dd613e4d-82cc-4914-9e01-b40a0946bfba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0f4d75fd-c35c-50e4-bcbf-274733e29352" executionId="2281c6f0-fe51-4ff0-93a9-86a3e0c7028c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="118521c1-fb6c-0cd0-f919-71fe1250f425" executionId="7c11ce7a-340a-4b94-984e-ced7a318dd9a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c36afd6-1957-5208-42e3-92c3edacad23" executionId="c0c1e843-50c1-4bc8-b7d6-0baea450e39c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30ea97f5-c6a8-014a-dbe0-9500a95a0f3d" executionId="2aa4cc9e-2bb0-4a0e-b6ab-74fa4e3d70c6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34939394-7f95-033d-78d3-ee4189fe58a8" executionId="7c4c18e1-0053-431d-8d78-bff672c07a71" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="425a2982-2abe-aa89-cb98-83febba728bb" executionId="a77481b1-5b0c-416c-ae3c-ebb6ab234526" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="480e3065-4e9d-c2e5-85e5-151883a23700" executionId="15c51283-bf81-47d1-9212-64ba660f5815" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6cd5f15c-af3a-a13c-5eda-62a3835ebe18" executionId="3e6853de-218b-4aa5-9aa3-4f69e7083049" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b4c101a-0ba7-1901-9a66-a2f27ae7e7d2" executionId="701667ac-909c-4547-8307-3401cef5ec98" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97377115-8f77-730e-b40c-f370f3479b61" executionId="0748713e-f00c-4c11-917a-d59021eefaf3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1e3cebc-a18c-1bbe-e878-e5aac6e12e67" executionId="7feea38e-609b-4914-aa3b-252969006a88" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a6494fca-178f-bab7-7303-58228f4f8840" executionId="c70c765c-af3d-45db-98ee-2e607a5dcd42" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b47b0f2b-2e0c-1785-8628-2e60de42438e" executionId="98bd8a6c-723f-4fed-9cb8-3b02b7428c77" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c4a50e0e-5e0b-a5ac-3bf3-3a8ea76c3904" executionId="fc4e06fb-3136-49af-8f08-3e227a6864cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d0dd70e2-6bbc-0b21-2af5-412af563a0e6" executionId="b5e1d15f-bf8d-48c9-8ed7-a2e092c049cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dbfc1878-09ba-49b0-1b06-5ed7cf8bc1b0" executionId="594d22c4-8130-4026-95b4-a39b920d9cd5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="dd613e4d-82cc-4914-9e01-b40a0946bfba" testId="0a2e69cc-e55f-517c-3b91-d8f3b5887227" testName="LogOn_Post_ReturnsRedirectOnSuccess_WithoutReturnUrl" computerName="DIAL4JOBZ-PC" duration="00:00:03.6088437" startTime="2015-02-27T12:02:17.4914667+05:30" endTime="2015-02-27T12:02:22.1100748+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd613e4d-82cc-4914-9e01-b40a0946bfba">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Dial4Jobz.Tests.Controllers.AccountControllerTest.LogOn_Post_ReturnsRedirectOnSuccess_WithoutReturnUrl threw exception: 
+System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid.</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at Dial4Jobz.Models.Dial4JobzEntities..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Dial4Jobz.Designer.cs:line 109
+   at Dial4Jobz.Models.Repositories.Repository..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Repositories\Repository.cs:line 14
+   at Dial4Jobz.Controllers.AccountController..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Controllers\AccountController.cs:line 22
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 322
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.LogOn_Post_ReturnsRedirectOnSuccess_WithoutReturnUrl() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 147
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2281c6f0-fe51-4ff0-93a9-86a3e0c7028c" testId="0f4d75fd-c35c-50e4-bcbf-274733e29352" testName="Index" computerName="DIAL4JOBZ-PC" duration="00:00:02.4057718" startTime="2015-02-27T12:02:22.1412749+05:30" endTime="2015-02-27T12:02:24.5602792+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2281c6f0-fe51-4ff0-93a9-86a3e0c7028c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Dial4Jobz.Tests.Controllers.HomeControllerTest.Index threw exception: 
+System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid.</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at Dial4Jobz.Models.Dial4JobzEntities..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Dial4Jobz.Designer.cs:line 109
+   at Dial4Jobz.Models.Repositories.Repository..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Repositories\Repository.cs:line 14
+   at Dial4Jobz.Controllers.HomeController..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Controllers\HomeController.cs:line 20
+   at Dial4Jobz.Tests.Controllers.HomeControllerTest.Index() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\HomeControllerTest.cs:line 19
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7c11ce7a-340a-4b94-984e-ced7a318dd9a" testId="118521c1-fb6c-0cd0-f919-71fe1250f425" testName="ChangePasswordSuccess_ReturnsView" computerName="DIAL4JOBZ-PC" duration="00:00:00.7258368" startTime="2015-02-27T12:02:24.6070793+05:30" endTime="2015-02-27T12:02:25.3516821+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c11ce7a-340a-4b94-984e-ced7a318dd9a">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Dial4Jobz.Tests.Controllers.AccountControllerTest.ChangePasswordSuccess_ReturnsView threw exception: 
+System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid.</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at Dial4Jobz.Models.Dial4JobzEntities..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Dial4Jobz.Designer.cs:line 109
+   at Dial4Jobz.Models.Repositories.Repository..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Repositories\Repository.cs:line 14
+   at Dial4Jobz.Controllers.AccountController..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Controllers\AccountController.cs:line 22
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 322
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.ChangePasswordSuccess_ReturnsView() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 104
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c0c1e843-50c1-4bc8-b7d6-0baea450e39c" testId="1c36afd6-1957-5208-42e3-92c3edacad23" testName="ChangePassword_Get_ReturnsView" computerName="DIAL4JOBZ-PC" duration="00:00:00.7016743" startTime="2015-02-27T12:02:25.3672821+05:30" endTime="2015-02-27T12:02:26.0848834+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0c1e843-50c1-4bc8-b7d6-0baea450e39c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Dial4Jobz.Tests.Controllers.AccountControllerTest.ChangePassword_Get_ReturnsView threw exception: 
+System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid.</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at Dial4Jobz.Models.Dial4JobzEntities..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Dial4Jobz.Designer.cs:line 109
+   at Dial4Jobz.Models.Repositories.Repository..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Repositories\Repository.cs:line 14
+   at Dial4Jobz.Controllers.AccountController..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Controllers\AccountController.cs:line 22
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 322
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.ChangePassword_Get_ReturnsView() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 23
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2aa4cc9e-2bb0-4a0e-b6ab-74fa4e3d70c6" testId="30ea97f5-c6a8-014a-dbe0-9500a95a0f3d" testName="Register_Post_ReturnsViewIfRegistrationFails" computerName="DIAL4JOBZ-PC" duration="00:00:00.7195119" startTime="2015-02-27T12:02:26.1004834+05:30" endTime="2015-02-27T12:02:26.8288870+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2aa4cc9e-2bb0-4a0e-b6ab-74fa4e3d70c6">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Dial4Jobz.Tests.Controllers.AccountControllerTest.Register_Post_ReturnsViewIfRegistrationFails threw exception: 
+System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid.</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at Dial4Jobz.Models.Dial4JobzEntities..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Dial4Jobz.Designer.cs:line 109
+   at Dial4Jobz.Models.Repositories.Repository..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Repositories\Repository.cs:line 14
+   at Dial4Jobz.Controllers.AccountController..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Controllers\AccountController.cs:line 22
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 322
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.Register_Post_ReturnsViewIfRegistrationFails() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 274
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7c4c18e1-0053-431d-8d78-bff672c07a71" testId="34939394-7f95-033d-78d3-ee4189fe58a8" testName="LogOff_LogsOutAndRedirects" computerName="DIAL4JOBZ-PC" duration="00:00:00.3431005" startTime="2015-02-27T12:02:26.8444870+05:30" endTime="2015-02-27T12:02:27.1876876+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c4c18e1-0053-431d-8d78-bff672c07a71">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Dial4Jobz.Tests.Controllers.AccountControllerTest.LogOff_LogsOutAndRedirects threw exception: 
+System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid.</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at Dial4Jobz.Models.Dial4JobzEntities..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Dial4Jobz.Designer.cs:line 109
+   at Dial4Jobz.Models.Repositories.Repository..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Repositories\Repository.cs:line 14
+   at Dial4Jobz.Controllers.AccountController..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Controllers\AccountController.cs:line 22
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 322
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.LogOff_LogsOutAndRedirects() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 117
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a77481b1-5b0c-416c-ae3c-ebb6ab234526" testId="425a2982-2abe-aa89-cb98-83febba728bb" testName="Register_Post_ReturnsViewIfModelStateIsInvalid" computerName="DIAL4JOBZ-PC" duration="00:00:00.2969461" startTime="2015-02-27T12:02:27.2032877+05:30" endTime="2015-02-27T12:02:27.5152882+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a77481b1-5b0c-416c-ae3c-ebb6ab234526">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Dial4Jobz.Tests.Controllers.AccountControllerTest.Register_Post_ReturnsViewIfModelStateIsInvalid threw exception: 
+System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid.</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at Dial4Jobz.Models.Dial4JobzEntities..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Dial4Jobz.Designer.cs:line 109
+   at Dial4Jobz.Models.Repositories.Repository..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Repositories\Repository.cs:line 14
+   at Dial4Jobz.Controllers.AccountController..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Controllers\AccountController.cs:line 22
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 322
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.Register_Post_ReturnsViewIfModelStateIsInvalid() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 299
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="15c51283-bf81-47d1-9212-64ba660f5815" testId="480e3065-4e9d-c2e5-85e5-151883a23700" testName="ChangePassword_Post_ReturnsViewIfChangePasswordFails" computerName="DIAL4JOBZ-PC" duration="00:00:00.2793297" startTime="2015-02-27T12:02:27.5308882+05:30" endTime="2015-02-27T12:02:27.8116887+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="15c51283-bf81-47d1-9212-64ba660f5815">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Dial4Jobz.Tests.Controllers.AccountControllerTest.ChangePassword_Post_ReturnsViewIfChangePasswordFails threw exception: 
+System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid.</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at Dial4Jobz.Models.Dial4JobzEntities..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Dial4Jobz.Designer.cs:line 109
+   at Dial4Jobz.Models.Repositories.Repository..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Repositories\Repository.cs:line 14
+   at Dial4Jobz.Controllers.AccountController..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Controllers\AccountController.cs:line 22
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 322
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.ChangePassword_Post_ReturnsViewIfChangePasswordFails() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 58
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3e6853de-218b-4aa5-9aa3-4f69e7083049" testId="6cd5f15c-af3a-a13c-5eda-62a3835ebe18" testName="LogOn_Post_ReturnsRedirectOnSuccess_WithReturnUrl" computerName="DIAL4JOBZ-PC" duration="00:00:00.2654285" startTime="2015-02-27T12:02:27.8116887+05:30" endTime="2015-02-27T12:02:28.0924892+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e6853de-218b-4aa5-9aa3-4f69e7083049">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Dial4Jobz.Tests.Controllers.AccountControllerTest.LogOn_Post_ReturnsRedirectOnSuccess_WithReturnUrl threw exception: 
+System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid.</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at Dial4Jobz.Models.Dial4JobzEntities..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Dial4Jobz.Designer.cs:line 109
+   at Dial4Jobz.Models.Repositories.Repository..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Repositories\Repository.cs:line 14
+   at Dial4Jobz.Controllers.AccountController..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Controllers\AccountController.cs:line 22
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 322
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.LogOn_Post_ReturnsRedirectOnSuccess_WithReturnUrl() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 170
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="701667ac-909c-4547-8307-3401cef5ec98" testId="7b4c101a-0ba7-1901-9a66-a2f27ae7e7d2" testName="ChangePassword_Post_ReturnsRedirectOnSuccess" computerName="DIAL4JOBZ-PC" duration="00:00:00.2571802" startTime="2015-02-27T12:02:28.0924892+05:30" endTime="2015-02-27T12:02:28.3596898+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="701667ac-909c-4547-8307-3401cef5ec98">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Dial4Jobz.Tests.Controllers.AccountControllerTest.ChangePassword_Post_ReturnsRedirectOnSuccess threw exception: 
+System.ArgumentException: The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid.</Message>
+          <StackTrace>    at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   at System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   at Dial4Jobz.Models.Dial4JobzEntities..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Dial4Jobz.Designer.cs:line 109
+   at Dial4Jobz.Models.Repositories.Repository..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Models\Repositories\Repository.cs:line 14
+   at Dial4Jobz.Controllers.AccountController..ctor() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\Controllers\AccountController.cs:line 22
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.GetAccountController() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 322
+   at Dial4Jobz.Tests.Controllers.AccountControllerTest.ChangePassword_Post_ReturnsRedirectOnSuccess() in D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz.Tests\Controllers\AccountControllerTest.cs:line 37
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0748713e-f00c-4c11-917a-d59021eefaf3" testId="97377115-8f77-730e-b40c-f370f3479b61" testName="About" computerName="DIAL4JOBZ-PC" duration="00:00:08.2020151" startTime="2015-02-27T12:02:28.3596898+05:30" endTime="2015-02-27T12:02:36.5617049+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0748713e-f00c-4c11-917a-d59021eefaf3">
+    </UnitTestResult>
+    <UnitTestResult executionId="7feea38e-609b-4914-aa3b-252969006a88" testId="a1e3cebc-a18c-1bbe-e878-e5aac6e12e67" testName="LogOn_Post_ReturnsViewIfModelStateIsInvalid" computerName="DIAL4JOBZ-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7feea38e-609b-4914-aa3b-252969006a88">
+    </UnitTestResult>
+    <UnitTestResult executionId="c70c765c-af3d-45db-98ee-2e607a5dcd42" testId="a6494fca-178f-bab7-7303-58228f4f8840" testName="ChangePassword_Post_ReturnsViewIfModelStateIsInvalid" computerName="DIAL4JOBZ-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c70c765c-af3d-45db-98ee-2e607a5dcd42">
+    </UnitTestResult>
+    <UnitTestResult executionId="98bd8a6c-723f-4fed-9cb8-3b02b7428c77" testId="b47b0f2b-2e0c-1785-8628-2e60de42438e" testName="Register_Get_ReturnsView" computerName="DIAL4JOBZ-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="98bd8a6c-723f-4fed-9cb8-3b02b7428c77">
+    </UnitTestResult>
+    <UnitTestResult executionId="fc4e06fb-3136-49af-8f08-3e227a6864cf" testId="c4a50e0e-5e0b-a5ac-3bf3-3a8ea76c3904" testName="LogOn_Get_ReturnsView" computerName="DIAL4JOBZ-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc4e06fb-3136-49af-8f08-3e227a6864cf">
+    </UnitTestResult>
+    <UnitTestResult executionId="b5e1d15f-bf8d-48c9-8ed7-a2e092c049cf" testId="d0dd70e2-6bbc-0b21-2af5-412af563a0e6" testName="LogOn_Post_ReturnsViewIfValidateUserFails" computerName="DIAL4JOBZ-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b5e1d15f-bf8d-48c9-8ed7-a2e092c049cf">
+    </UnitTestResult>
+    <UnitTestResult executionId="594d22c4-8130-4026-95b4-a39b920d9cd5" testId="dbfc1878-09ba-49b0-1b06-5ed7cf8bc1b0" testName="Register_Post_ReturnsRedirectOnSuccess" computerName="DIAL4JOBZ-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="594d22c4-8130-4026-95b4-a39b920d9cd5">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,2085 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Dial4JobzModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="Dial4JobzEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CandidateCertifications" EntityType="Dial4JobzModel.CandidateCertification" />
+    <EntitySet Name="CandidateLanguages" EntityType="Dial4JobzModel.CandidateLanguage" />
+    <EntitySet Name="CandidatePreferredFunctions" EntityType="Dial4JobzModel.CandidatePreferredFunction" />
+    <EntitySet Name="CandidatePreferredLocations" EntityType="Dial4JobzModel.CandidatePreferredLocation" />
+    <EntitySet Name="CandidatePreferredRoles" EntityType="Dial4JobzModel.CandidatePreferredRole" />
+    <EntitySet Name="Candidates" EntityType="Dial4JobzModel.Candidate" />
+    <EntitySet Name="CandidateSkills" EntityType="Dial4JobzModel.CandidateSkill" />
+    <EntitySet Name="Certifications" EntityType="Dial4JobzModel.Certification" />
+    <EntitySet Name="Cities" EntityType="Dial4JobzModel.City" />
+    <EntitySet Name="Countries" EntityType="Dial4JobzModel.Country" />
+    <EntitySet Name="Degrees" EntityType="Dial4JobzModel.Degree" />
+    <EntitySet Name="Functions" EntityType="Dial4JobzModel.Function" />
+    <EntitySet Name="Industries" EntityType="Dial4JobzModel.Industry" />
+    <EntitySet Name="JobLanguages" EntityType="Dial4JobzModel.JobLanguage" />
+    <EntitySet Name="JobLocations" EntityType="Dial4JobzModel.JobLocation" />
+    <EntitySet Name="JobPreferredCertifications" EntityType="Dial4JobzModel.JobPreferredCertification" />
+    <EntitySet Name="JobPreferredIndustries" EntityType="Dial4JobzModel.JobPreferredIndustry" />
+    <EntitySet Name="JobRequiredQualifications" EntityType="Dial4JobzModel.JobRequiredQualification" />
+    <EntitySet Name="JobRoles" EntityType="Dial4JobzModel.JobRole" />
+    <EntitySet Name="Jobs" EntityType="Dial4JobzModel.Job" />
+    <EntitySet Name="JobSkills" EntityType="Dial4JobzModel.JobSkill" />
+    <EntitySet Name="Languages" EntityType="Dial4JobzModel.Language" />
+    <EntitySet Name="Locations" EntityType="Dial4JobzModel.Location" />
+    <EntitySet Name="Organizations" EntityType="Dial4JobzModel.Organization" />
+    <EntitySet Name="Regions" EntityType="Dial4JobzModel.Region" />
+    <EntitySet Name="Roles" EntityType="Dial4JobzModel.Role" />
+    <EntitySet Name="Skills" EntityType="Dial4JobzModel.Skill" />
+    <EntitySet Name="States" EntityType="Dial4JobzModel.State" />
+    <EntitySet Name="Users" EntityType="Dial4JobzModel.User" />
+    <AssociationSet Name="FK_CandidateCertifications_Candidates" Association="Dial4JobzModel.FK_CandidateCertifications_Candidates">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="CandidateCertifications" EntitySet="CandidateCertifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateCertifications_Certifications" Association="Dial4JobzModel.FK_CandidateCertifications_Certifications">
+      <End Role="Certifications" EntitySet="Certifications" />
+      <End Role="CandidateCertifications" EntitySet="CandidateCertifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateLanguages_Candidates" Association="Dial4JobzModel.FK_CandidateLanguages_Candidates">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="CandidateLanguages" EntitySet="CandidateLanguages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateLanguages_Languages" Association="Dial4JobzModel.FK_CandidateLanguages_Languages">
+      <End Role="Languages" EntitySet="Languages" />
+      <End Role="CandidateLanguages" EntitySet="CandidateLanguages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidatePreferredFunctions_Candidates" Association="Dial4JobzModel.FK_CandidatePreferredFunctions_Candidates">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="CandidatePreferredFunctions" EntitySet="CandidatePreferredFunctions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidatePreferredFunctions_Functions" Association="Dial4JobzModel.FK_CandidatePreferredFunctions_Functions">
+      <End Role="Functions" EntitySet="Functions" />
+      <End Role="CandidatePreferredFunctions" EntitySet="CandidatePreferredFunctions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidatePreferredLocations_Candidates" Association="Dial4JobzModel.FK_CandidatePreferredLocations_Candidates">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="CandidatePreferredLocations" EntitySet="CandidatePreferredLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidatePreferredLocations_Locations" Association="Dial4JobzModel.FK_CandidatePreferredLocations_Locations">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="CandidatePreferredLocations" EntitySet="CandidatePreferredLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidatePreferredRoles_Candidates" Association="Dial4JobzModel.FK_CandidatePreferredRoles_Candidates">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="CandidatePreferredRoles" EntitySet="CandidatePreferredRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidatePreferredRoles_Roles" Association="Dial4JobzModel.FK_CandidatePreferredRoles_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="CandidatePreferredRoles" EntitySet="CandidatePreferredRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Candidates_Functions" Association="Dial4JobzModel.FK_Candidates_Functions">
+      <End Role="Functions" EntitySet="Functions" />
+      <End Role="Candidates" EntitySet="Candidates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Candidates_Users" Association="Dial4JobzModel.FK_Candidates_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Candidates" EntitySet="Candidates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateSkills_Candidates" Association="Dial4JobzModel.FK_CandidateSkills_Candidates">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="CandidateSkills" EntitySet="CandidateSkills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateSkills_Skills" Association="Dial4JobzModel.FK_CandidateSkills_Skills">
+      <End Role="Skills" EntitySet="Skills" />
+      <End Role="CandidateSkills" EntitySet="CandidateSkills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobPreferredCertifications_Certifications" Association="Dial4JobzModel.FK_JobPreferredCertifications_Certifications">
+      <End Role="Certifications" EntitySet="Certifications" />
+      <End Role="JobPreferredCertifications" EntitySet="JobPreferredCertifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cities_States" Association="Dial4JobzModel.FK_Cities_States">
+      <End Role="States" EntitySet="States" />
+      <End Role="Cities" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Locations_Cities" Association="Dial4JobzModel.FK_Locations_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Locations" EntitySet="Locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Regions_Cities" Association="Dial4JobzModel.FK_Regions_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Regions" EntitySet="Regions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Locations_Countries" Association="Dial4JobzModel.FK_Locations_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Locations" EntitySet="Locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_States_Countries" Association="Dial4JobzModel.FK_States_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="States" EntitySet="States" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganizationRequiredQualifications_Degrees" Association="Dial4JobzModel.FK_OrganizationRequiredQualifications_Degrees">
+      <End Role="Degrees" EntitySet="Degrees" />
+      <End Role="JobRequiredQualifications" EntitySet="JobRequiredQualifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganizationPreferredIndustries_Industries" Association="Dial4JobzModel.FK_OrganizationPreferredIndustries_Industries">
+      <End Role="Industries" EntitySet="Industries" />
+      <End Role="JobPreferredIndustries" EntitySet="JobPreferredIndustries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Organizations_Industries" Association="Dial4JobzModel.FK_Organizations_Industries">
+      <End Role="Industries" EntitySet="Industries" />
+      <End Role="Organizations" EntitySet="Organizations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobLanguages_Jobs" Association="Dial4JobzModel.FK_JobLanguages_Jobs">
+      <End Role="Jobs" EntitySet="Jobs" />
+      <End Role="JobLanguages" EntitySet="JobLanguages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganizationLanguages_Languages" Association="Dial4JobzModel.FK_OrganizationLanguages_Languages">
+      <End Role="Languages" EntitySet="Languages" />
+      <End Role="JobLanguages" EntitySet="JobLanguages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobLocations_Jobs" Association="Dial4JobzModel.FK_JobLocations_Jobs">
+      <End Role="Jobs" EntitySet="Jobs" />
+      <End Role="JobLocations" EntitySet="JobLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganizationPostingLocations_Locations" Association="Dial4JobzModel.FK_OrganizationPostingLocations_Locations">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="JobLocations" EntitySet="JobLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobPreferredCertifications_Jobs" Association="Dial4JobzModel.FK_JobPreferredCertifications_Jobs">
+      <End Role="Jobs" EntitySet="Jobs" />
+      <End Role="JobPreferredCertifications" EntitySet="JobPreferredCertifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobPreferredIndustries_Jobs" Association="Dial4JobzModel.FK_JobPreferredIndustries_Jobs">
+      <End Role="Jobs" EntitySet="Jobs" />
+      <End Role="JobPreferredIndustries" EntitySet="JobPreferredIndustries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobRequiredQualifications_Jobs" Association="Dial4JobzModel.FK_JobRequiredQualifications_Jobs">
+      <End Role="Jobs" EntitySet="Jobs" />
+      <End Role="JobRequiredQualifications" EntitySet="JobRequiredQualifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobRoles_Jobs" Association="Dial4JobzModel.FK_JobRoles_Jobs">
+      <End Role="Jobs" EntitySet="Jobs" />
+      <End Role="JobRoles" EntitySet="JobRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobRoles_Roles" Association="Dial4JobzModel.FK_JobRoles_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="JobRoles" EntitySet="JobRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Jobs_Organizations" Association="Dial4JobzModel.FK_Jobs_Organizations">
+      <End Role="Organizations" EntitySet="Organizations" />
+      <End Role="Jobs" EntitySet="Jobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobSkills_Jobs" Association="Dial4JobzModel.FK_JobSkills_Jobs">
+      <End Role="Jobs" EntitySet="Jobs" />
+      <End Role="JobSkills" EntitySet="JobSkills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganizationSkills_Skills" Association="Dial4JobzModel.FK_OrganizationSkills_Skills">
+      <End Role="Skills" EntitySet="Skills" />
+      <End Role="JobSkills" EntitySet="JobSkills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Locations_Regions" Association="Dial4JobzModel.FK_Locations_Regions">
+      <End Role="Regions" EntitySet="Regions" />
+      <End Role="Locations" EntitySet="Locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Locations_States" Association="Dial4JobzModel.FK_Locations_States">
+      <End Role="States" EntitySet="States" />
+      <End Role="Locations" EntitySet="Locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Organizations_Users" Association="Dial4JobzModel.FK_Organizations_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Organizations" EntitySet="Organizations" />
+    </AssociationSet>
+    <EntitySet Name="CandidateLicenseTypes" EntityType="Dial4JobzModel.CandidateLicenseType" />
+    <EntitySet Name="LicenseTypes" EntityType="Dial4JobzModel.LicenseType" />
+    <AssociationSet Name="FK_CandidateLicenseTypes_Candidates" Association="Dial4JobzModel.FK_CandidateLicenseTypes_Candidates">
+      <End Role="Candidate" EntitySet="Candidates" />
+      <End Role="CandidateLicenseType" EntitySet="CandidateLicenseTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateLicenseTypes_LicenseTypes" Association="Dial4JobzModel.FK_CandidateLicenseTypes_LicenseTypes">
+      <End Role="LicenseType" EntitySet="LicenseTypes" />
+      <End Role="CandidateLicenseType" EntitySet="CandidateLicenseTypes" />
+    </AssociationSet>
+    <EntitySet Name="MaritalStatuses" EntityType="Dial4JobzModel.MaritalStatus" />
+    <AssociationSet Name="FK_Candidates_MaritalState" Association="Dial4JobzModel.FK_Candidates_MaritalState">
+      <End Role="MaritalStatus" EntitySet="MaritalStatuses" />
+      <End Role="Candidate" EntitySet="Candidates" />
+    </AssociationSet>
+    <EntitySet Name="Specializations" EntityType="Dial4JobzModel.Specialization" />
+    <AssociationSet Name="FK__Specializ__Degre__10766AC2" Association="Dial4JobzModel.FK__Specializ__Degre__10766AC2">
+      <End Role="Degree" EntitySet="Degrees" />
+      <End Role="Specialization" EntitySet="Specializations" />
+    </AssociationSet>
+    <EntitySet Name="Institutes" EntityType="Dial4JobzModel.Institute" />
+    <EntitySet Name="CandidateQualifications" EntityType="Dial4JobzModel.CandidateQualification" />
+    <AssociationSet Name="FK__Candidate__Insti__190BB0C3" Association="Dial4JobzModel.FK__Candidate__Insti__190BB0C3">
+      <End Role="Institute" EntitySet="Institutes" />
+      <End Role="CandidateQualification" EntitySet="CandidateQualifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Candidate__Speci__18178C8A" Association="Dial4JobzModel.FK__Candidate__Speci__18178C8A">
+      <End Role="Specialization" EntitySet="Specializations" />
+      <End Role="CandidateQualification" EntitySet="CandidateQualifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateQualifications_Candidates" Association="Dial4JobzModel.FK_CandidateQualifications_Candidates">
+      <End Role="Candidate" EntitySet="Candidates" />
+      <End Role="CandidateQualification" EntitySet="CandidateQualifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateQualifications_Degrees" Association="Dial4JobzModel.FK_CandidateQualifications_Degrees">
+      <End Role="Degree" EntitySet="Degrees" />
+      <End Role="CandidateQualification" EntitySet="CandidateQualifications" />
+    </AssociationSet>
+    <EntitySet Name="AdminUserEntries" EntityType="Dial4JobzModel.AdminUserEntry" />
+    <AssociationSet Name="FK_AdminUserEntries_Users" Association="Dial4JobzModel.FK_AdminUserEntries_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="AdminUserEntry" EntitySet="AdminUserEntries" />
+    </AssociationSet>
+    <EntitySet Name="FunctionsForFindJobs" EntityType="Dial4JobzModel.FunctionsForFindJob" />
+    <EntitySet Name="RolesForFindJobseekers" EntityType="Dial4JobzModel.RolesForFindJobseeker" />
+    <EntitySet Name="AlertsDones" EntityType="Dial4JobzModel.AlertsDone" />
+    <EntitySet Name="ContactsViewedCounts" EntityType="Dial4JobzModel.ContactsViewedCount" />
+    <EntitySet Name="ContactsViewedLogs" EntityType="Dial4JobzModel.ContactsViewedLog" />
+    <FunctionImport Name="SP_CheckEmployerPlanDetailstopostJob" ReturnType="Collection(Dial4JobzModel.SP_CheckEmployerPlanDetailstopostJob_Result2)">
+      <Parameter Name="empId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_CheckEmployerPlanDetailstopostJob_Result2" ReturnType="Collection(Dial4JobzModel.SP_CheckEmployerPlanDetailstopostJob_Result2)">
+      <Parameter Name="empId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="OrderDetails" EntityType="Dial4JobzModel.OrderDetail" />
+    <EntitySet Name="OrderMasters" EntityType="Dial4JobzModel.OrderMaster" />
+    <EntitySet Name="OrderPayments" EntityType="Dial4JobzModel.OrderPayment" />
+    <EntitySet Name="VasPlans" EntityType="Dial4JobzModel.VasPlan" />
+    <AssociationSet Name="FK_OrderMaster_Candidates" Association="Dial4JobzModel.FK_OrderMaster_Candidates">
+      <End Role="Candidate" EntitySet="Candidates" />
+      <End Role="OrderMaster" EntitySet="OrderMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_OrderMaster" Association="Dial4JobzModel.FK_OrderDetail_OrderMaster">
+      <End Role="OrderMaster" EntitySet="OrderMasters" />
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderMaster_Organizations" Association="Dial4JobzModel.FK_OrderMaster_Organizations">
+      <End Role="Organization" EntitySet="Organizations" />
+      <End Role="OrderMaster" EntitySet="OrderMasters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderPayment_OrderMaster" Association="Dial4JobzModel.FK_OrderPayment_OrderMaster">
+      <End Role="OrderMaster" EntitySet="OrderMasters" />
+      <End Role="OrderPayment" EntitySet="OrderPayments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_VasPlans" Association="Dial4JobzModel.FK_OrderDetail_VasPlans">
+      <End Role="VasPlan" EntitySet="VasPlans" />
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <EntitySet Name="PostedJobAlerts" EntityType="Dial4JobzModel.PostedJobAlert" />
+    <AssociationSet Name="FK_OrderDetail_PostedJobAlerts" Association="Dial4JobzModel.FK_OrderDetail_PostedJobAlerts">
+      <End Role="PostedJobAlert" EntitySet="PostedJobAlerts" />
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_OrderPayment" Association="Dial4JobzModel.FK_OrderDetail_OrderPayment">
+      <End Role="OrderPayment" EntitySet="OrderPayments" />
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidatePreferredFunctions_Roles" Association="Dial4JobzModel.FK_CandidatePreferredFunctions_Roles">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="CandidatePreferredFunction" EntitySet="CandidatePreferredFunctions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PostedJobAlerts_OrderMaster" Association="Dial4JobzModel.FK_PostedJobAlerts_OrderMaster">
+      <End Role="OrderMaster" EntitySet="OrderMasters" />
+      <End Role="PostedJobAlert" EntitySet="PostedJobAlerts" />
+    </AssociationSet>
+    <EntitySet Name="JobLicenseTypes" EntityType="Dial4JobzModel.JobLicenseType" />
+    <AssociationSet Name="FK_JobLicenseTypes_Jobs" Association="Dial4JobzModel.FK_JobLicenseTypes_Jobs">
+      <End Role="Job" EntitySet="Jobs" />
+      <End Role="JobLicenseType" EntitySet="JobLicenseTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobLicenseTypes_LicenseTypes" Association="Dial4JobzModel.FK_JobLicenseTypes_LicenseTypes">
+      <End Role="LicenseType" EntitySet="LicenseTypes" />
+      <End Role="JobLicenseType" EntitySet="JobLicenseTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Roles_Functions" Association="Dial4JobzModel.FK_Roles_Functions">
+      <End Role="Function" EntitySet="Functions" />
+      <End Role="Role" EntitySet="Roles" />
+    </AssociationSet>
+    <EntitySet Name="JobsViewedLogs" EntityType="Dial4JobzModel.JobsViewedLog" />
+    <AssociationSet Name="FK_JobsViewedLog_OrderMaster" Association="Dial4JobzModel.FK_JobsViewedLog_OrderMaster">
+      <End Role="OrderMaster" EntitySet="OrderMasters" />
+      <End Role="JobsViewedLog" EntitySet="JobsViewedLogs" />
+    </AssociationSet>
+    <EntitySet Name="ChannelEntries" EntityType="Dial4JobzModel.ChannelEntry" />
+    <EntitySet Name="ChannelPartners" EntityType="Dial4JobzModel.ChannelPartner" />
+    <EntitySet Name="ChannelUsers" EntityType="Dial4JobzModel.ChannelUser" />
+    <AssociationSet Name="FK_ChannelEntries_ChannelPartners" Association="Dial4JobzModel.FK_ChannelEntries_ChannelPartners">
+      <End Role="ChannelPartner" EntitySet="ChannelPartners" />
+      <End Role="ChannelEntry" EntitySet="ChannelEntries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChannelEntries_ChannelUsers" Association="Dial4JobzModel.FK_ChannelEntries_ChannelUsers">
+      <End Role="ChannelUser" EntitySet="ChannelUsers" />
+      <End Role="ChannelEntry" EntitySet="ChannelEntries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChannelUsers_ChannelPartners" Association="Dial4JobzModel.FK_ChannelUsers_ChannelPartners">
+      <End Role="ChannelPartner" EntitySet="ChannelPartners" />
+      <End Role="ChannelUser" EntitySet="ChannelUsers" />
+    </AssociationSet>
+    <EntitySet Name="AlertsLogs" EntityType="Dial4JobzModel.AlertsLog" />
+    <AssociationSet Name="FK_AlertsLog_OrderMaster" Association="Dial4JobzModel.FK_AlertsLog_OrderMaster">
+      <End Role="OrderMaster" EntitySet="OrderMasters" />
+      <End Role="AlertsLog" EntitySet="AlertsLogs" />
+    </AssociationSet>
+    <EntitySet Name="Invoices" EntityType="Dial4JobzModel.Invoice" />
+    <AssociationSet Name="FK_Invoice_Invoice" Association="Dial4JobzModel.FK_Invoice_Invoice">
+      <End Role="Invoice" EntitySet="Invoices" />
+      <End Role="Invoice1" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderMaster_Invoice" Association="Dial4JobzModel.FK_OrderMaster_Invoice">
+      <End Role="Invoice" EntitySet="Invoices" />
+      <End Role="OrderMaster" EntitySet="OrderMasters" />
+    </AssociationSet>
+    <EntitySet Name="Consultantes" EntityType="Dial4JobzModel.Consultante" />
+    <AssociationSet Name="FK_Candidates_Consultantes" Association="Dial4JobzModel.FK_Candidates_Consultantes">
+      <End Role="Consultante" EntitySet="Consultantes" />
+      <End Role="Candidate" EntitySet="Candidates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Consultantes_Industries" Association="Dial4JobzModel.FK_Consultantes_Industries">
+      <End Role="Industry" EntitySet="Industries" />
+      <End Role="Consultante" EntitySet="Consultantes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Jobs_Consultantes" Association="Dial4JobzModel.FK_Jobs_Consultantes">
+      <End Role="Consultante" EntitySet="Consultantes" />
+      <End Role="Job" EntitySet="Jobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderMaster_Consultantes" Association="Dial4JobzModel.FK_OrderMaster_Consultantes">
+      <End Role="Consultante" EntitySet="Consultantes" />
+      <End Role="OrderMaster" EntitySet="OrderMasters" />
+    </AssociationSet>
+    <EntitySet Name="EmployeesCounts" EntityType="Dial4JobzModel.EmployeesCount" />
+    <EntitySet Name="DPRLogs" EntityType="Dial4JobzModel.DPRLog" />
+    <EntitySet Name="JobsLogs" EntityType="Dial4JobzModel.JobsLog" />
+    <EntitySet Name="AdminPermissions" EntityType="Dial4JobzModel.AdminPermission" />
+    <EntitySet Name="Permissions" EntityType="Dial4JobzModel.Permission" />
+    <AssociationSet Name="FK_AdminPermissions_Permissions" Association="Dial4JobzModel.FK_AdminPermissions_Permissions">
+      <End Role="Permission" EntitySet="Permissions" />
+      <End Role="AdminPermission" EntitySet="AdminPermissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdminPermissions_Users" Association="Dial4JobzModel.FK_AdminPermissions_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="AdminPermission" EntitySet="AdminPermissions" />
+    </AssociationSet>
+    <EntitySet Name="CollectionExecutives" EntityType="Dial4JobzModel.CollectionExecutive" />
+    <EntitySet Name="PickupCashAlertsLogs" EntityType="Dial4JobzModel.PickupCashAlertsLog" />
+  </EntityContainer>
+  <EntityType Name="CandidateCertification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CandidateId" Type="Int32" Nullable="false" />
+    <Property Name="CertificationId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Candidate" Relationship="Dial4JobzModel.FK_CandidateCertifications_Candidates" FromRole="CandidateCertifications" ToRole="Candidates" />
+    <NavigationProperty Name="Certification" Relationship="Dial4JobzModel.FK_CandidateCertifications_Certifications" FromRole="CandidateCertifications" ToRole="Certifications" />
+  </EntityType>
+  <EntityType Name="CandidateLanguage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CandidateId" Type="Int32" Nullable="false" />
+    <Property Name="LanguageId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Candidate" Relationship="Dial4JobzModel.FK_CandidateLanguages_Candidates" FromRole="CandidateLanguages" ToRole="Candidates" />
+    <NavigationProperty Name="Language" Relationship="Dial4JobzModel.FK_CandidateLanguages_Languages" FromRole="CandidateLanguages" ToRole="Languages" />
+  </EntityType>
+  <EntityType Name="CandidatePreferredFunction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CandidateId" Type="Int32" Nullable="false" />
+    <Property Name="FunctionId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Candidate" Relationship="Dial4JobzModel.FK_CandidatePreferredFunctions_Candidates" FromRole="CandidatePreferredFunctions" ToRole="Candidates" />
+    <NavigationProperty Name="Function" Relationship="Dial4JobzModel.FK_CandidatePreferredFunctions_Functions" FromRole="CandidatePreferredFunctions" ToRole="Functions" />
+    <Property Type="Int32" Name="RoleId" />
+    <NavigationProperty Name="Role" Relationship="Dial4JobzModel.FK_CandidatePreferredFunctions_Roles" FromRole="CandidatePreferredFunction" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="CandidatePreferredLocation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CandidateId" Type="Int32" Nullable="false" />
+    <Property Name="LocationId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Candidate" Relationship="Dial4JobzModel.FK_CandidatePreferredLocations_Candidates" FromRole="CandidatePreferredLocations" ToRole="Candidates" />
+    <NavigationProperty Name="Location" Relationship="Dial4JobzModel.FK_CandidatePreferredLocations_Locations" FromRole="CandidatePreferredLocations" ToRole="Locations" />
+  </EntityType>
+  <EntityType Name="CandidatePreferredRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CandidateId" Type="Int32" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Candidate" Relationship="Dial4JobzModel.FK_CandidatePreferredRoles_Candidates" FromRole="CandidatePreferredRoles" ToRole="Candidates" />
+    <NavigationProperty Name="Role" Relationship="Dial4JobzModel.FK_CandidatePreferredRoles_Roles" FromRole="CandidatePreferredRoles" ToRole="Roles" />
+  </EntityType>
+  <EntityType Name="Candidate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="UserName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="Binary" MaxLength="16" FixedLength="true" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="LocationId" Type="Int32" />
+    <Property Name="ContactNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MobileNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DOB" Type="DateTime" />
+    <Property Name="Gender" Type="Int32" />
+    <Property Name="TotalExperience" Type="Int64" />
+    <Property Name="AnnualSalary" Type="Double" />
+    <Property Name="Position" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FunctionId" Type="Int32" />
+    <Property Name="IndustryId" Type="Int32" />
+    <Property Name="ResumeFileName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CandidateCertifications" Relationship="Dial4JobzModel.FK_CandidateCertifications_Candidates" FromRole="Candidates" ToRole="CandidateCertifications" />
+    <NavigationProperty Name="CandidateLanguages" Relationship="Dial4JobzModel.FK_CandidateLanguages_Candidates" FromRole="Candidates" ToRole="CandidateLanguages" />
+    <NavigationProperty Name="CandidatePreferredFunctions" Relationship="Dial4JobzModel.FK_CandidatePreferredFunctions_Candidates" FromRole="Candidates" ToRole="CandidatePreferredFunctions" />
+    <NavigationProperty Name="CandidatePreferredLocations" Relationship="Dial4JobzModel.FK_CandidatePreferredLocations_Candidates" FromRole="Candidates" ToRole="CandidatePreferredLocations" />
+    <NavigationProperty Name="CandidatePreferredRoles" Relationship="Dial4JobzModel.FK_CandidatePreferredRoles_Candidates" FromRole="Candidates" ToRole="CandidatePreferredRoles" />
+    <NavigationProperty Name="Function" Relationship="Dial4JobzModel.FK_Candidates_Functions" FromRole="Candidates" ToRole="Functions" />
+    <NavigationProperty Name="User" Relationship="Dial4JobzModel.FK_Candidates_Users" FromRole="Candidates" ToRole="Users" />
+    <NavigationProperty Name="CandidateSkills" Relationship="Dial4JobzModel.FK_CandidateSkills_Candidates" FromRole="Candidates" ToRole="CandidateSkills" />
+    <Property Type="Boolean" Name="PreferredAll" />
+    <Property Type="Boolean" Name="PreferredContract" />
+    <Property Type="Boolean" Name="PreferredParttime" />
+    <Property Type="Boolean" Name="PreferredWorkFromHome" />
+    <Property Type="Boolean" Name="PreferredFulltime" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="DateTime" Name="UpdatedDate" />
+    <Property Type="Int32" Name="PreferredType" />
+    <Property Type="String" Name="LicenseNumber" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Int64" Name="MinExperience" />
+    <Property Type="Int64" Name="MaxExperience" />
+    <Property Type="String" Name="PassportNumber" MaxLength="30" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="CandidateLicenseTypes" Relationship="Dial4JobzModel.FK_CandidateLicenseTypes_Candidates" FromRole="Candidate" ToRole="CandidateLicenseType" />
+    <Property Type="String" Name="PresentCompany" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="PreviousCompany" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="NumberOfCompanies" />
+    <Property Type="String" Name="Pincode" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="60" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="MaritalId" />
+    <Property Type="Int32" Name="PhoneVerificationNo" />
+    <Property Type="Boolean" Name="IsPhoneVerified" />
+    <Property Type="Boolean" Name="IsMailVerified" />
+    <NavigationProperty Name="MaritalStatus" Relationship="Dial4JobzModel.FK_Candidates_MaritalState" FromRole="Candidate" ToRole="MaritalStatus" />
+    <NavigationProperty Name="CandidateQualifications" Relationship="Dial4JobzModel.FK_CandidateQualifications_Candidates" FromRole="Candidate" ToRole="CandidateQualification" />
+    <Property Type="String" Name="PreferredTimeFrom" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PreferredTimeTo" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OrderMasters" Relationship="Dial4JobzModel.FK_OrderMaster_Candidates" FromRole="Candidate" ToRole="OrderMaster" />
+    <Property Type="String" Name="IPAddress" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="NightShift" />
+    <Property Type="Boolean" Name="GeneralShift" />
+    <Property Type="Boolean" Name="TwoWheeler" />
+    <Property Type="Boolean" Name="FourWheeler" />
+    <Property Type="String" Name="VerifiedByAdmin" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="InternationalNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ConsultantId" />
+    <NavigationProperty Name="Consultante" Relationship="Dial4JobzModel.FK_Candidates_Consultantes" FromRole="Candidate" ToRole="Consultante" />
+  </EntityType>
+  <EntityType Name="CandidateSkill">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CandidateId" Type="Int32" Nullable="false" />
+    <Property Name="SkillId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Candidate" Relationship="Dial4JobzModel.FK_CandidateSkills_Candidates" FromRole="CandidateSkills" ToRole="Candidates" />
+    <NavigationProperty Name="Skill" Relationship="Dial4JobzModel.FK_CandidateSkills_Skills" FromRole="CandidateSkills" ToRole="Skills" />
+  </EntityType>
+  <EntityType Name="Certification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CandidateCertifications" Relationship="Dial4JobzModel.FK_CandidateCertifications_Certifications" FromRole="Certifications" ToRole="CandidateCertifications" />
+    <NavigationProperty Name="JobPreferredCertifications" Relationship="Dial4JobzModel.FK_JobPreferredCertifications_Certifications" FromRole="Certifications" ToRole="JobPreferredCertifications" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="StateId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="State" Relationship="Dial4JobzModel.FK_Cities_States" FromRole="Cities" ToRole="States" />
+    <NavigationProperty Name="Locations" Relationship="Dial4JobzModel.FK_Locations_Cities" FromRole="Cities" ToRole="Locations" />
+    <NavigationProperty Name="Regions" Relationship="Dial4JobzModel.FK_Regions_Cities" FromRole="Cities" ToRole="Regions" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Locations" Relationship="Dial4JobzModel.FK_Locations_Countries" FromRole="Countries" ToRole="Locations" />
+    <NavigationProperty Name="States" Relationship="Dial4JobzModel.FK_States_Countries" FromRole="Countries" ToRole="States" />
+  </EntityType>
+  <EntityType Name="Degree">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="JobRequiredQualifications" Relationship="Dial4JobzModel.FK_OrganizationRequiredQualifications_Degrees" FromRole="Degrees" ToRole="JobRequiredQualifications" />
+    <NavigationProperty Name="Specializations" Relationship="Dial4JobzModel.FK__Specializ__Degre__10766AC2" FromRole="Degree" ToRole="Specialization" />
+    <NavigationProperty Name="CandidateQualifications" Relationship="Dial4JobzModel.FK_CandidateQualifications_Degrees" FromRole="Degree" ToRole="CandidateQualification" />
+  </EntityType>
+  <EntityType Name="Function">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="CandidatePreferredFunctions" Relationship="Dial4JobzModel.FK_CandidatePreferredFunctions_Functions" FromRole="Functions" ToRole="CandidatePreferredFunctions" />
+    <NavigationProperty Name="Candidates" Relationship="Dial4JobzModel.FK_Candidates_Functions" FromRole="Functions" ToRole="Candidates" />
+    <NavigationProperty Name="Roles" Relationship="Dial4JobzModel.FK_Roles_Functions" FromRole="Function" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="Industry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="JobPreferredIndustries" Relationship="Dial4JobzModel.FK_OrganizationPreferredIndustries_Industries" FromRole="Industries" ToRole="JobPreferredIndustries" />
+    <NavigationProperty Name="Organizations" Relationship="Dial4JobzModel.FK_Organizations_Industries" FromRole="Industries" ToRole="Organizations" />
+    <NavigationProperty Name="Consultantes" Relationship="Dial4JobzModel.FK_Consultantes_Industries" FromRole="Industry" ToRole="Consultante" />
+  </EntityType>
+  <EntityType Name="JobLanguage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="Int32" />
+    <Property Name="LanguageId" Type="Int32" />
+    <NavigationProperty Name="Job" Relationship="Dial4JobzModel.FK_JobLanguages_Jobs" FromRole="JobLanguages" ToRole="Jobs" />
+    <NavigationProperty Name="Language" Relationship="Dial4JobzModel.FK_OrganizationLanguages_Languages" FromRole="JobLanguages" ToRole="Languages" />
+  </EntityType>
+  <EntityType Name="JobLocation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="Int32" Nullable="false" />
+    <Property Name="LocationId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Job" Relationship="Dial4JobzModel.FK_JobLocations_Jobs" FromRole="JobLocations" ToRole="Jobs" />
+    <NavigationProperty Name="Location" Relationship="Dial4JobzModel.FK_OrganizationPostingLocations_Locations" FromRole="JobLocations" ToRole="Locations" />
+  </EntityType>
+  <EntityType Name="JobPreferredCertification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="Int32" Nullable="false" />
+    <Property Name="CertificationId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Certification" Relationship="Dial4JobzModel.FK_JobPreferredCertifications_Certifications" FromRole="JobPreferredCertifications" ToRole="Certifications" />
+    <NavigationProperty Name="Job" Relationship="Dial4JobzModel.FK_JobPreferredCertifications_Jobs" FromRole="JobPreferredCertifications" ToRole="Jobs" />
+  </EntityType>
+  <EntityType Name="JobPreferredIndustry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="Int32" Nullable="false" />
+    <Property Name="IndustryId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Industry" Relationship="Dial4JobzModel.FK_OrganizationPreferredIndustries_Industries" FromRole="JobPreferredIndustries" ToRole="Industries" />
+    <NavigationProperty Name="Job" Relationship="Dial4JobzModel.FK_JobPreferredIndustries_Jobs" FromRole="JobPreferredIndustries" ToRole="Jobs" />
+  </EntityType>
+  <EntityType Name="JobRequiredQualification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DegreeId" Type="Int32" Nullable="false" />
+    <Property Name="JobId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Degree" Relationship="Dial4JobzModel.FK_OrganizationRequiredQualifications_Degrees" FromRole="JobRequiredQualifications" ToRole="Degrees" />
+    <NavigationProperty Name="Job" Relationship="Dial4JobzModel.FK_JobRequiredQualifications_Jobs" FromRole="JobRequiredQualifications" ToRole="Jobs" />
+    <Property Type="Int32" Name="SpecializationId" />
+    <Property Type="String" Name="Specialization" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="JobRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="Int32" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Job" Relationship="Dial4JobzModel.FK_JobRoles_Jobs" FromRole="JobRoles" ToRole="Jobs" />
+    <NavigationProperty Name="Role" Relationship="Dial4JobzModel.FK_JobRoles_Roles" FromRole="JobRoles" ToRole="Roles" />
+  </EntityType>
+  <EntityType Name="Job">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrganizationId" Type="Int32" Nullable="false" />
+    <Property Name="FunctionId" Type="Int32" />
+    <Property Name="Position" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Male" Type="Boolean" />
+    <Property Name="Female" Type="Boolean" />
+    <Property Name="Budget" Type="Double" />
+    <Property Name="ContactPerson" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ContactNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MobileNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CommunicateViaSMS" Type="Boolean" />
+    <Property Name="CommunicateViaEmail" Type="Boolean" />
+    <Property Name="MinExperience" Type="Int64" />
+    <Property Name="MaxExperience" Type="Int64" />
+    <Property Name="MaxBudget" Type="Double" />
+    <NavigationProperty Name="JobLanguages" Relationship="Dial4JobzModel.FK_JobLanguages_Jobs" FromRole="Jobs" ToRole="JobLanguages" />
+    <NavigationProperty Name="JobLocations" Relationship="Dial4JobzModel.FK_JobLocations_Jobs" FromRole="Jobs" ToRole="JobLocations" />
+    <NavigationProperty Name="JobPreferredCertifications" Relationship="Dial4JobzModel.FK_JobPreferredCertifications_Jobs" FromRole="Jobs" ToRole="JobPreferredCertifications" />
+    <NavigationProperty Name="JobPreferredIndustries" Relationship="Dial4JobzModel.FK_JobPreferredIndustries_Jobs" FromRole="Jobs" ToRole="JobPreferredIndustries" />
+    <NavigationProperty Name="JobRequiredQualifications" Relationship="Dial4JobzModel.FK_JobRequiredQualifications_Jobs" FromRole="Jobs" ToRole="JobRequiredQualifications" />
+    <NavigationProperty Name="JobRoles" Relationship="Dial4JobzModel.FK_JobRoles_Jobs" FromRole="Jobs" ToRole="JobRoles" />
+    <NavigationProperty Name="Organization" Relationship="Dial4JobzModel.FK_Jobs_Organizations" FromRole="Jobs" ToRole="Organizations" />
+    <NavigationProperty Name="JobSkills" Relationship="Dial4JobzModel.FK_JobSkills_Jobs" FromRole="Jobs" ToRole="JobSkills" />
+    <Property Type="Boolean" Name="PreferredAll" />
+    <Property Type="Boolean" Name="PreferredContract" />
+    <Property Type="Boolean" Name="PreferredParttime" />
+    <Property Type="Boolean" Name="PreferredFulltime" />
+    <Property Type="Boolean" Name="PreferredWorkFromHome" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="DateTime" Name="UpdatedDate" />
+    <Property Type="Int32" Name="PreferredType" />
+    <Property Type="Int16" Name="PreferredTimeFromMinutes" />
+    <Property Type="Int16" Name="PreferredTimeToMinutes" />
+    <Property Type="Boolean" Name="HideDetails" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int16" Name="MaxPreferredTimeFrom" />
+    <Property Type="Int16" Name="MaxPreferredTimeTo" />
+    <Property Type="String" Name="PreferredTimeFrom" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PreferredTimeTo" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="NightShift" />
+    <Property Type="Boolean" Name="GeneralShift" />
+    <Property Type="Boolean" Name="TwoWheeler" />
+    <Property Type="Boolean" Name="FourWheeler" />
+    <NavigationProperty Name="JobLicenseTypes" Relationship="Dial4JobzModel.FK_JobLicenseTypes_Jobs" FromRole="Job" ToRole="JobLicenseType" />
+    <Property Type="String" Name="InternationalNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ConsultantId" />
+    <NavigationProperty Name="Consultante" Relationship="Dial4JobzModel.FK_Jobs_Consultantes" FromRole="Job" ToRole="Consultante" />
+  </EntityType>
+  <EntityType Name="JobSkill">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="Int32" Nullable="false" />
+    <Property Name="SkillId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Job" Relationship="Dial4JobzModel.FK_JobSkills_Jobs" FromRole="JobSkills" ToRole="Jobs" />
+    <NavigationProperty Name="Skill" Relationship="Dial4JobzModel.FK_OrganizationSkills_Skills" FromRole="JobSkills" ToRole="Skills" />
+  </EntityType>
+  <EntityType Name="Language">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="CandidateLanguages" Relationship="Dial4JobzModel.FK_CandidateLanguages_Languages" FromRole="Languages" ToRole="CandidateLanguages" />
+    <NavigationProperty Name="JobLanguages" Relationship="Dial4JobzModel.FK_OrganizationLanguages_Languages" FromRole="Languages" ToRole="JobLanguages" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CountryId" Type="Int32" Nullable="false" />
+    <Property Name="StateId" Type="Int32" />
+    <Property Name="CityId" Type="Int32" />
+    <Property Name="RegionId" Type="Int32" />
+    <NavigationProperty Name="CandidatePreferredLocations" Relationship="Dial4JobzModel.FK_CandidatePreferredLocations_Locations" FromRole="Locations" ToRole="CandidatePreferredLocations" />
+    <NavigationProperty Name="City" Relationship="Dial4JobzModel.FK_Locations_Cities" FromRole="Locations" ToRole="Cities" />
+    <NavigationProperty Name="Country" Relationship="Dial4JobzModel.FK_Locations_Countries" FromRole="Locations" ToRole="Countries" />
+    <NavigationProperty Name="JobLocations" Relationship="Dial4JobzModel.FK_OrganizationPostingLocations_Locations" FromRole="Locations" ToRole="JobLocations" />
+    <NavigationProperty Name="Region" Relationship="Dial4JobzModel.FK_Locations_Regions" FromRole="Locations" ToRole="Regions" />
+    <NavigationProperty Name="State" Relationship="Dial4JobzModel.FK_Locations_States" FromRole="Locations" ToRole="States" />
+  </EntityType>
+  <EntityType Name="Organization">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="UserName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="Binary" MaxLength="16" FixedLength="true" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IndustryId" Type="Int32" />
+    <Property Name="ContactPerson" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Website" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="LocationId" Type="Int32" />
+    <Property Name="ContactNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MobileNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Industry" Relationship="Dial4JobzModel.FK_Organizations_Industries" FromRole="Organizations" ToRole="Industries" />
+    <NavigationProperty Name="Jobs" Relationship="Dial4JobzModel.FK_Jobs_Organizations" FromRole="Organizations" ToRole="Jobs" />
+    <NavigationProperty Name="User" Relationship="Dial4JobzModel.FK_Organizations_Users" FromRole="Organizations" ToRole="Users" />
+    <Property Type="DateTime" Name="CreateDate" />
+    <Property Type="DateTime" Name="UpdateDate" />
+    <Property Type="Int32" Name="PhoneVerificationNo" />
+    <Property Type="Boolean" Name="IsPhoneVerified" />
+    <Property Type="Boolean" Name="IsMailVerified" />
+    <Property Type="String" Name="Address" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pincode" MaxLength="6" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OrderMasters" Relationship="Dial4JobzModel.FK_OrderMaster_Organizations" FromRole="Organization" ToRole="OrderMaster" />
+    <Property Type="String" Name="IPAddress" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="VerifiedByAdmin" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="EmployersCount" />
+    <Property Type="Int32" Name="EmployerType" />
+    <Property Type="Int32" Name="OwnershipType" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="City" Relationship="Dial4JobzModel.FK_Regions_Cities" FromRole="Regions" ToRole="Cities" />
+    <NavigationProperty Name="Locations" Relationship="Dial4JobzModel.FK_Locations_Regions" FromRole="Regions" ToRole="Locations" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FunctionId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CandidatePreferredRoles" Relationship="Dial4JobzModel.FK_CandidatePreferredRoles_Roles" FromRole="Roles" ToRole="CandidatePreferredRoles" />
+    <NavigationProperty Name="JobRoles" Relationship="Dial4JobzModel.FK_JobRoles_Roles" FromRole="Roles" ToRole="JobRoles" />
+    <Property Type="String" Name="HomeFlag" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="CandidatePreferredFunctions" Relationship="Dial4JobzModel.FK_CandidatePreferredFunctions_Roles" FromRole="Role" ToRole="CandidatePreferredFunction" />
+    <NavigationProperty Name="Function" Relationship="Dial4JobzModel.FK_Roles_Functions" FromRole="Role" ToRole="Function" />
+  </EntityType>
+  <EntityType Name="Skill">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="CandidateSkills" Relationship="Dial4JobzModel.FK_CandidateSkills_Skills" FromRole="Skills" ToRole="CandidateSkills" />
+    <NavigationProperty Name="JobSkills" Relationship="Dial4JobzModel.FK_OrganizationSkills_Skills" FromRole="Skills" ToRole="JobSkills" />
+  </EntityType>
+  <EntityType Name="State">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CountryId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cities" Relationship="Dial4JobzModel.FK_Cities_States" FromRole="States" ToRole="Cities" />
+    <NavigationProperty Name="Country" Relationship="Dial4JobzModel.FK_States_Countries" FromRole="States" ToRole="Countries" />
+    <NavigationProperty Name="Locations" Relationship="Dial4JobzModel.FK_Locations_States" FromRole="States" ToRole="Locations" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="Binary" Nullable="false" MaxLength="16" FixedLength="true" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <NavigationProperty Name="Candidates" Relationship="Dial4JobzModel.FK_Candidates_Users" FromRole="Users" ToRole="Candidates" />
+    <NavigationProperty Name="Organizations" Relationship="Dial4JobzModel.FK_Organizations_Users" FromRole="Users" ToRole="Organizations" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Mobilenumber" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PageCode" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsSuperAdmin" />
+    <NavigationProperty Name="AdminUserEntries" Relationship="Dial4JobzModel.FK_AdminUserEntries_Users" FromRole="User" ToRole="AdminUserEntry" />
+    <NavigationProperty Name="AdminPermissions" Relationship="Dial4JobzModel.FK_AdminPermissions_Users" FromRole="User" ToRole="AdminPermission" />
+  </EntityType>
+  <Association Name="FK_CandidateCertifications_Candidates">
+    <End Role="Candidates" Type="Dial4JobzModel.Candidate" Multiplicity="1" />
+    <End Role="CandidateCertifications" Type="Dial4JobzModel.CandidateCertification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateCertifications">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateCertifications_Certifications">
+    <End Role="Certifications" Type="Dial4JobzModel.Certification" Multiplicity="1" />
+    <End Role="CandidateCertifications" Type="Dial4JobzModel.CandidateCertification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Certifications">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateCertifications">
+        <PropertyRef Name="CertificationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateLanguages_Candidates">
+    <End Role="Candidates" Type="Dial4JobzModel.Candidate" Multiplicity="1" />
+    <End Role="CandidateLanguages" Type="Dial4JobzModel.CandidateLanguage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateLanguages">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateLanguages_Languages">
+    <End Role="Languages" Type="Dial4JobzModel.Language" Multiplicity="1" />
+    <End Role="CandidateLanguages" Type="Dial4JobzModel.CandidateLanguage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Languages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateLanguages">
+        <PropertyRef Name="LanguageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidatePreferredFunctions_Candidates">
+    <End Role="Candidates" Type="Dial4JobzModel.Candidate" Multiplicity="1" />
+    <End Role="CandidatePreferredFunctions" Type="Dial4JobzModel.CandidatePreferredFunction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidatePreferredFunctions">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidatePreferredFunctions_Functions">
+    <End Role="Functions" Type="Dial4JobzModel.Function" Multiplicity="1" />
+    <End Role="CandidatePreferredFunctions" Type="Dial4JobzModel.CandidatePreferredFunction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Functions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidatePreferredFunctions">
+        <PropertyRef Name="FunctionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidatePreferredLocations_Candidates">
+    <End Role="Candidates" Type="Dial4JobzModel.Candidate" Multiplicity="1" />
+    <End Role="CandidatePreferredLocations" Type="Dial4JobzModel.CandidatePreferredLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidatePreferredLocations">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidatePreferredLocations_Locations">
+    <End Role="Locations" Type="Dial4JobzModel.Location" Multiplicity="1" />
+    <End Role="CandidatePreferredLocations" Type="Dial4JobzModel.CandidatePreferredLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidatePreferredLocations">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidatePreferredRoles_Candidates">
+    <End Role="Candidates" Type="Dial4JobzModel.Candidate" Multiplicity="1" />
+    <End Role="CandidatePreferredRoles" Type="Dial4JobzModel.CandidatePreferredRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidatePreferredRoles">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidatePreferredRoles_Roles">
+    <End Role="Roles" Type="Dial4JobzModel.Role" Multiplicity="1" />
+    <End Role="CandidatePreferredRoles" Type="Dial4JobzModel.CandidatePreferredRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidatePreferredRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Candidates_Functions">
+    <End Role="Functions" Type="Dial4JobzModel.Function" Multiplicity="0..1" />
+    <End Role="Candidates" Type="Dial4JobzModel.Candidate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Functions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Candidates">
+        <PropertyRef Name="FunctionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Candidates_Users">
+    <End Role="Users" Type="Dial4JobzModel.User" Multiplicity="0..1" />
+    <End Role="Candidates" Type="Dial4JobzModel.Candidate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Candidates">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateSkills_Candidates">
+    <End Role="Candidates" Type="Dial4JobzModel.Candidate" Multiplicity="1" />
+    <End Role="CandidateSkills" Type="Dial4JobzModel.CandidateSkill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateSkills">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateSkills_Skills">
+    <End Role="Skills" Type="Dial4JobzModel.Skill" Multiplicity="1" />
+    <End Role="CandidateSkills" Type="Dial4JobzModel.CandidateSkill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Skills">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateSkills">
+        <PropertyRef Name="SkillId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobPreferredCertifications_Certifications">
+    <End Role="Certifications" Type="Dial4JobzModel.Certification" Multiplicity="1" />
+    <End Role="JobPreferredCertifications" Type="Dial4JobzModel.JobPreferredCertification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Certifications">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobPreferredCertifications">
+        <PropertyRef Name="CertificationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cities_States">
+    <End Role="States" Type="Dial4JobzModel.State" Multiplicity="1" />
+    <End Role="Cities" Type="Dial4JobzModel.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="States">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cities">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Locations_Cities">
+    <End Role="Cities" Type="Dial4JobzModel.City" Multiplicity="0..1" />
+    <End Role="Locations" Type="Dial4JobzModel.Location" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Locations">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Regions_Cities">
+    <End Role="Cities" Type="Dial4JobzModel.City" Multiplicity="1" />
+    <End Role="Regions" Type="Dial4JobzModel.Region" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Regions">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Locations_Countries">
+    <End Role="Countries" Type="Dial4JobzModel.Country" Multiplicity="1" />
+    <End Role="Locations" Type="Dial4JobzModel.Location" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Locations">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_States_Countries">
+    <End Role="Countries" Type="Dial4JobzModel.Country" Multiplicity="1" />
+    <End Role="States" Type="Dial4JobzModel.State" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="States">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganizationRequiredQualifications_Degrees">
+    <End Role="Degrees" Type="Dial4JobzModel.Degree" Multiplicity="1" />
+    <End Role="JobRequiredQualifications" Type="Dial4JobzModel.JobRequiredQualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Degrees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobRequiredQualifications">
+        <PropertyRef Name="DegreeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganizationPreferredIndustries_Industries">
+    <End Role="Industries" Type="Dial4JobzModel.Industry" Multiplicity="1" />
+    <End Role="JobPreferredIndustries" Type="Dial4JobzModel.JobPreferredIndustry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Industries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobPreferredIndustries">
+        <PropertyRef Name="IndustryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Organizations_Industries">
+    <End Role="Industries" Type="Dial4JobzModel.Industry" Multiplicity="0..1" />
+    <End Role="Organizations" Type="Dial4JobzModel.Organization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Industries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organizations">
+        <PropertyRef Name="IndustryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobLanguages_Jobs">
+    <End Role="Jobs" Type="Dial4JobzModel.Job" Multiplicity="0..1" />
+    <End Role="JobLanguages" Type="Dial4JobzModel.JobLanguage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jobs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobLanguages">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganizationLanguages_Languages">
+    <End Role="Languages" Type="Dial4JobzModel.Language" Multiplicity="0..1" />
+    <End Role="JobLanguages" Type="Dial4JobzModel.JobLanguage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Languages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobLanguages">
+        <PropertyRef Name="LanguageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobLocations_Jobs">
+    <End Role="Jobs" Type="Dial4JobzModel.Job" Multiplicity="1" />
+    <End Role="JobLocations" Type="Dial4JobzModel.JobLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jobs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobLocations">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganizationPostingLocations_Locations">
+    <End Role="Locations" Type="Dial4JobzModel.Location" Multiplicity="1" />
+    <End Role="JobLocations" Type="Dial4JobzModel.JobLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobLocations">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobPreferredCertifications_Jobs">
+    <End Role="Jobs" Type="Dial4JobzModel.Job" Multiplicity="1" />
+    <End Role="JobPreferredCertifications" Type="Dial4JobzModel.JobPreferredCertification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jobs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobPreferredCertifications">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobPreferredIndustries_Jobs">
+    <End Role="Jobs" Type="Dial4JobzModel.Job" Multiplicity="1" />
+    <End Role="JobPreferredIndustries" Type="Dial4JobzModel.JobPreferredIndustry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jobs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobPreferredIndustries">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobRequiredQualifications_Jobs">
+    <End Role="Jobs" Type="Dial4JobzModel.Job" Multiplicity="1" />
+    <End Role="JobRequiredQualifications" Type="Dial4JobzModel.JobRequiredQualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jobs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobRequiredQualifications">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobRoles_Jobs">
+    <End Role="Jobs" Type="Dial4JobzModel.Job" Multiplicity="1" />
+    <End Role="JobRoles" Type="Dial4JobzModel.JobRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jobs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobRoles">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobRoles_Roles">
+    <End Role="Roles" Type="Dial4JobzModel.Role" Multiplicity="1" />
+    <End Role="JobRoles" Type="Dial4JobzModel.JobRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Jobs_Organizations">
+    <End Role="Organizations" Type="Dial4JobzModel.Organization" Multiplicity="1" />
+    <End Role="Jobs" Type="Dial4JobzModel.Job" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organizations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Jobs">
+        <PropertyRef Name="OrganizationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobSkills_Jobs">
+    <End Role="Jobs" Type="Dial4JobzModel.Job" Multiplicity="1" />
+    <End Role="JobSkills" Type="Dial4JobzModel.JobSkill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jobs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobSkills">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganizationSkills_Skills">
+    <End Role="Skills" Type="Dial4JobzModel.Skill" Multiplicity="1" />
+    <End Role="JobSkills" Type="Dial4JobzModel.JobSkill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Skills">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobSkills">
+        <PropertyRef Name="SkillId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Locations_Regions">
+    <End Role="Regions" Type="Dial4JobzModel.Region" Multiplicity="0..1" />
+    <End Role="Locations" Type="Dial4JobzModel.Location" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Locations">
+        <PropertyRef Name="RegionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Locations_States">
+    <End Role="States" Type="Dial4JobzModel.State" Multiplicity="0..1" />
+    <End Role="Locations" Type="Dial4JobzModel.Location" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="States">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Locations">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Organizations_Users">
+    <End Role="Users" Type="Dial4JobzModel.User" Multiplicity="0..1" />
+    <End Role="Organizations" Type="Dial4JobzModel.Organization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organizations">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="CandidateLicenseType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CandidateId" Nullable="false" />
+    <Property Type="Int32" Name="LicenseTypeId" Nullable="false" />
+    <NavigationProperty Name="Candidate" Relationship="Dial4JobzModel.FK_CandidateLicenseTypes_Candidates" FromRole="CandidateLicenseType" ToRole="Candidate" />
+    <NavigationProperty Name="LicenseType" Relationship="Dial4JobzModel.FK_CandidateLicenseTypes_LicenseTypes" FromRole="CandidateLicenseType" ToRole="LicenseType" />
+  </EntityType>
+  <EntityType Name="LicenseType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="CandidateLicenseTypes" Relationship="Dial4JobzModel.FK_CandidateLicenseTypes_LicenseTypes" FromRole="LicenseType" ToRole="CandidateLicenseType" />
+    <NavigationProperty Name="JobLicenseTypes" Relationship="Dial4JobzModel.FK_JobLicenseTypes_LicenseTypes" FromRole="LicenseType" ToRole="JobLicenseType" />
+  </EntityType>
+  <Association Name="FK_CandidateLicenseTypes_Candidates">
+    <End Type="Dial4JobzModel.Candidate" Role="Candidate" Multiplicity="1" />
+    <End Type="Dial4JobzModel.CandidateLicenseType" Role="CandidateLicenseType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidate">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateLicenseType">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateLicenseTypes_LicenseTypes">
+    <End Type="Dial4JobzModel.LicenseType" Role="LicenseType" Multiplicity="1" />
+    <End Type="Dial4JobzModel.CandidateLicenseType" Role="CandidateLicenseType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LicenseType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateLicenseType">
+        <PropertyRef Name="LicenseTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MaritalStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Candidates" Relationship="Dial4JobzModel.FK_Candidates_MaritalState" FromRole="MaritalStatus" ToRole="Candidate" />
+  </EntityType>
+  <Association Name="FK_Candidates_MaritalState">
+    <End Type="Dial4JobzModel.MaritalStatus" Role="MaritalStatus" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.Candidate" Role="Candidate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MaritalStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Candidate">
+        <PropertyRef Name="MaritalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Specialization">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="DegreeId" Nullable="false" />
+    <NavigationProperty Name="Degree" Relationship="Dial4JobzModel.FK__Specializ__Degre__10766AC2" FromRole="Specialization" ToRole="Degree" />
+    <NavigationProperty Name="CandidateQualifications" Relationship="Dial4JobzModel.FK__Candidate__Speci__18178C8A" FromRole="Specialization" ToRole="CandidateQualification" />
+  </EntityType>
+  <Association Name="FK__Specializ__Degre__10766AC2">
+    <End Type="Dial4JobzModel.Degree" Role="Degree" Multiplicity="1" />
+    <End Type="Dial4JobzModel.Specialization" Role="Specialization" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Degree">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Specialization">
+        <PropertyRef Name="DegreeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Institute">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CandidateQualifications" Relationship="Dial4JobzModel.FK__Candidate__Insti__190BB0C3" FromRole="Institute" ToRole="CandidateQualification" />
+  </EntityType>
+  <EntityType Name="CandidateQualification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="DegreeId" Nullable="false" />
+    <Property Type="Int32" Name="CandidateId" Nullable="false" />
+    <Property Type="Int32" Name="SpecializationId" />
+    <Property Type="Int32" Name="InstituteId" />
+    <Property Type="Int32" Name="PassedOutYear" />
+    <NavigationProperty Name="Institute" Relationship="Dial4JobzModel.FK__Candidate__Insti__190BB0C3" FromRole="CandidateQualification" ToRole="Institute" />
+    <NavigationProperty Name="Specialization" Relationship="Dial4JobzModel.FK__Candidate__Speci__18178C8A" FromRole="CandidateQualification" ToRole="Specialization" />
+    <NavigationProperty Name="Candidate" Relationship="Dial4JobzModel.FK_CandidateQualifications_Candidates" FromRole="CandidateQualification" ToRole="Candidate" />
+    <NavigationProperty Name="Degree" Relationship="Dial4JobzModel.FK_CandidateQualifications_Degrees" FromRole="CandidateQualification" ToRole="Degree" />
+  </EntityType>
+  <Association Name="FK__Candidate__Insti__190BB0C3">
+    <End Type="Dial4JobzModel.Institute" Role="Institute" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.CandidateQualification" Role="CandidateQualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Institute">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateQualification">
+        <PropertyRef Name="InstituteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Candidate__Speci__18178C8A">
+    <End Type="Dial4JobzModel.Specialization" Role="Specialization" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.CandidateQualification" Role="CandidateQualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Specialization">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateQualification">
+        <PropertyRef Name="SpecializationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateQualifications_Candidates">
+    <End Type="Dial4JobzModel.Candidate" Role="Candidate" Multiplicity="1" />
+    <End Type="Dial4JobzModel.CandidateQualification" Role="CandidateQualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidate">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateQualification">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateQualifications_Degrees">
+    <End Type="Dial4JobzModel.Degree" Role="Degree" Multiplicity="1" />
+    <End Type="Dial4JobzModel.CandidateQualification" Role="CandidateQualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Degree">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateQualification">
+        <PropertyRef Name="DegreeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="AdminUserEntry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="AdminId" Nullable="false" />
+    <Property Type="Int32" Name="EntryId" Nullable="false" />
+    <Property Type="Int32" Name="EntryType" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Dial4JobzModel.FK_AdminUserEntries_Users" FromRole="AdminUserEntry" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_AdminUserEntries_Users">
+    <End Type="Dial4JobzModel.User" Role="User" Multiplicity="1" />
+    <End Type="Dial4JobzModel.AdminUserEntry" Role="AdminUserEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AdminUserEntry">
+        <PropertyRef Name="AdminId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="FunctionsForFindJob">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Functions" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="RolesForFindJobseeker">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Type="Int32" Name="RoleId" Nullable="false" />
+    <Property Type="String" Name="RoleName" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="JobId" />
+    <Property Type="String" Name="Functions" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AlertsDone">
+    <Key>
+      <PropertyRef Name="AlertsDoneId" />
+    </Key>
+    <Property Type="Decimal" Name="AlertsDoneId" Nullable="false" Precision="6" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="EmployerId" Precision="6" Scale="0" />
+    <Property Type="Decimal" Name="JobId" Precision="6" Scale="0" />
+    <Property Type="Decimal" Name="AlertsSent" Precision="6" Scale="0" />
+    <Property Type="Int32" Name="ConsultantId" />
+  </EntityType>
+  <EntityType Name="ContactsViewedCount">
+    <Key>
+      <PropertyRef Name="ContsctsViewedId" />
+    </Key>
+    <Property Type="Decimal" Name="ContsctsViewedId" Nullable="false" Precision="5" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="EmployerId" Precision="6" Scale="0" />
+    <Property Type="Decimal" Name="ContactsViewed" Precision="6" Scale="0" />
+    <Property Type="Int32" Name="ConsultantId" />
+  </EntityType>
+  <EntityType Name="ContactsViewedLog">
+    <Key>
+      <PropertyRef Name="ContactsViewedId" />
+    </Key>
+    <Property Type="Decimal" Name="ContactsViewedId" Nullable="false" Precision="6" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="EmployerId" Precision="6" Scale="0" />
+    <Property Type="Decimal" Name="CandidateId" Precision="6" Scale="0" />
+    <Property Type="DateTime" Name="DateViewed" />
+    <Property Name="OrderId" Type="Int32" />
+    <Property Type="Int32" Name="ConsultantId" />
+  </EntityType>
+  <ComplexType Name="SP_CheckEmployerPlanDetailstopostJob_Result2">
+    <Property Type="String" Name="PlanId" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="OrderDetailId" />
+    </Key>
+    <Property Type="Int32" Name="OrderDetailId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="OrderId" />
+    <Property Type="Int32" Name="PlanId" />
+    <Property Type="String" Name="PlanName" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="Amount" />
+    <Property Type="DateTime" Name="ActivationDate" />
+    <Property Type="DateTime" Name="ValidityTill" />
+    <Property Type="Int32" Name="ValidityCount" />
+    <Property Type="Int32" Name="RemainingCount" />
+    <NavigationProperty Name="OrderMaster" Relationship="Dial4JobzModel.FK_OrderDetail_OrderMaster" FromRole="OrderDetail" ToRole="OrderMaster" />
+    <NavigationProperty Name="VasPlan" Relationship="Dial4JobzModel.FK_OrderDetail_VasPlans" FromRole="OrderDetail" ToRole="VasPlan" />
+    <Property Type="Int32" Name="PostedJobId" />
+    <NavigationProperty Name="PostedJobAlert" Relationship="Dial4JobzModel.FK_OrderDetail_PostedJobAlerts" FromRole="OrderDetail" ToRole="PostedJobAlert" />
+    <Property Type="Int32" Name="Vacancies" />
+    <Property Type="Int32" Name="PaymentId" />
+    <NavigationProperty Name="OrderPayment" Relationship="Dial4JobzModel.FK_OrderDetail_OrderPayment" FromRole="OrderDetail" ToRole="OrderPayment" />
+    <Property Type="Int32" Name="EmailRemainingCount" />
+    <Property Type="Int32" Name="TeleConference" />
+    <Property Type="Int32" Name="ValidityDays" />
+    <Property Type="Int32" Name="DiscountAmount" />
+    <Property Type="Int32" Name="BasicCount" />
+  </EntityType>
+  <EntityType Name="OrderMaster">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Type="Int32" Name="OrderId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="OrderDate" />
+    <Property Type="Int32" Name="CandidateId" />
+    <Property Type="Int32" Name="OrganizationId" />
+    <Property Type="Double" Name="Amount" />
+    <Property Type="Boolean" Name="PaymentStatus" />
+    <NavigationProperty Name="Candidate" Relationship="Dial4JobzModel.FK_OrderMaster_Candidates" FromRole="OrderMaster" ToRole="Candidate" />
+    <NavigationProperty Name="OrderDetails" Relationship="Dial4JobzModel.FK_OrderDetail_OrderMaster" FromRole="OrderMaster" ToRole="OrderDetail" />
+    <NavigationProperty Name="Organization" Relationship="Dial4JobzModel.FK_OrderMaster_Organizations" FromRole="OrderMaster" ToRole="Organization" />
+    <NavigationProperty Name="OrderPayments" Relationship="Dial4JobzModel.FK_OrderPayment_OrderMaster" FromRole="OrderMaster" ToRole="OrderPayment" />
+    <Property Type="String" Name="ActivatedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SubscribedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PostedJobAlerts" Relationship="Dial4JobzModel.FK_PostedJobAlerts_OrderMaster" FromRole="OrderMaster" ToRole="PostedJobAlert" />
+    <NavigationProperty Name="JobsViewedLogs" Relationship="Dial4JobzModel.FK_JobsViewedLog_OrderMaster" FromRole="OrderMaster" ToRole="JobsViewedLog" />
+    <Property Type="Int32" Name="ConsultantId" />
+    <Property Type="Int32" Name="InvoiceId" />
+    <NavigationProperty Name="AlertsLogs" Relationship="Dial4JobzModel.FK_AlertsLog_OrderMaster" FromRole="OrderMaster" ToRole="AlertsLog" />
+    <NavigationProperty Name="Invoice" Relationship="Dial4JobzModel.FK_OrderMaster_Invoice" FromRole="OrderMaster" ToRole="Invoice" />
+    <NavigationProperty Name="Consultante" Relationship="Dial4JobzModel.FK_OrderMaster_Consultantes" FromRole="OrderMaster" ToRole="Consultante" />
+  </EntityType>
+  <EntityType Name="OrderPayment">
+    <Key>
+      <PropertyRef Name="PaymentId" />
+    </Key>
+    <Property Type="Int32" Name="PaymentId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="OrderId" />
+    <Property Type="Int32" Name="PaymentMode" />
+    <Property Type="Double" Name="Amount" />
+    <Property Type="String" Name="TransferReference" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="TransferDate" />
+    <Property Type="String" Name="DrawnOnBank" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ChequeNumber" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="PaymentDate" />
+    <Property Type="DateTime" Name="DepositedOn" />
+    <Property Type="String" Name="Branch" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OrderMaster" Relationship="Dial4JobzModel.FK_OrderPayment_OrderMaster" FromRole="OrderPayment" ToRole="OrderMaster" />
+    <NavigationProperty Name="OrderDetails" Relationship="Dial4JobzModel.FK_OrderDetail_OrderPayment" FromRole="OrderPayment" ToRole="OrderDetail" />
+    <Property Type="String" Name="Regions" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CollectedBy" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CollectedOn" />
+  </EntityType>
+  <EntityType Name="VasPlan">
+    <Key>
+      <PropertyRef Name="PlanId" />
+    </Key>
+    <Property Type="Int32" Name="PlanId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PlanName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="Amount" />
+    <Property Type="Int32" Name="ValidityCount" />
+    <Property Type="Int32" Name="ValidityDays" />
+    <NavigationProperty Name="OrderDetails" Relationship="Dial4JobzModel.FK_OrderDetail_VasPlans" FromRole="VasPlan" ToRole="OrderDetail" />
+    <Property Type="Int32" Name="Vacancies" />
+    <Property Type="Int32" Name="EmailCount" />
+  </EntityType>
+  <Association Name="FK_OrderMaster_Candidates">
+    <End Type="Dial4JobzModel.Candidate" Role="Candidate" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.OrderMaster" Role="OrderMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidate">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderMaster">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_OrderMaster">
+    <End Type="Dial4JobzModel.OrderMaster" Role="OrderMaster" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderMaster">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderMaster_Organizations">
+    <End Type="Dial4JobzModel.Organization" Role="Organization" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.OrderMaster" Role="OrderMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organization">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderMaster">
+        <PropertyRef Name="OrganizationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderPayment_OrderMaster">
+    <End Type="Dial4JobzModel.OrderMaster" Role="OrderMaster" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.OrderPayment" Role="OrderPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderMaster">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="OrderPayment">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_VasPlans">
+    <End Type="Dial4JobzModel.VasPlan" Role="VasPlan" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VasPlan">
+        <PropertyRef Name="PlanId" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="PlanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="PostedJobAlert">
+    <Key>
+      <PropertyRef Name="PostedJobId" />
+    </Key>
+    <Property Type="Int32" Name="PostedJobId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="JobId" />
+    <Property Type="Int32" Name="OrganizationId" />
+    <Property Type="Int32" Name="Vacancies" />
+    <Property Type="Boolean" Name="ActivatedJobStatus" />
+    <NavigationProperty Name="OrderDetails" Relationship="Dial4JobzModel.FK_OrderDetail_PostedJobAlerts" FromRole="PostedJobAlert" ToRole="OrderDetail" />
+    <Property Type="Int32" Name="OrderId" />
+    <NavigationProperty Name="OrderMaster" Relationship="Dial4JobzModel.FK_PostedJobAlerts_OrderMaster" FromRole="PostedJobAlert" ToRole="OrderMaster" />
+    <Property Type="DateTime" Name="AlertActivateDate" />
+    <Property Type="DateTime" Name="ValidityTill" />
+    <Property Type="Int32" Name="RemainingCount" />
+    <Property Type="Int32" Name="ConsultantId" />
+  </EntityType>
+  <Association Name="FK_OrderDetail_PostedJobAlerts">
+    <End Type="Dial4JobzModel.PostedJobAlert" Role="PostedJobAlert" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PostedJobAlert">
+        <PropertyRef Name="PostedJobId" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="PostedJobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_OrderPayment">
+    <End Type="Dial4JobzModel.OrderPayment" Role="OrderPayment" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderPayment">
+        <PropertyRef Name="PaymentId" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="PaymentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidatePreferredFunctions_Roles">
+    <End Type="Dial4JobzModel.Role" Role="Role" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.CandidatePreferredFunction" Role="CandidatePreferredFunction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidatePreferredFunction">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PostedJobAlerts_OrderMaster">
+    <End Type="Dial4JobzModel.OrderMaster" Role="OrderMaster" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.PostedJobAlert" Role="PostedJobAlert" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderMaster">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="PostedJobAlert">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="JobLicenseType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="JobId" Nullable="false" />
+    <Property Type="Int32" Name="LicenseTypeId" Nullable="false" />
+    <NavigationProperty Name="Job" Relationship="Dial4JobzModel.FK_JobLicenseTypes_Jobs" FromRole="JobLicenseType" ToRole="Job" />
+    <NavigationProperty Name="LicenseType" Relationship="Dial4JobzModel.FK_JobLicenseTypes_LicenseTypes" FromRole="JobLicenseType" ToRole="LicenseType" />
+  </EntityType>
+  <Association Name="FK_JobLicenseTypes_Jobs">
+    <End Type="Dial4JobzModel.Job" Role="Job" Multiplicity="1" />
+    <End Type="Dial4JobzModel.JobLicenseType" Role="JobLicenseType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Job">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobLicenseType">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobLicenseTypes_LicenseTypes">
+    <End Type="Dial4JobzModel.LicenseType" Role="LicenseType" Multiplicity="1" />
+    <End Type="Dial4JobzModel.JobLicenseType" Role="JobLicenseType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LicenseType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobLicenseType">
+        <PropertyRef Name="LicenseTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Roles_Functions">
+    <End Type="Dial4JobzModel.Function" Role="Function" Multiplicity="1" />
+    <End Type="Dial4JobzModel.Role" Role="Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Function">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Role">
+        <PropertyRef Name="FunctionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="JobsViewedLog">
+    <Key>
+      <PropertyRef Name="JobsViewedId" />
+    </Key>
+    <Property Type="Int32" Name="JobsViewedId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CandidateId" />
+    <Property Type="Int32" Name="PlanId" />
+    <Property Type="DateTime" Name="DateViewed" />
+    <Property Type="Int32" Name="JobId" />
+    <Property Type="Int32" Name="OrderId" />
+    <Property Type="Boolean" Name="MailSent" />
+    <Property Type="Boolean" Name="SmsSent" />
+    <NavigationProperty Name="OrderMaster" Relationship="Dial4JobzModel.FK_JobsViewedLog_OrderMaster" FromRole="JobsViewedLog" ToRole="OrderMaster" />
+    <Property Type="Int32" Name="ConsultantId" />
+  </EntityType>
+  <Association Name="FK_JobsViewedLog_OrderMaster">
+    <End Type="Dial4JobzModel.OrderMaster" Role="OrderMaster" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.JobsViewedLog" Role="JobsViewedLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderMaster">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="JobsViewedLog">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ChannelEntry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ChannelPartnerId" />
+    <Property Type="Int32" Name="ChannelUserId" />
+    <Property Type="Int32" Name="EntryId" Nullable="false" />
+    <Property Type="Int32" Name="EntryType" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="false" />
+    <NavigationProperty Name="ChannelPartner" Relationship="Dial4JobzModel.FK_ChannelEntries_ChannelPartners" FromRole="ChannelEntry" ToRole="ChannelPartner" />
+    <NavigationProperty Name="ChannelUser" Relationship="Dial4JobzModel.FK_ChannelEntries_ChannelUsers" FromRole="ChannelEntry" ToRole="ChannelUser" />
+  </EntityType>
+  <EntityType Name="ChannelPartner">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="Password" Nullable="false" MaxLength="16" FixedLength="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactNo" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Address" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Pincode" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <NavigationProperty Name="ChannelEntries" Relationship="Dial4JobzModel.FK_ChannelEntries_ChannelPartners" FromRole="ChannelPartner" ToRole="ChannelEntry" />
+    <NavigationProperty Name="ChannelUsers" Relationship="Dial4JobzModel.FK_ChannelUsers_ChannelPartners" FromRole="ChannelPartner" ToRole="ChannelUser" />
+    <Property Type="Int32" Name="PhoneVerificationNo" />
+    <Property Type="Boolean" Name="IsphoneVerified" />
+    <Property Type="Boolean" Name="IsMailVerified" />
+    <Property Type="String" Name="ContactPerson" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ChannelUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="Password" Nullable="false" MaxLength="16" FixedLength="true" />
+    <Property Type="Int32" Name="ChannelPartnerId" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactNo" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <NavigationProperty Name="ChannelEntries" Relationship="Dial4JobzModel.FK_ChannelEntries_ChannelUsers" FromRole="ChannelUser" ToRole="ChannelEntry" />
+    <NavigationProperty Name="ChannelPartner" Relationship="Dial4JobzModel.FK_ChannelUsers_ChannelPartners" FromRole="ChannelUser" ToRole="ChannelPartner" />
+    <Property Type="Int32" Name="PhoneVerificationNo" />
+    <Property Type="Boolean" Name="IsphoneVerified" />
+    <Property Type="Boolean" Name="IsMailVerified" />
+  </EntityType>
+  <Association Name="FK_ChannelEntries_ChannelPartners">
+    <End Type="Dial4JobzModel.ChannelPartner" Role="ChannelPartner" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.ChannelEntry" Role="ChannelEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChannelPartner">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ChannelEntry">
+        <PropertyRef Name="ChannelPartnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChannelEntries_ChannelUsers">
+    <End Type="Dial4JobzModel.ChannelUser" Role="ChannelUser" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.ChannelEntry" Role="ChannelEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChannelUser">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ChannelEntry">
+        <PropertyRef Name="ChannelUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChannelUsers_ChannelPartners">
+    <End Type="Dial4JobzModel.ChannelPartner" Role="ChannelPartner" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.ChannelUser" Role="ChannelUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChannelPartner">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ChannelUser">
+        <PropertyRef Name="ChannelPartnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="AlertsLog">
+    <Key>
+      <PropertyRef Name="AlertId" />
+    </Key>
+    <Property Type="Int32" Name="AlertId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="OrganizationId" />
+    <Property Type="Int32" Name="JobId" />
+    <Property Type="DateTime" Name="AlertSentDate" />
+    <Property Type="Int32" Name="CandidateId" />
+    <Property Type="Boolean" Name="SmsSent" />
+    <Property Type="Boolean" Name="MailSent" />
+    <Property Type="Int32" Name="OrderId" />
+    <Property Type="Int32" Name="ConsultantId" />
+    <NavigationProperty Name="OrderMaster" Relationship="Dial4JobzModel.FK_AlertsLog_OrderMaster" FromRole="AlertsLog" ToRole="OrderMaster" />
+  </EntityType>
+  <Association Name="FK_AlertsLog_OrderMaster">
+    <End Type="Dial4JobzModel.OrderMaster" Role="OrderMaster" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.AlertsLog" Role="AlertsLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderMaster">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="AlertsLog">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="InvoiceId" />
+    </Key>
+    <Property Type="Int32" Name="InvoiceId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="InvoiceNo" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="InvoiceDate" />
+    <Property Type="Int32" Name="OrderNo" />
+    <NavigationProperty Name="Invoice1" Relationship="Dial4JobzModel.FK_Invoice_Invoice" FromRole="Invoice" ToRole="Invoice1" />
+    <NavigationProperty Name="Invoice2" Relationship="Dial4JobzModel.FK_Invoice_Invoice" FromRole="Invoice1" ToRole="Invoice" />
+    <NavigationProperty Name="OrderMasters" Relationship="Dial4JobzModel.FK_OrderMaster_Invoice" FromRole="Invoice" ToRole="OrderMaster" />
+  </EntityType>
+  <Association Name="FK_Invoice_Invoice">
+    <End Type="Dial4JobzModel.Invoice" Role="Invoice" Multiplicity="1" />
+    <End Type="Dial4JobzModel.Invoice" Role="Invoice1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Invoice">
+        <PropertyRef Name="InvoiceId" />
+      </Principal>
+      <Dependent Role="Invoice1">
+        <PropertyRef Name="InvoiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderMaster_Invoice">
+    <End Type="Dial4JobzModel.Invoice" Role="Invoice" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.OrderMaster" Role="OrderMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Invoice">
+        <PropertyRef Name="InvoiceId" />
+      </Principal>
+      <Dependent Role="OrderMaster">
+        <PropertyRef Name="InvoiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Consultante">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Binary" Name="Password" Nullable="false" MaxLength="16" FixedLength="true" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="DateTime" Name="UpdatedDate" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="IndustryId" />
+    <Property Type="String" Name="ContactPerson" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Website" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="LocationId" />
+    <Property Type="String" Name="ContactNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Pincode" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="IPAddress" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DisplayName" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsMailVerified" />
+    <Property Type="Boolean" Name="IsPhoneVerified" />
+    <Property Type="Int32" Name="PhoneVerificationNo" />
+    <Property Type="String" Name="Address" MaxLength="300" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Candidates" Relationship="Dial4JobzModel.FK_Candidates_Consultantes" FromRole="Consultante" ToRole="Candidate" />
+    <NavigationProperty Name="Industry" Relationship="Dial4JobzModel.FK_Consultantes_Industries" FromRole="Consultante" ToRole="Industry" />
+    <NavigationProperty Name="Jobs" Relationship="Dial4JobzModel.FK_Jobs_Consultantes" FromRole="Consultante" ToRole="Job" />
+    <NavigationProperty Name="OrderMasters" Relationship="Dial4JobzModel.FK_OrderMaster_Consultantes" FromRole="Consultante" ToRole="OrderMaster" />
+  </EntityType>
+  <Association Name="FK_Candidates_Consultantes">
+    <End Type="Dial4JobzModel.Consultante" Role="Consultante" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.Candidate" Role="Candidate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Consultante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Candidate">
+        <PropertyRef Name="ConsultantId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Consultantes_Industries">
+    <End Type="Dial4JobzModel.Industry" Role="Industry" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.Consultante" Role="Consultante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Industry">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Consultante">
+        <PropertyRef Name="IndustryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Jobs_Consultantes">
+    <End Type="Dial4JobzModel.Consultante" Role="Consultante" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.Job" Role="Job" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Consultante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Job">
+        <PropertyRef Name="ConsultantId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderMaster_Consultantes">
+    <End Type="Dial4JobzModel.Consultante" Role="Consultante" Multiplicity="0..1" />
+    <End Type="Dial4JobzModel.OrderMaster" Role="OrderMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Consultante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderMaster">
+        <PropertyRef Name="ConsultantId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="EmployeesCount">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DPRLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="OrganizationId" />
+    <Property Type="Int32" Name="CandidateId" Nullable="false" />
+    <Property Type="DateTime" Name="ViewedDate" />
+    <Property Type="Int32" Name="ConsultantId" />
+  </EntityType>
+  <EntityType Name="JobsLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="JobViewedDate" Nullable="false" />
+    <Property Type="Int32" Name="CandidateId" Nullable="false" />
+    <Property Type="Int32" Name="OrganizationId" />
+    <Property Type="Int32" Name="ConsultantId" />
+    <Property Type="Int32" Name="JobId" />
+  </EntityType>
+  <EntityType Name="AdminPermission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="Int32" Name="PermissionId" Nullable="false" />
+    <NavigationProperty Name="Permission" Relationship="Dial4JobzModel.FK_AdminPermissions_Permissions" FromRole="AdminPermission" ToRole="Permission" />
+    <NavigationProperty Name="User" Relationship="Dial4JobzModel.FK_AdminPermissions_Users" FromRole="AdminPermission" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Permission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AdminPermissions" Relationship="Dial4JobzModel.FK_AdminPermissions_Permissions" FromRole="Permission" ToRole="AdminPermission" />
+  </EntityType>
+  <Association Name="FK_AdminPermissions_Permissions">
+    <End Type="Dial4JobzModel.Permission" Role="Permission" Multiplicity="1" />
+    <End Type="Dial4JobzModel.AdminPermission" Role="AdminPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AdminPermission">
+        <PropertyRef Name="PermissionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdminPermissions_Users">
+    <End Type="Dial4JobzModel.User" Role="User" Multiplicity="1" />
+    <End Type="Dial4JobzModel.AdminPermission" Role="AdminPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AdminPermission">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="CollectionExecutive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MobileNumber" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pincode" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DOB" />
+    <Property Type="Int32" Name="Gender" />
+  </EntityType>
+  <EntityType Name="PickupCashAlertsLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="OrderId" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CollectionExecutiveId" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CandidateId" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ConsultId" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="EmployerId" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="AlertSentDate" />
+    <Property Type="Boolean" Name="UserSMSSent" />
+    <Property Type="Boolean" Name="UserMailSent" />
+    <Property Type="Boolean" Name="CollectionSMSSent" />
+    <Property Type="Boolean" Name="CollectionMailSent" />
+    <Property Type="Boolean" Name="AdminMailSent" />
+  </EntityType>
+</Schema>

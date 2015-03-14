@@ -1,0 +1,1030 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Dial4JobzModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="Dial4JobzModelStoreContainer">
+    <EntitySet Name="CandidateCertifications" EntityType="Dial4JobzModel.Store.CandidateCertifications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CandidateLanguages" EntityType="Dial4JobzModel.Store.CandidateLanguages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CandidatePreferredFunctions" EntityType="Dial4JobzModel.Store.CandidatePreferredFunctions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CandidatePreferredLocations" EntityType="Dial4JobzModel.Store.CandidatePreferredLocations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CandidatePreferredRoles" EntityType="Dial4JobzModel.Store.CandidatePreferredRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CandidateQualifications" EntityType="Dial4JobzModel.Store.CandidateQualifications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Candidates" EntityType="Dial4JobzModel.Store.Candidates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CandidateSkills" EntityType="Dial4JobzModel.Store.CandidateSkills" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Certifications" EntityType="Dial4JobzModel.Store.Certifications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cities" EntityType="Dial4JobzModel.Store.Cities" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Countries" EntityType="Dial4JobzModel.Store.Countries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Degrees" EntityType="Dial4JobzModel.Store.Degrees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Functions" EntityType="Dial4JobzModel.Store.Functions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Industries" EntityType="Dial4JobzModel.Store.Industries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="JobLanguages" EntityType="Dial4JobzModel.Store.JobLanguages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="JobLocations" EntityType="Dial4JobzModel.Store.JobLocations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="JobPreferredCertifications" EntityType="Dial4JobzModel.Store.JobPreferredCertifications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="JobPreferredIndustries" EntityType="Dial4JobzModel.Store.JobPreferredIndustries" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="JobRequiredQualifications" EntityType="Dial4JobzModel.Store.JobRequiredQualifications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="JobRoles" EntityType="Dial4JobzModel.Store.JobRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Jobs" EntityType="Dial4JobzModel.Store.Jobs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="JobSkills" EntityType="Dial4JobzModel.Store.JobSkills" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Languages" EntityType="Dial4JobzModel.Store.Languages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Locations" EntityType="Dial4JobzModel.Store.Locations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Organizations" EntityType="Dial4JobzModel.Store.Organizations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Regions" EntityType="Dial4JobzModel.Store.Regions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Roles" EntityType="Dial4JobzModel.Store.Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Skills" EntityType="Dial4JobzModel.Store.Skills" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="States" EntityType="Dial4JobzModel.Store.States" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="Dial4JobzModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="Dial4JobzModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VasFES" EntityType="Dial4JobzModel.Store.VasFES" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VasHotResumes" EntityType="Dial4JobzModel.Store.VasHotResumes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VasPlans" EntityType="Dial4JobzModel.Store.VasPlans" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_CandidateCertifications_Candidates" Association="Dial4JobzModel.Store.FK_CandidateCertifications_Candidates">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="CandidateCertifications" EntitySet="CandidateCertifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateCertifications_Certifications" Association="Dial4JobzModel.Store.FK_CandidateCertifications_Certifications">
+      <End Role="Certifications" EntitySet="Certifications" />
+      <End Role="CandidateCertifications" EntitySet="CandidateCertifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateLanguages_Candidates" Association="Dial4JobzModel.Store.FK_CandidateLanguages_Candidates">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="CandidateLanguages" EntitySet="CandidateLanguages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateLanguages_Languages" Association="Dial4JobzModel.Store.FK_CandidateLanguages_Languages">
+      <End Role="Languages" EntitySet="Languages" />
+      <End Role="CandidateLanguages" EntitySet="CandidateLanguages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidatePreferredFunctions_Candidates" Association="Dial4JobzModel.Store.FK_CandidatePreferredFunctions_Candidates">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="CandidatePreferredFunctions" EntitySet="CandidatePreferredFunctions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidatePreferredFunctions_Functions" Association="Dial4JobzModel.Store.FK_CandidatePreferredFunctions_Functions">
+      <End Role="Functions" EntitySet="Functions" />
+      <End Role="CandidatePreferredFunctions" EntitySet="CandidatePreferredFunctions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidatePreferredLocations_Candidates" Association="Dial4JobzModel.Store.FK_CandidatePreferredLocations_Candidates">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="CandidatePreferredLocations" EntitySet="CandidatePreferredLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidatePreferredLocations_Locations" Association="Dial4JobzModel.Store.FK_CandidatePreferredLocations_Locations">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="CandidatePreferredLocations" EntitySet="CandidatePreferredLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidatePreferredRoles_Candidates" Association="Dial4JobzModel.Store.FK_CandidatePreferredRoles_Candidates">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="CandidatePreferredRoles" EntitySet="CandidatePreferredRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidatePreferredRoles_Roles" Association="Dial4JobzModel.Store.FK_CandidatePreferredRoles_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="CandidatePreferredRoles" EntitySet="CandidatePreferredRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateQualifications_Candidates" Association="Dial4JobzModel.Store.FK_CandidateQualifications_Candidates">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="CandidateQualifications" EntitySet="CandidateQualifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateQualifications_Degrees" Association="Dial4JobzModel.Store.FK_CandidateQualifications_Degrees">
+      <End Role="Degrees" EntitySet="Degrees" />
+      <End Role="CandidateQualifications" EntitySet="CandidateQualifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Candidates_Functions" Association="Dial4JobzModel.Store.FK_Candidates_Functions">
+      <End Role="Functions" EntitySet="Functions" />
+      <End Role="Candidates" EntitySet="Candidates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Candidates_Users" Association="Dial4JobzModel.Store.FK_Candidates_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Candidates" EntitySet="Candidates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateSkills_Candidates" Association="Dial4JobzModel.Store.FK_CandidateSkills_Candidates">
+      <End Role="Candidates" EntitySet="Candidates" />
+      <End Role="CandidateSkills" EntitySet="CandidateSkills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateSkills_Skills" Association="Dial4JobzModel.Store.FK_CandidateSkills_Skills">
+      <End Role="Skills" EntitySet="Skills" />
+      <End Role="CandidateSkills" EntitySet="CandidateSkills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cities_States" Association="Dial4JobzModel.Store.FK_Cities_States">
+      <End Role="States" EntitySet="States" />
+      <End Role="Cities" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobLanguages_Jobs" Association="Dial4JobzModel.Store.FK_JobLanguages_Jobs">
+      <End Role="Jobs" EntitySet="Jobs" />
+      <End Role="JobLanguages" EntitySet="JobLanguages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobLocations_Jobs" Association="Dial4JobzModel.Store.FK_JobLocations_Jobs">
+      <End Role="Jobs" EntitySet="Jobs" />
+      <End Role="JobLocations" EntitySet="JobLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobPreferredCertifications_Certifications" Association="Dial4JobzModel.Store.FK_JobPreferredCertifications_Certifications">
+      <End Role="Certifications" EntitySet="Certifications" />
+      <End Role="JobPreferredCertifications" EntitySet="JobPreferredCertifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobPreferredCertifications_Jobs" Association="Dial4JobzModel.Store.FK_JobPreferredCertifications_Jobs">
+      <End Role="Jobs" EntitySet="Jobs" />
+      <End Role="JobPreferredCertifications" EntitySet="JobPreferredCertifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobPreferredIndustries_Jobs" Association="Dial4JobzModel.Store.FK_JobPreferredIndustries_Jobs">
+      <End Role="Jobs" EntitySet="Jobs" />
+      <End Role="JobPreferredIndustries" EntitySet="JobPreferredIndustries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobRequiredQualifications_Jobs" Association="Dial4JobzModel.Store.FK_JobRequiredQualifications_Jobs">
+      <End Role="Jobs" EntitySet="Jobs" />
+      <End Role="JobRequiredQualifications" EntitySet="JobRequiredQualifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobRoles_Jobs" Association="Dial4JobzModel.Store.FK_JobRoles_Jobs">
+      <End Role="Jobs" EntitySet="Jobs" />
+      <End Role="JobRoles" EntitySet="JobRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobRoles_Roles" Association="Dial4JobzModel.Store.FK_JobRoles_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="JobRoles" EntitySet="JobRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Jobs_Organizations" Association="Dial4JobzModel.Store.FK_Jobs_Organizations">
+      <End Role="Organizations" EntitySet="Organizations" />
+      <End Role="Jobs" EntitySet="Jobs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JobSkills_Jobs" Association="Dial4JobzModel.Store.FK_JobSkills_Jobs">
+      <End Role="Jobs" EntitySet="Jobs" />
+      <End Role="JobSkills" EntitySet="JobSkills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Locations_Cities" Association="Dial4JobzModel.Store.FK_Locations_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Locations" EntitySet="Locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Locations_Countries" Association="Dial4JobzModel.Store.FK_Locations_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Locations" EntitySet="Locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Locations_Regions" Association="Dial4JobzModel.Store.FK_Locations_Regions">
+      <End Role="Regions" EntitySet="Regions" />
+      <End Role="Locations" EntitySet="Locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Locations_States" Association="Dial4JobzModel.Store.FK_Locations_States">
+      <End Role="States" EntitySet="States" />
+      <End Role="Locations" EntitySet="Locations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganizationLanguages_Languages" Association="Dial4JobzModel.Store.FK_OrganizationLanguages_Languages">
+      <End Role="Languages" EntitySet="Languages" />
+      <End Role="JobLanguages" EntitySet="JobLanguages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganizationPostingLocations_Locations" Association="Dial4JobzModel.Store.FK_OrganizationPostingLocations_Locations">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="JobLocations" EntitySet="JobLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganizationPreferredIndustries_Industries" Association="Dial4JobzModel.Store.FK_OrganizationPreferredIndustries_Industries">
+      <End Role="Industries" EntitySet="Industries" />
+      <End Role="JobPreferredIndustries" EntitySet="JobPreferredIndustries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganizationRequiredQualifications_Degrees" Association="Dial4JobzModel.Store.FK_OrganizationRequiredQualifications_Degrees">
+      <End Role="Degrees" EntitySet="Degrees" />
+      <End Role="JobRequiredQualifications" EntitySet="JobRequiredQualifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Organizations_Industries" Association="Dial4JobzModel.Store.FK_Organizations_Industries">
+      <End Role="Industries" EntitySet="Industries" />
+      <End Role="Organizations" EntitySet="Organizations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Organizations_Users" Association="Dial4JobzModel.Store.FK_Organizations_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Organizations" EntitySet="Organizations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrganizationSkills_Skills" Association="Dial4JobzModel.Store.FK_OrganizationSkills_Skills">
+      <End Role="Skills" EntitySet="Skills" />
+      <End Role="JobSkills" EntitySet="JobSkills" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Regions_Cities" Association="Dial4JobzModel.Store.FK_Regions_Cities">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Regions" EntitySet="Regions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_States_Countries" Association="Dial4JobzModel.Store.FK_States_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="States" EntitySet="States" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VasFES_VasFES" Association="Dial4JobzModel.Store.FK_VasFES_VasFES">
+      <End Role="VasPlans" EntitySet="VasPlans" />
+      <End Role="VasFES" EntitySet="VasFES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VasHotResumes_VasPlans" Association="Dial4JobzModel.Store.FK_VasHotResumes_VasPlans">
+      <End Role="VasPlans" EntitySet="VasPlans" />
+      <End Role="VasHotResumes" EntitySet="VasHotResumes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CandidateCertifications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CandidateId" Type="int" Nullable="false" />
+    <Property Name="CertificationId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CandidateLanguages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CandidateId" Type="int" Nullable="false" />
+    <Property Name="LanguageId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CandidatePreferredFunctions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CandidateId" Type="int" Nullable="false" />
+    <Property Name="FunctionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CandidatePreferredLocations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CandidateId" Type="int" Nullable="false" />
+    <Property Name="LocationId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CandidatePreferredRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CandidateId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CandidateQualifications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DegreeId" Type="int" Nullable="false" />
+    <Property Name="Specialization" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CandidateId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Candidates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="binary" MaxLength="16" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" />
+    <Property Name="LocationId" Type="int" />
+    <Property Name="ContactNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="MobileNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="DOB" Type="datetime" />
+    <Property Name="Gender" Type="int" />
+    <Property Name="TotalExperience" Type="bigint" />
+    <Property Name="AnnualSalary" Type="float" />
+    <Property Name="Position" Type="nvarchar" MaxLength="50" />
+    <Property Name="FunctionId" Type="int" />
+    <Property Name="IndustryId" Type="int" />
+    <Property Name="PreferredType" Type="int" />
+    <Property Name="ResumeFileName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CandidateSkills">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CandidateId" Type="int" Nullable="false" />
+    <Property Name="SkillId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Certifications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Cities">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="StateId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Degrees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Type" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Functions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Industries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="JobLanguages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="int" />
+    <Property Name="LanguageId" Type="int" />
+  </EntityType>
+  <EntityType Name="JobLocations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="int" Nullable="false" />
+    <Property Name="LocationId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JobPreferredCertifications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="int" Nullable="false" />
+    <Property Name="CertificationId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JobPreferredIndustries">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="int" Nullable="false" />
+    <Property Name="IndustryId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JobRequiredQualifications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DegreeId" Type="int" Nullable="false" />
+    <Property Name="JobId" Type="int" Nullable="false" />
+    <Property Name="Specialization" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="JobRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Jobs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrganizationId" Type="int" Nullable="false" />
+    <Property Name="FunctionId" Type="int" />
+    <Property Name="Position" Type="nvarchar" MaxLength="50" />
+    <Property Name="Male" Type="bit" />
+    <Property Name="Female" Type="bit" />
+    <Property Name="Budget" Type="float" />
+    <Property Name="PreferredType" Type="int" />
+    <Property Name="ContactPerson" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContactNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="MobileNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="CommunicateViaSMS" Type="bit" />
+    <Property Name="CommunicateViaEmail" Type="bit" />
+    <Property Name="MinExperience" Type="bigint" />
+    <Property Name="MaxExperience" Type="bigint" />
+    <Property Name="MaxBudget" Type="float" />
+  </EntityType>
+  <EntityType Name="JobSkills">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="JobId" Type="int" Nullable="false" />
+    <Property Name="SkillId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Languages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Locations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CountryId" Type="int" Nullable="false" />
+    <Property Name="StateId" Type="int" />
+    <Property Name="CityId" Type="int" />
+    <Property Name="RegionId" Type="int" />
+  </EntityType>
+  <EntityType Name="Organizations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="binary" MaxLength="16" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="IndustryId" Type="int" />
+    <Property Name="ContactPerson" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Website" Type="nvarchar" MaxLength="50" />
+    <Property Name="LocationId" Type="int" />
+    <Property Name="ContactNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="MobileNumber" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Regions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="FunctionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Skills">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="States">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CountryId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="binary" Nullable="false" MaxLength="16" />
+    <Property Name="CreatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="VasFES">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Position" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Amount" Type="int" Nullable="false" />
+    <Property Name="Validity" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PlanId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VasHotResumes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SalaryRange" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Resumes" Type="int" Nullable="false" />
+    <Property Name="CostPerResume" Type="int" Nullable="false" />
+    <Property Name="CostVas" Type="int" Nullable="false" />
+    <Property Name="TaxAmount" Type="int" Nullable="false" />
+    <Property Name="Proposed" Type="int" Nullable="false" />
+    <Property Name="CostofVas" Type="int" Nullable="false" />
+    <Property Name="PlanId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VasPlans">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VasPaln" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_CandidateCertifications_Candidates">
+    <End Role="Candidates" Type="Dial4JobzModel.Store.Candidates" Multiplicity="1" />
+    <End Role="CandidateCertifications" Type="Dial4JobzModel.Store.CandidateCertifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateCertifications">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateCertifications_Certifications">
+    <End Role="Certifications" Type="Dial4JobzModel.Store.Certifications" Multiplicity="1" />
+    <End Role="CandidateCertifications" Type="Dial4JobzModel.Store.CandidateCertifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Certifications">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateCertifications">
+        <PropertyRef Name="CertificationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateLanguages_Candidates">
+    <End Role="Candidates" Type="Dial4JobzModel.Store.Candidates" Multiplicity="1" />
+    <End Role="CandidateLanguages" Type="Dial4JobzModel.Store.CandidateLanguages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateLanguages">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateLanguages_Languages">
+    <End Role="Languages" Type="Dial4JobzModel.Store.Languages" Multiplicity="1" />
+    <End Role="CandidateLanguages" Type="Dial4JobzModel.Store.CandidateLanguages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Languages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateLanguages">
+        <PropertyRef Name="LanguageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidatePreferredFunctions_Candidates">
+    <End Role="Candidates" Type="Dial4JobzModel.Store.Candidates" Multiplicity="1" />
+    <End Role="CandidatePreferredFunctions" Type="Dial4JobzModel.Store.CandidatePreferredFunctions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidatePreferredFunctions">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidatePreferredFunctions_Functions">
+    <End Role="Functions" Type="Dial4JobzModel.Store.Functions" Multiplicity="1" />
+    <End Role="CandidatePreferredFunctions" Type="Dial4JobzModel.Store.CandidatePreferredFunctions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Functions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidatePreferredFunctions">
+        <PropertyRef Name="FunctionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidatePreferredLocations_Candidates">
+    <End Role="Candidates" Type="Dial4JobzModel.Store.Candidates" Multiplicity="1" />
+    <End Role="CandidatePreferredLocations" Type="Dial4JobzModel.Store.CandidatePreferredLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidatePreferredLocations">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidatePreferredLocations_Locations">
+    <End Role="Locations" Type="Dial4JobzModel.Store.Locations" Multiplicity="1" />
+    <End Role="CandidatePreferredLocations" Type="Dial4JobzModel.Store.CandidatePreferredLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidatePreferredLocations">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidatePreferredRoles_Candidates">
+    <End Role="Candidates" Type="Dial4JobzModel.Store.Candidates" Multiplicity="1" />
+    <End Role="CandidatePreferredRoles" Type="Dial4JobzModel.Store.CandidatePreferredRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidatePreferredRoles">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidatePreferredRoles_Roles">
+    <End Role="Roles" Type="Dial4JobzModel.Store.Roles" Multiplicity="1" />
+    <End Role="CandidatePreferredRoles" Type="Dial4JobzModel.Store.CandidatePreferredRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidatePreferredRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateQualifications_Candidates">
+    <End Role="Candidates" Type="Dial4JobzModel.Store.Candidates" Multiplicity="1" />
+    <End Role="CandidateQualifications" Type="Dial4JobzModel.Store.CandidateQualifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateQualifications">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateQualifications_Degrees">
+    <End Role="Degrees" Type="Dial4JobzModel.Store.Degrees" Multiplicity="1" />
+    <End Role="CandidateQualifications" Type="Dial4JobzModel.Store.CandidateQualifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Degrees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateQualifications">
+        <PropertyRef Name="DegreeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Candidates_Functions">
+    <End Role="Functions" Type="Dial4JobzModel.Store.Functions" Multiplicity="0..1" />
+    <End Role="Candidates" Type="Dial4JobzModel.Store.Candidates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Functions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Candidates">
+        <PropertyRef Name="FunctionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Candidates_Users">
+    <End Role="Users" Type="Dial4JobzModel.Store.Users" Multiplicity="0..1" />
+    <End Role="Candidates" Type="Dial4JobzModel.Store.Candidates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Candidates">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateSkills_Candidates">
+    <End Role="Candidates" Type="Dial4JobzModel.Store.Candidates" Multiplicity="1" />
+    <End Role="CandidateSkills" Type="Dial4JobzModel.Store.CandidateSkills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Candidates">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateSkills">
+        <PropertyRef Name="CandidateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateSkills_Skills">
+    <End Role="Skills" Type="Dial4JobzModel.Store.Skills" Multiplicity="1" />
+    <End Role="CandidateSkills" Type="Dial4JobzModel.Store.CandidateSkills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Skills">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CandidateSkills">
+        <PropertyRef Name="SkillId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cities_States">
+    <End Role="States" Type="Dial4JobzModel.Store.States" Multiplicity="1" />
+    <End Role="Cities" Type="Dial4JobzModel.Store.Cities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="States">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cities">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobLanguages_Jobs">
+    <End Role="Jobs" Type="Dial4JobzModel.Store.Jobs" Multiplicity="0..1" />
+    <End Role="JobLanguages" Type="Dial4JobzModel.Store.JobLanguages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jobs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobLanguages">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobLocations_Jobs">
+    <End Role="Jobs" Type="Dial4JobzModel.Store.Jobs" Multiplicity="1" />
+    <End Role="JobLocations" Type="Dial4JobzModel.Store.JobLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jobs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobLocations">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobPreferredCertifications_Certifications">
+    <End Role="Certifications" Type="Dial4JobzModel.Store.Certifications" Multiplicity="1" />
+    <End Role="JobPreferredCertifications" Type="Dial4JobzModel.Store.JobPreferredCertifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Certifications">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobPreferredCertifications">
+        <PropertyRef Name="CertificationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobPreferredCertifications_Jobs">
+    <End Role="Jobs" Type="Dial4JobzModel.Store.Jobs" Multiplicity="1" />
+    <End Role="JobPreferredCertifications" Type="Dial4JobzModel.Store.JobPreferredCertifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jobs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobPreferredCertifications">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobPreferredIndustries_Jobs">
+    <End Role="Jobs" Type="Dial4JobzModel.Store.Jobs" Multiplicity="1" />
+    <End Role="JobPreferredIndustries" Type="Dial4JobzModel.Store.JobPreferredIndustries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jobs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobPreferredIndustries">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobRequiredQualifications_Jobs">
+    <End Role="Jobs" Type="Dial4JobzModel.Store.Jobs" Multiplicity="1" />
+    <End Role="JobRequiredQualifications" Type="Dial4JobzModel.Store.JobRequiredQualifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jobs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobRequiredQualifications">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobRoles_Jobs">
+    <End Role="Jobs" Type="Dial4JobzModel.Store.Jobs" Multiplicity="1" />
+    <End Role="JobRoles" Type="Dial4JobzModel.Store.JobRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jobs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobRoles">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobRoles_Roles">
+    <End Role="Roles" Type="Dial4JobzModel.Store.Roles" Multiplicity="1" />
+    <End Role="JobRoles" Type="Dial4JobzModel.Store.JobRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Jobs_Organizations">
+    <End Role="Organizations" Type="Dial4JobzModel.Store.Organizations" Multiplicity="1" />
+    <End Role="Jobs" Type="Dial4JobzModel.Store.Jobs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organizations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Jobs">
+        <PropertyRef Name="OrganizationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JobSkills_Jobs">
+    <End Role="Jobs" Type="Dial4JobzModel.Store.Jobs" Multiplicity="1" />
+    <End Role="JobSkills" Type="Dial4JobzModel.Store.JobSkills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jobs">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobSkills">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Locations_Cities">
+    <End Role="Cities" Type="Dial4JobzModel.Store.Cities" Multiplicity="0..1" />
+    <End Role="Locations" Type="Dial4JobzModel.Store.Locations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Locations">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Locations_Countries">
+    <End Role="Countries" Type="Dial4JobzModel.Store.Countries" Multiplicity="1" />
+    <End Role="Locations" Type="Dial4JobzModel.Store.Locations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Locations">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Locations_Regions">
+    <End Role="Regions" Type="Dial4JobzModel.Store.Regions" Multiplicity="0..1" />
+    <End Role="Locations" Type="Dial4JobzModel.Store.Locations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Locations">
+        <PropertyRef Name="RegionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Locations_States">
+    <End Role="States" Type="Dial4JobzModel.Store.States" Multiplicity="0..1" />
+    <End Role="Locations" Type="Dial4JobzModel.Store.Locations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="States">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Locations">
+        <PropertyRef Name="StateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganizationLanguages_Languages">
+    <End Role="Languages" Type="Dial4JobzModel.Store.Languages" Multiplicity="0..1" />
+    <End Role="JobLanguages" Type="Dial4JobzModel.Store.JobLanguages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Languages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobLanguages">
+        <PropertyRef Name="LanguageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganizationPostingLocations_Locations">
+    <End Role="Locations" Type="Dial4JobzModel.Store.Locations" Multiplicity="1" />
+    <End Role="JobLocations" Type="Dial4JobzModel.Store.JobLocations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobLocations">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganizationPreferredIndustries_Industries">
+    <End Role="Industries" Type="Dial4JobzModel.Store.Industries" Multiplicity="1" />
+    <End Role="JobPreferredIndustries" Type="Dial4JobzModel.Store.JobPreferredIndustries" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Industries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobPreferredIndustries">
+        <PropertyRef Name="IndustryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganizationRequiredQualifications_Degrees">
+    <End Role="Degrees" Type="Dial4JobzModel.Store.Degrees" Multiplicity="1" />
+    <End Role="JobRequiredQualifications" Type="Dial4JobzModel.Store.JobRequiredQualifications" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Degrees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobRequiredQualifications">
+        <PropertyRef Name="DegreeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Organizations_Industries">
+    <End Role="Industries" Type="Dial4JobzModel.Store.Industries" Multiplicity="0..1" />
+    <End Role="Organizations" Type="Dial4JobzModel.Store.Organizations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Industries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organizations">
+        <PropertyRef Name="IndustryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Organizations_Users">
+    <End Role="Users" Type="Dial4JobzModel.Store.Users" Multiplicity="0..1" />
+    <End Role="Organizations" Type="Dial4JobzModel.Store.Organizations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Organizations">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrganizationSkills_Skills">
+    <End Role="Skills" Type="Dial4JobzModel.Store.Skills" Multiplicity="1" />
+    <End Role="JobSkills" Type="Dial4JobzModel.Store.JobSkills" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Skills">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="JobSkills">
+        <PropertyRef Name="SkillId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Regions_Cities">
+    <End Role="Cities" Type="Dial4JobzModel.Store.Cities" Multiplicity="1" />
+    <End Role="Regions" Type="Dial4JobzModel.Store.Regions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Regions">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_States_Countries">
+    <End Role="Countries" Type="Dial4JobzModel.Store.Countries" Multiplicity="1" />
+    <End Role="States" Type="Dial4JobzModel.Store.States" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="States">
+        <PropertyRef Name="CountryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VasFES_VasFES">
+    <End Role="VasPlans" Type="Dial4JobzModel.Store.VasPlans" Multiplicity="1" />
+    <End Role="VasFES" Type="Dial4JobzModel.Store.VasFES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VasPlans">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VasFES">
+        <PropertyRef Name="PlanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VasHotResumes_VasPlans">
+    <End Role="VasPlans" Type="Dial4JobzModel.Store.VasPlans" Multiplicity="1" />
+    <End Role="VasHotResumes" Type="Dial4JobzModel.Store.VasHotResumes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VasPlans">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VasHotResumes">
+        <PropertyRef Name="PlanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

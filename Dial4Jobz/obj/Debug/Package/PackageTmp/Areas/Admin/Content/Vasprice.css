@@ -1,0 +1,104 @@
+﻿/*packages */
+
+body.signup section.packages2 {
+  margin: 50px auto;
+  background-color: #ffc;
+  width: 450px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 30px 30px; }
+  body.signup section.packages2 p {
+    margin-bottom: 30px; }
+  body.signup section.packages2 h2 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    line-height: 1.1em;
+    text-align: center; }
+  body.signup section.packages2 h3 {
+    text-align: center;
+    margin: -15px 0 0 0;
+    font-weight: normal; }
+  body.signup section.packages2 table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: auto;
+    border-top: 1px solid #e3c27c; }
+ body.signup section.packages2 table td {
+      font-size: 20px;
+      padding: 15px;
+     border-bottom: 1px solid #e3c27c; }
+ body.signup section.packages2 table td span {
+        display: block;
+        padding-top: 7px;
+        font-size: 14px; }
+body.signup section.packages2 table td strong {
+        color: #c00; }
+body.signup section.packages2 table td.price {
+        font-weight: normal;
+        padding: 15px;
+        width: 1%;
+        border-left: 1px solid #e3c27c; }
+body.signup section.packages2 table td.price span {
+          display: inline;
+          font-size: 16px;
+          color: #000; }
+body.signup section.packages {
+  height: 200px;
+  margin: 50px auto;
+  width: 860px; }
+  body.signup section.packages article.package {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow: none; }
+    body.signup section.packages article.package h1 {
+      font-size: 30px;
+      margin: 50px 0 0 0;
+      font-weight: bold;
+      line-height: 1.1em; }
+    body.signup section.packages article.package h2 {
+      font-weight: normal;
+      font-size: 18px;
+      margin: 0;
+      font-weight: normal; }
+    body.signup section.packages article.package h3 {
+      font-weight: normal;
+      border-top: 1px solid #fff;
+      font-size: 20px;
+      margin: 30px 0 0 0;
+      font-weight: normal;
+      opacity: 0.75;
+      padding-top: 13px; }
+      body.signup section.packages article.package h3 span {
+        font-size: 15px;
+        display: block;
+        padding-top: 2px; }
+  body.signup section.packages article.extras {
+    clear: both;
+    padding: 20px 0;
+    font-size: 16px;
+    text-align: center;
+    color: #aa9c84; }
+  body.signup section.packages article.trial {
+    clear: both;
+    padding: 30px 0;
+    font-size: 40px;
+    text-align: center;
+    color: #aa9c84; }
+
+
+/*Price
+
+ body.signup section.packages2 table td.price {
+        font-weight: normal;
+        padding: 15px;
+        width: 1%;
+        border-left: 1px solid #e3c27c; }
+        body.signup section.packages2 table td.price span {
+          display: inline;
+          font-size: 16px;
+          color: #000; }

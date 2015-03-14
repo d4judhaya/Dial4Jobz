@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33A3BB36-843A-463A-97EB-F9748043FA2B}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dial4Jobz</RootNamespace>
+    <AssemblyName>Dial4Jobz</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Content\Images\Icons\favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MCPG.CCA.Util">
+      <HintPath>..\..\..\..\..\..\ASP.Net_Kit_Version_3.5\ASP.Net_Kit_Version_3.5\NON_SEAMLESS_KIT\libs\MCPG.CCA.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="SFA">
+      <HintPath>..\..\..\..\..\..\SFA.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ActivationReportController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminHomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminPermissionController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CandidateMatchesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CandidateReportController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ChannelController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ConsultantReportController.cs" />
+    <Compile Include="Areas\Admin\Controllers\EmployerReportController.cs" />
+    <Compile Include="Areas\Admin\Controllers\JobMatchesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\JobPostingController.cs" />
+    <Compile Include="Areas\Admin\Controllers\VacancyReportController.cs" />
+    <Compile Include="Areas\Channel\ChannelAreaRegistration.cs" />
+    <Compile Include="Areas\Channel\Controllers\ChannelHomeController.cs" />
+    <Compile Include="Areas\Channel\Controllers\ChannelUserController.cs" />
+    <Compile Include="Areas\Channel\Controllers\LoginController.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CandidateMatchesJobController.cs" />
+    <Compile Include="Controllers\CandidatesController.cs" />
+    <Compile Include="Controllers\CandidatesVasController.cs" />
+    <Compile Include="Controllers\CCAVPaymentController.cs" />
+    <Compile Include="Controllers\ConsultController.cs" />
+    <Compile Include="Controllers\EmployerController.cs" />
+    <Compile Include="Controllers\EmployervasController.cs" />
+    <Compile Include="Controllers\FunctionsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IndustriesController.cs" />
+    <Compile Include="Controllers\JobMatchesCandidateController.cs" />
+    <Compile Include="Controllers\LanguagesController.cs" />
+    <Compile Include="Controllers\LocationController.cs" />
+    <Compile Include="Controllers\JobsController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Controllers\SkillsController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\DateHelper.cs" />
+    <Compile Include="Helpers\EmailHelper.cs" />
+    <Compile Include="Helpers\PaginatedList.cs" />
+    <Compile Include="Helpers\SecurityHelper.cs" />
+    <Compile Include="Helpers\SmsHelper.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\BinaryFileResult.cs" />
+    <Compile Include="Models\BusinessEntities\Admin.cs" />
+    <Compile Include="Models\BusinessEntities\Candidate.cs" />
+    <Compile Include="Models\BusinessEntities\ContactCandidates.cs" />
+    <Compile Include="Models\BusinessEntities\Consultante.cs" />
+    <Compile Include="Models\BusinessEntities\DropDownItem.cs" />
+    <Compile Include="Models\BusinessEntities\Job.cs" />
+    <Compile Include="Models\BusinessEntities\Location.cs" />
+    <Compile Include="Models\BusinessEntities\OrderDetail.cs" />
+    <Compile Include="Models\BusinessEntities\Organization.cs" />
+    <Compile Include="Models\BusinessEntities\SaveEmployer.cs" />
+    <Compile Include="Models\BusinessEntities\VasPlan.cs" />
+    <Compile Include="Models\Constants.cs" />
+    <Compile Include="Models\Constraints\NotNullOrEmptyConstraint.cs" />
+    <Compile Include="Models\Dial4Jobz.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dial4Jobz.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Enums\ChannelRoles.cs" />
+    <Compile Include="Models\Enums\DegreeType.cs" />
+    <Compile Include="Models\Enums\EmployerType.cs" />
+    <Compile Include="Models\Enums\EntryType.cs" />
+    <Compile Include="Models\Enums\Gender.cs" />
+    <Compile Include="Models\Enums\JobType.cs" />
+    <Compile Include="Models\Enums\OwnershipType.cs" />
+    <Compile Include="Models\Enums\PaymentMode.cs" />
+    <Compile Include="Models\Enums\SendMethod.cs" />
+    <Compile Include="Models\Enums\Textbox.cs" />
+    <Compile Include="Models\Enums\UserType.cs" />
+    <Compile Include="Models\Exceptions\ClientException.cs" />
+    <Compile Include="Models\Extensions\RouteExtensions.cs" />
+    <Compile Include="Models\Filters\ChannelAuthorize.cs" />
+    <Compile Include="Models\Filters\HandleErrorWithAjaxFilter.cs" />
+    <Compile Include="Models\Filters\HandleNonAjaxRequest.cs" />
+    <Compile Include="Models\Filters\Refine.cs" />
+    <Compile Include="Models\Filters\ReservedWord.cs" />
+    <Compile Include="Models\Repositories\ChannelRepository.cs" />
+    <Compile Include="Models\Repositories\IChannelRepository.cs" />
+    <Compile Include="Models\Results\JsonFunction.cs" />
+    <Compile Include="Models\Results\JsonTokenizerResult.cs" />
+    <Compile Include="Models\Repositories\IRepository.cs" />
+    <Compile Include="Models\Repositories\IUserRepository.cs" />
+    <Compile Include="Models\Repositories\IVasRepository.cs" />
+    <Compile Include="Models\Repositories\Repository.cs" />
+    <Compile Include="Models\Repositories\UserRepository.cs" />
+    <Compile Include="Models\Repositories\VasRepository.cs" />
+    <Compile Include="Models\Results\FileNotFoundResult.cs" />
+    <Compile Include="Models\Results\JsonActionResult.cs" />
+    <Compile Include="Models\Results\JsonRole.cs" />
+    <Compile Include="Models\Results\JsonRolesResult.cs" />
+    <Compile Include="Models\Results\JsonVas.cs" />
+    <Compile Include="Models\Results\JsonVasResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\UserMembershipProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Content\Admin.css" />
+    <Content Include="Areas\Admin\Content\adminpermission.css" />
+    <Content Include="Areas\Admin\Content\dataTable.css" />
+    <Content Include="Areas\Admin\Content\DataTable\css\demo_table_jui.css" />
+    <Content Include="Areas\Admin\Content\DataTable\images\back_disabled.png" />
+    <Content Include="Areas\Admin\Content\DataTable\images\back_enabled.png" />
+    <Content Include="Areas\Admin\Content\DataTable\images\back_enabled_hover.png" />
+    <Content Include="Areas\Admin\Content\DataTable\images\favicon.ico" />
+    <Content Include="Areas\Admin\Content\DataTable\images\forward_disabled.png" />
+    <Content Include="Areas\Admin\Content\DataTable\images\forward_enabled.png" />
+    <Content Include="Areas\Admin\Content\DataTable\images\forward_enabled_hover.png" />
+    <Content Include="Areas\Admin\Content\DataTable\images\sort_asc.png" />
+    <Content Include="Areas\Admin\Content\DataTable\images\sort_asc_disabled.png" />
+    <Content Include="Areas\Admin\Content\DataTable\images\sort_both.png" />
+    <Content Include="Areas\Admin\Content\DataTable\images\sort_desc.png" />
+    <Content Include="Areas\Admin\Content\DataTable\images\sort_desc_disabled.png" />
+    <Content Include="Areas\Admin\Content\DataTable\js\jquery.dataTables.js" />
+    <Content Include="Areas\Admin\Content\DataTable\js\jquery.dataTables.min.js" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\smoothness\jquery-ui-1.8.4.custom.css" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Areas\Admin\Content\DataTable\themes\ui-lightness\jquery-ui-1.8.4.custom.css" />
+    <Content Include="Areas\Admin\Content\DeleteConfirmation.css" />
+    <Content Include="Areas\Admin\Content\Flash\uploadify.swf" />
+    <Content Include="Areas\Admin\Content\Images\activate1.jpg" />
+    <Content Include="Areas\Admin\Content\Images\Admin_menu.jpg" />
+    <Content Include="Areas\Admin\Content\Images\AdvtEmail.png" />
+    <Content Include="Areas\Admin\Content\Images\ajax-loader.gif" />
+    <Content Include="Areas\Admin\Content\Images\ajax_loader1.gif" />
+    <Content Include="Areas\Admin\Content\Images\Arrow.png" />
+    <Content Include="Areas\Admin\Content\Images\arrow1.png" />
+    <Content Include="Areas\Admin\Content\Images\bg-more.png" />
+    <Content Include="Areas\Admin\Content\Images\Billing.png" />
+    <Content Include="Areas\Admin\Content\Images\Blank.png" />
+    <Content Include="Areas\Admin\Content\Images\bubble_bottom.gif" />
+    <Content Include="Areas\Admin\Content\Images\bubble_middle.gif" />
+    <Content Include="Areas\Admin\Content\Images\bubble_top.gif" />
+    <Content Include="Areas\Admin\Content\Images\BuyHotResume.png" />
+    <Content Include="Areas\Admin\Content\Images\cancel.png" />
+    <Content Include="Areas\Admin\Content\Images\cHEQUE BUTTON 1.png" />
+    <Content Include="Areas\Admin\Content\Images\Click here to sms.jpg" />
+    <Content Include="Areas\Admin\Content\Images\credit card.png" />
+    <Content Include="Areas\Admin\Content\Images\D4j Number.jpg" />
+    <Content Include="Areas\Admin\Content\Images\d4jlogo 12102013.jpg" />
+    <Content Include="Areas\Admin\Content\Images\d4jlogo.jpg" />
+    <Content Include="Areas\Admin\Content\Images\demo_wait.gif" />
+    <Content Include="Areas\Admin\Content\Images\dropdown.gif" />
+    <Content Include="Areas\Admin\Content\Images\ebanking.png" />
+    <Content Include="Areas\Admin\Content\Images\editprofile.png" />
+    <Content Include="Areas\Admin\Content\Images\EmployerEditProfile.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\blank.gif" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancybox-x.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancybox-y.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancybox.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_close.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_loading.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_nav_left.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_nav_right.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_shadow_e.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_shadow_n.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_shadow_ne.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_shadow_nw.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_shadow_s.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_shadow_se.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_shadow_sw.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_shadow_w.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_title_left.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_title_main.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_title_over.png" />
+    <Content Include="Areas\Admin\Content\Images\fancybox\fancy_title_right.png" />
+    <Content Include="Areas\Admin\Content\Images\FeaturedEmp.jpg" />
+    <Content Include="Areas\Admin\Content\Images\find2.gif" />
+    <Content Include="Areas\Admin\Content\Images\findjobs.png" />
+    <Content Include="Areas\Admin\Content\Images\flag.png" />
+    <Content Include="Areas\Admin\Content\Images\FreeJob.gif" />
+    <Content Include="Areas\Admin\Content\Images\green_round_tick_sign_4246.jpg" />
+    <Content Include="Areas\Admin\Content\Images\GS1.png" />
+    <Content Include="Areas\Admin\Content\Images\help.gif" />
+    <Content Include="Areas\Admin\Content\Images\Home page Logo D4J.jpg" />
+    <Content Include="Areas\Admin\Content\Images\home-color.png" />
+    <Content Include="Areas\Admin\Content\Images\home-light.png" />
+    <Content Include="Areas\Admin\Content\Images\home.png" />
+    <Content Include="Areas\Admin\Content\Images\Home1.png" />
+    <Content Include="Areas\Admin\Content\Images\HomeArrow.png" />
+    <Content Include="Areas\Admin\Content\Images\HomeBlank.png" />
+    <Content Include="Areas\Admin\Content\Images\Homecancel.png" />
+    <Content Include="Areas\Admin\Content\Images\Homefindjobs.png" />
+    <Content Include="Areas\Admin\Content\Images\Homelogo_home.jpg" />
+    <Content Include="Areas\Admin\Content\Images\HomeNumber1.png" />
+    <Content Include="Areas\Admin\Content\Images\HomeNumber2.png" />
+    <Content Include="Areas\Admin\Content\Images\HomeRegiserCandidate.png" />
+    <Content Include="Areas\Admin\Content\Images\HomeRegisterEmployer.png" />
+    <Content Include="Areas\Admin\Content\Images\icn_edit.png" />
+    <Content Include="Areas\Admin\Content\Images\icn_trash.png" />
+    <Content Include="Areas\Admin\Content\Images\Icons\favicon %281%29.ico" />
+    <Content Include="Areas\Admin\Content\Images\Icons\favicon %283%29.ico" />
+    <Content Include="Areas\Admin\Content\Images\Icons\favicon.ico" />
+    <Content Include="Areas\Admin\Content\Images\images\left.gif" />
+    <Content Include="Areas\Admin\Content\Images\images\left.png" />
+    <Content Include="Areas\Admin\Content\Images\images\right.gif" />
+    <Content Include="Areas\Admin\Content\Images\images\right.png" />
+    <Content Include="Areas\Admin\Content\Images\images\selected-sub.gif" />
+    <Content Include="Areas\Admin\Content\Images\images\selected-sub.png" />
+    <Content Include="Areas\Admin\Content\Images\images\sep-sub.png" />
+    <Content Include="Areas\Admin\Content\Images\images\sep.png" />
+    <Content Include="Areas\Admin\Content\Images\images\sub-item-hover.gif" />
+    <Content Include="Areas\Admin\Content\Images\images\submenu-bottom.gif" />
+    <Content Include="Areas\Admin\Content\Images\images\submenu-bottom.png" />
+    <Content Include="Areas\Admin\Content\Images\images\submenu-pointer-hover.gif" />
+    <Content Include="Areas\Admin\Content\Images\images\submenu-pointer.gif" />
+    <Content Include="Areas\Admin\Content\Images\images\submenu-pointer.png" />
+    <Content Include="Areas\Admin\Content\Images\images\submenu-top.gif" />
+    <Content Include="Areas\Admin\Content\Images\images\submenu-top.png" />
+    <Content Include="Areas\Admin\Content\Images\images\subsubmenu-top.gif" />
+    <Content Include="Areas\Admin\Content\Images\images\subsubmenu-top.png" />
+    <Content Include="Areas\Admin\Content\Images\images\Untitled-1.gif" />
+    <Content Include="Areas\Admin\Content\Images\info.png" />
+    <Content Include="Areas\Admin\Content\Images\jHtmlArea.png" />
+    <Content Include="Areas\Admin\Content\Images\jHtmlArea_Toolbar_Group_BG.png" />
+    <Content Include="Areas\Admin\Content\Images\jHtmlArea_Toolbar_Group__Btn_Select_BG.png" />
+    <Content Include="Areas\Admin\Content\Images\JobList.png" />
+    <Content Include="Areas\Admin\Content\Images\Jobpost.png" />
+    <Content Include="Areas\Admin\Content\Images\Jobs.png" />
+    <Content Include="Areas\Admin\Content\Images\JobSeekers.png" />
+    <Content Include="Areas\Admin\Content\Images\Land Line.jpg" />
+    <Content Include="Areas\Admin\Content\Images\location.png" />
+    <Content Include="Areas\Admin\Content\Images\location2.png" />
+    <Content Include="Areas\Admin\Content\Images\Log in btn.png" />
+    <Content Include="Areas\Admin\Content\Images\login.png" />
+    <Content Include="Areas\Admin\Content\Images\loginsymbol.jpg" />
+    <Content Include="Areas\Admin\Content\Images\logo.jpg" />
+    <Content Include="Areas\Admin\Content\Images\logout-color.png" />
+    <Content Include="Areas\Admin\Content\Images\logout-light.png" />
+    <Content Include="Areas\Admin\Content\Images\logout.png" />
+    <Content Include="Areas\Admin\Content\Images\logo_home.jpg" />
+    <Content Include="Areas\Admin\Content\Images\logo_small.jpg" />
+    <Content Include="Areas\Admin\Content\Images\dial4jobz_logo.png" />
+    <Content Include="Areas\Admin\Content\Images\mail.png" />
+    <Content Include="Areas\Admin\Content\Images\Mobile.jpg" />
+    <Content Include="Areas\Admin\Content\Images\multiselect-hover.gif" />
+    <Content Include="Areas\Admin\Content\Images\multiselect.gif" />
+    <Content Include="Areas\Admin\Content\Images\MyAccounts.png" />
+    <Content Include="Areas\Admin\Content\Images\MyCredit.png" />
+    <Content Include="Areas\Admin\Content\Images\MySubscription.png" />
+    <Content Include="Areas\Admin\Content\Images\Office Phone.png" />
+    <Content Include="Areas\Admin\Content\Images\officephone.png" />
+    <Content Include="Areas\Admin\Content\Images\Pay now %281%29.png" />
+    <Content Include="Areas\Admin\Content\Images\Pay Now Call.jpg" />
+    <Content Include="Areas\Admin\Content\Images\Pay Now.png" />
+    <Content Include="Areas\Admin\Content\Images\Pay thru mobile.jpg" />
+    <Content Include="Areas\Admin\Content\Images\person.png" />
+    <Content Include="Areas\Admin\Content\Images\phone.png" />
+    <Content Include="Areas\Admin\Content\Images\phone1.gif" />
+    <Content Include="Areas\Admin\Content\Images\Popup\bg.png" />
+    <Content Include="Areas\Admin\Content\Images\Popup\clouds.gif" />
+    <Content Include="Areas\Admin\Content\Images\Popup\columnBg.png" />
+    <Content Include="Areas\Admin\Content\Images\Popup\columnTop.gif" />
+    <Content Include="Areas\Admin\Content\Images\Popup\leftColumn.gif" />
+    <Content Include="Areas\Admin\Content\Images\Popup\notice.png" />
+    <Content Include="Areas\Admin\Content\Images\Popup\sub-bg.png" />
+    <Content Include="Areas\Admin\Content\Images\Popup\tipBtm.png" />
+    <Content Include="Areas\Admin\Content\Images\Popup\tipMid.png" />
+    <Content Include="Areas\Admin\Content\Images\Popup\tipTop.png" />
+    <Content Include="Areas\Admin\Content\Images\Price box sample.png" />
+    <Content Include="Areas\Admin\Content\Images\Price box1.png" />
+    <Content Include="Areas\Admin\Content\Images\price box360.png" />
+    <Content Include="Areas\Admin\Content\Images\ReferenceCheck.png" />
+    <Content Include="Areas\Admin\Content\Images\RegiserCandidate.png" />
+    <Content Include="Areas\Admin\Content\Images\RegisterEmployer.png" />
+    <Content Include="Areas\Admin\Content\Images\rupee.jpg" />
+    <Content Include="Areas\Admin\Content\Images\send_email.jpg" />
+    <Content Include="Areas\Admin\Content\Images\sharelandline.png" />
+    <Content Include="Areas\Admin\Content\Images\Sign up new.png" />
+    <Content Include="Areas\Admin\Content\Images\submit.jpg" />
+    <Content Include="Areas\Admin\Content\Images\Subscribe Btn on click.png" />
+    <Content Include="Areas\Admin\Content\Images\Subscribe btn1.png" />
+    <Content Include="Areas\Admin\Content\Images\Subscribe now on click.png" />
+    <Content Include="Areas\Admin\Content\Images\Subscribe now.png" />
+    <Content Include="Areas\Admin\Content\Images\Tick.png" />
+    <Content Include="Areas\Admin\Content\Images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Areas\Admin\Content\Images\Under D4j Logo 230-30.jpg" />
+    <Content Include="Areas\Admin\Content\Images\update_details.jpg" />
+    <Content Include="Areas\Admin\Content\Images\Upload Resume Btn.png" />
+    <Content Include="Areas\Admin\Content\Images\uploadify-cancel.png" />
+    <Content Include="Areas\Admin\Content\Images\validation-tick.png" />
+    <Content Include="Areas\Admin\Content\Images\verificationimage.gif" />
+    <Content Include="Areas\Admin\Content\Images\video.png" />
+    <Content Include="Areas\Admin\Content\jHtmlArea.css" />
+    <Content Include="Areas\Admin\Content\jquery-ui.1.8.1.css" />
+    <Content Include="Areas\Admin\Content\jquery.fancybox-1.3.1.css" />
+    <Content Include="Areas\Admin\Content\jquery.timepicker.css" />
+    <Content Include="Areas\Admin\Content\pepper-grinder\images\ui-bg_diagonal-maze_20_6e4f1c_10x10.png" />
+    <Content Include="Areas\Admin\Content\pepper-grinder\images\ui-bg_diagonal-maze_40_000000_10x10.png" />
+    <Content Include="Areas\Admin\Content\pepper-grinder\images\ui-bg_fine-grain_10_eceadf_60x60.png" />
+    <Content Include="Areas\Admin\Content\pepper-grinder\images\ui-bg_fine-grain_15_eceadf_60x60.png" />
+    <Content Include="Areas\Admin\Content\pepper-grinder\images\ui-icons_222222_256x240.png" />
+    <Content Include="Areas\Admin\Content\pepper-grinder\jquery-ui-1.8.7.custom.css" />
+    <Content Include="Areas\Admin\Content\pg_v6.css" />
+    <Content Include="Areas\Admin\Content\popup.css" />
+    <Content Include="Areas\Admin\Content\recruiter_v7.css" />
+    <Content Include="Areas\Admin\Content\Site.css" />
+    <Content Include="Areas\Admin\Content\sprockets-787716fbed57a05ab05bab0df5757b824833f352.css" />
+    <Content Include="Areas\Admin\Content\tipTip.css" />
+    <Content Include="Areas\Admin\Content\token-input-facebook.css" />
+    <Content Include="Areas\Admin\Content\uploadify.css" />
+    <Content Include="Areas\Admin\Content\Vas.css" />
+    <Content Include="Areas\Admin\Content\Vasprice.css" />
+    <Content Include="Areas\Admin\Views\ActivationReport\ActivatedReport.aspx" />
+    <Content Include="Areas\Admin\Views\ActivationReport\CandidateActivatedReport.aspx" />
+    <Content Include="Areas\Admin\Views\ActivationReport\CandidateVasActivation.aspx" />
+    <Content Include="Areas\Admin\Views\ActivationReport\ConsultantActivatedReport.aspx" />
+    <Content Include="Areas\Admin\Views\ActivationReport\ConsultantActivation.aspx" />
+    <Content Include="Areas\Admin\Views\ActivationReport\Index.aspx" />
+    <Content Include="Areas\Admin\Views\ActivationReport\SavePaymentDetails.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\Activation.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\AddCandidate.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\AddEmployer.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\AddJob.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\AdminDashBoard.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\AdminPlans.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\AdminPostedJobs.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\AdminAlertSentDetails.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\AdminRAJAlertSentDetails.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\CandidateArea.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\CandidateCity.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\CandidateCountry.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\CandidateDashBoard.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\CandidateEmailActivation.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\CandidateFreshness.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\CandidateGender.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\SpecialPlans.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\SubscriptionBillingForCandidate.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\CandidateState.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\CandidateSummary.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\ChangePassword.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\Delete.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\AdminViewedCandidatesList.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\UpdateSIDetails.ascx" />
+    <Content Include="Areas\Admin\Views\CandidateReport\CandidateFullReports.aspx" />
+    <Content Include="Areas\Admin\Views\CandidateReport\DeleteCandidate.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\EditJob.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\EmailVerification.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\EmployerSubscription_Billing.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\EmployerSummary.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\ImportData.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\Index.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\JobSummary.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\PhoneNoVerification.aspx" />
+    <Content Include="Areas\Admin\Views\AdminHome\VASActivationByAdmin.aspx" />
+    <Content Include="Areas\Admin\Views\AdminPermission\AdminReport.aspx" />
+    <Content Include="Areas\Admin\Views\AdminPermission\ChangePassword.aspx" />
+    <Content Include="Areas\Admin\Views\AdminPermission\Create.aspx" />
+    <Content Include="Areas\Admin\Views\AdminPermission\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\AdminPermission\Index.aspx" />
+    <Content Include="Areas\Admin\Views\AdminPermission\UserReport.aspx" />
+    <Content Include="Areas\Admin\Views\CandidateMatches\CandidateMatch.aspx" />
+    <Content Include="Areas\Admin\Views\CandidateReport\Details.aspx" />
+    <Content Include="Areas\Admin\Views\CandidateReport\Index.aspx" />
+    <Content Include="Areas\Admin\Views\CandidateReport\NonUpdateCandidateReports.aspx" />
+    <Content Include="Areas\Admin\Views\Channel\ChangePartnerPassword.aspx" />
+    <Content Include="Areas\Admin\Views\Channel\ChannelPartnerReport.aspx" />
+    <Content Include="Areas\Admin\Views\Channel\CreatePartner.aspx" />
+    <Content Include="Areas\Admin\Views\Channel\EditPartner.aspx" />
+    <Content Include="Areas\Admin\Views\Channel\ManagePartners.aspx" />
+    <Content Include="Areas\Admin\Views\ConsultantReport\AddConsultant.aspx" />
+    <Content Include="Areas\Admin\Views\ConsultantReport\ConsultantDashBoard.aspx" />
+    <Content Include="Areas\Admin\Views\ConsultantReport\ConsultantSubscription_Billing.aspx" />
+    <Content Include="Areas\Admin\Views\ConsultantReport\Index.aspx" />
+    <Content Include="Areas\Admin\Views\ConsultantReport\Invoice.aspx" />
+    <Content Include="Areas\Admin\Views\ConsultantReport\PostedJobs.aspx" />
+    <Content Include="Areas\Admin\Views\EmployerReport\Index.aspx" />
+    <Content Include="Areas\Admin\Views\EmployerReport\PostedJobs.aspx" />
+    <Content Include="Areas\Admin\Views\JobMatches\emailcandidate.htm" />
+    <Content Include="Areas\Admin\Views\JobMatches\JobMatch.aspx" />
+    <Content Include="Areas\Admin\Views\JobPosting\Add.aspx" />
+    <Content Include="Areas\Admin\Views\Shared\AdminCandidate.ascx" />
+    <Content Include="Areas\Admin\Views\Shared\AdminConsultant.ascx" />
+    <Content Include="Areas\Admin\Views\Shared\AdminEmployer.ascx" />
+    <Content Include="Areas\Admin\Views\Shared\NavAdmin.ascx" />
+    <Content Include="Areas\Admin\Views\Shared\PhoneVerification.ascx" />
+    <Content Include="Areas\Admin\Views\VacancyReport\Index.aspx" />
+    <Content Include="Areas\Channel\Content\DataTable\css\demo_table_jui.css" />
+    <Content Include="Areas\Channel\Content\DataTable\images\back_disabled.png" />
+    <Content Include="Areas\Channel\Content\DataTable\images\back_enabled.png" />
+    <Content Include="Areas\Channel\Content\DataTable\images\back_enabled_hover.png" />
+    <Content Include="Areas\Channel\Content\DataTable\images\favicon.ico" />
+    <Content Include="Areas\Channel\Content\DataTable\images\forward_disabled.png" />
+    <Content Include="Areas\Channel\Content\DataTable\images\forward_enabled.png" />
+    <Content Include="Areas\Channel\Content\DataTable\images\forward_enabled_hover.png" />
+    <Content Include="Areas\Channel\Content\DataTable\images\sort_asc.png" />
+    <Content Include="Areas\Channel\Content\DataTable\images\sort_asc_disabled.png" />
+    <Content Include="Areas\Channel\Content\DataTable\images\sort_both.png" />
+    <Content Include="Areas\Channel\Content\DataTable\images\sort_desc.png" />
+    <Content Include="Areas\Channel\Content\DataTable\images\sort_desc_disabled.png" />
+    <Content Include="Areas\Channel\Content\DataTable\js\jquery.dataTables.js" />
+    <Content Include="Areas\Channel\Content\DataTable\js\jquery.dataTables.min.js" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\smoothness\jquery-ui-1.8.4.custom.css" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Areas\Channel\Content\DataTable\themes\ui-lightness\jquery-ui-1.8.4.custom.css" />
+    <Content Include="Areas\Channel\Scripts\Dial4Jobz.ChannelAuth.js" />
+    <Content Include="Areas\Channel\Scripts\Dial4Jobz.ChannelCommon.js" />
+    <Content Include="Areas\Channel\Views\ChannelHome\Index.aspx" />
+    <Content Include="Areas\Channel\Views\ChannelUser\ChangePassword.aspx" />
+    <Content Include="Areas\Channel\Views\ChannelUser\Create.aspx" />
+    <Content Include="Areas\Channel\Views\ChannelUser\Edit.aspx" />
+    <Content Include="Areas\Channel\Views\ChannelUser\Index.aspx" />
+    <Content Include="Areas\Channel\Views\ChannelUser\MyReport.aspx" />
+    <Content Include="Areas\Channel\Views\ChannelUser\UserReport.aspx" />
+    <Content Include="Areas\Channel\Views\Login\ChangePassword.aspx" />
+    <Content Include="Areas\Channel\Views\Login\ForgotPassword.aspx" />
+    <Content Include="Areas\Channel\Views\Login\Index.aspx" />
+    <Content Include="Areas\Channel\Views\MailTemplate\ChannelPartnerRegistration.htm" />
+    <Content Include="Areas\Channel\Views\MailTemplate\ChannelUserRegistration.htm" />
+    <Content Include="Areas\Channel\Views\Shared\NavChannel.ascx" />
+    <Content Include="Areas\Channel\Views\Shared\PhoneVerification.ascx" />
+    <Content Include="Content\Admin.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\dataTable.css" />
+    <Content Include="Content\DeleteConfirmation.css" />
+    <Content Include="Content\Flash\uploadify.swf" />
+    <Content Include="Content\HomeTabs.css" />
+    <Content Include="Content\imageslidermaker.css" />
+    <Content Include="Content\Images\admin_menu1.jpg" />
+    <Content Include="Content\Images\admin_menu2.jpg" />
+    <Content Include="Content\Images\advertiseemails.jpg" />
+    <Content Include="Content\Images\ajax-loader.gif" />
+    <Content Include="Content\Images\arrow.gif" />
+    <Content Include="Content\Images\Arrow.png" />
+    <Content Include="Content\Images\arrow1.png" />
+    <Content Include="Content\Images\arrowon.gif" />
+    <Content Include="Content\Images\Bank Details Buttons.JPG" />
+    <Content Include="Content\Images\Bankdetails.jpg" />
+    <Content Include="Content\Images\bg-gray.gif" />
+    <Content Include="Content\Images\bg-gray1.gif" />
+    <Content Include="Content\Images\bg-gray2.gif" />
+    <Content Include="Content\Images\bg-more.png" />
+    <Content Include="Content\Images\bg.gif" />
+    <Content Include="Content\Images\Billing.png" />
+    <Content Include="Content\Images\billingdetails.jpg" />
+    <Content Include="Content\Images\Blank.png" />
+    <Content Include="Content\Images\Blank1.png" />
+    <Content Include="Content\Images\blank2.jpg" />
+    <Content Include="Content\Images\blue star-hotsres.jpg" />
+    <Content Include="Content\Images\buyhotresumes.jpg" />
+    <Content Include="Content\Images\buysms1.jpg" />
+    <Content Include="Content\Images\cancel.png" />
+    <Content Include="Content\Images\channel_earnings.png" />
+    <Content Include="Content\Images\cHEQUE BUTTON 1.png" />
+    <Content Include="Content\Images\Cheque Button.jpg" />
+    <Content Include="Content\Images\Cheque Details.jpg" />
+    <Content Include="Content\Images\Click here to sms.jpg" />
+    <Content Include="Content\Images\closeBtn.gif" />
+    <Content Include="Content\Images\consultant4.jpg" />
+    <Content Include="Content\Images\consultant5.jpg" />
+    <Content Include="Content\Images\consultant_large3.jpg" />
+    <Content Include="Content\Images\controls.png" />
+    <Content Include="Content\Images\cornerimages\rs-bottomleft.png" />
+    <Content Include="Content\Images\cornerimages\rs-bottomright.png" />
+    <Content Include="Content\Images\cornerimages\rs-topleft.png" />
+    <Content Include="Content\Images\cornerimages\rs-topright.png" />
+    <Content Include="Content\Images\credit card.png" />
+    <Content Include="Content\Images\d4jlogo 12102013.jpg" />
+    <Content Include="Content\Images\ddmenu-bg.jpg" />
+    <Content Include="Content\Images\demo_wait.gif" />
+    <Content Include="Content\Images\Depositingdetails.jpg" />
+    <Content Include="Content\Images\dial4jobz_logo.png" />
+    <Content Include="Content\Images\dl-arr.png" />
+    <Content Include="Content\Images\down-arr.gif" />
+    <Content Include="Content\Images\Download_resume.jpg" />
+    <Content Include="Content\Images\dropdown.gif" />
+    <Content Include="Content\Images\ebanking.png" />
+    <Content Include="Content\Images\Editprofile.jpg" />
+    <Content Include="Content\Images\emp.zone1-Edit.jpg" />
+    <Content Include="Content\Images\emp.zone1.jpg" />
+    <Content Include="Content\Images\forkme.png" />
+    <Content Include="Content\Images\free2.jpg" />
+    <Content Include="Content\Images\green_round_tick_sign_4246.jpg" />
+    <Content Include="Content\Images\green_star.png" />
+    <Content Include="Content\Images\green_star_dpr.jpg" />
+    <Content Include="Content\Images\hand.png" />
+    <Content Include="Content\Images\help.gif" />
+    <Content Include="Content\Images\Home page Logo D4J.jpg" />
+    <Content Include="Content\Images\HomeArrow.png" />
+    <Content Include="Content\Images\HomeBlank.png" />
+    <Content Include="Content\Images\Homecancel.png" />
+    <Content Include="Content\Images\Homelogo_home.jpg" />
+    <Content Include="Content\Images\HomeNumber1.png" />
+    <Content Include="Content\Images\HomeNumber2.png" />
+    <Content Include="Content\Images\Icons\favicon.ico" />
+    <Content Include="Content\Images\Icons\favicon_old.ico" />
+    <Content Include="Content\Images\info.png" />
+    <Content Include="Content\Images\invoicelogo.jpg" />
+    <Content Include="Content\Images\jHtmlArea.png" />
+    <Content Include="Content\Images\jHtmlArea_Toolbar_Group_BG.png" />
+    <Content Include="Content\Images\jHtmlArea_Toolbar_Group__Btn_Select_BG.png" />
+    <Content Include="Content\Images\jobalerts.jpg" />
+    <Content Include="Content\Images\Jobs.png" />
+    <Content Include="Content\Images\Land Line.jpg" />
+    <Content Include="Content\Images\Locate Us  Buttons.jpg" />
+    <Content Include="Content\Images\Locate Us Button.jpg" />
+    <Content Include="Content\Images\loginsymbol.jpg" />
+    <Content Include="Content\Images\logo_home.jpg" />
+    <Content Include="Content\Images\Home1.png" />
+    <Content Include="Content\Images\bubble_bottom.gif" />
+    <Content Include="Content\Images\bubble_middle.gif" />
+    <Content Include="Content\Images\bubble_top.gif" />
+    <Content Include="Content\Images\editprofile.png" />
+    <Content Include="Content\Images\fancybox\blank.gif" />
+    <Content Include="Content\Images\fancybox\fancybox-x.png" />
+    <Content Include="Content\Images\fancybox\fancybox-y.png" />
+    <Content Include="Content\Images\fancybox\fancybox.png" />
+    <Content Include="Content\Images\fancybox\fancy_close.png" />
+    <Content Include="Content\Images\fancybox\fancy_loading.png" />
+    <Content Include="Content\Images\fancybox\fancy_nav_left.png" />
+    <Content Include="Content\Images\fancybox\fancy_nav_right.png" />
+    <Content Include="Content\Images\fancybox\fancy_shadow_e.png" />
+    <Content Include="Content\Images\fancybox\fancy_shadow_n.png" />
+    <Content Include="Content\Images\fancybox\fancy_shadow_ne.png" />
+    <Content Include="Content\Images\fancybox\fancy_shadow_nw.png" />
+    <Content Include="Content\Images\fancybox\fancy_shadow_s.png" />
+    <Content Include="Content\Images\fancybox\fancy_shadow_se.png" />
+    <Content Include="Content\Images\fancybox\fancy_shadow_sw.png" />
+    <Content Include="Content\Images\fancybox\fancy_shadow_w.png" />
+    <Content Include="Content\Images\fancybox\fancy_title_left.png" />
+    <Content Include="Content\Images\fancybox\fancy_title_main.png" />
+    <Content Include="Content\Images\fancybox\fancy_title_over.png" />
+    <Content Include="Content\Images\fancybox\fancy_title_right.png" />
+    <Content Include="Content\Images\find2.gif" />
+    <Content Include="Content\Images\flag.png" />
+    <Content Include="Content\Images\home-color.png" />
+    <Content Include="Content\Images\home-light.png" />
+    <Content Include="Content\Images\home.png" />
+    <Content Include="Content\Images\images\left.gif" />
+    <Content Include="Content\Images\images\left.png" />
+    <Content Include="Content\Images\images\right.gif" />
+    <Content Include="Content\Images\images\right.png" />
+    <Content Include="Content\Images\images\selected-sub.gif" />
+    <Content Include="Content\Images\images\selected-sub.png" />
+    <Content Include="Content\Images\images\sep-sub.png" />
+    <Content Include="Content\Images\images\sep.png" />
+    <Content Include="Content\Images\images\sub-item-hover.gif" />
+    <Content Include="Content\Images\images\submenu-bottom.gif" />
+    <Content Include="Content\Images\images\submenu-bottom.png" />
+    <Content Include="Content\Images\images\submenu-pointer-hover.gif" />
+    <Content Include="Content\Images\images\submenu-pointer.gif" />
+    <Content Include="Content\Images\images\submenu-pointer.png" />
+    <Content Include="Content\Images\images\submenu-top.gif" />
+    <Content Include="Content\Images\images\submenu-top.png" />
+    <Content Include="Content\Images\images\subsubmenu-top.gif" />
+    <Content Include="Content\Images\images\subsubmenu-top.png" />
+    <Content Include="Content\Images\images\Untitled-1.gif" />
+    <Content Include="Content\Images\location.png" />
+    <Content Include="Content\Images\location2.png" />
+    <Content Include="Content\Images\Log in btn.png" />
+    <Content Include="Content\Images\login.png" />
+    <Content Include="Content\Images\logo.jpg" />
+    <Content Include="Content\Images\logout-color.png" />
+    <Content Include="Content\Images\logout-light.png" />
+    <Content Include="Content\Images\logout.png" />
+    <Content Include="Content\Images\logo_small.jpg" />
+    <Content Include="Content\Images\logo_with_number.jpg" />
+    <Content Include="Content\Images\mail.png" />
+    <Content Include="Content\Images\main-red-bg.gif" />
+    <Content Include="Content\Images\Mobile.jpg" />
+    <Content Include="Content\Images\multiselect-hover.gif" />
+    <Content Include="Content\Images\multiselect.gif" />
+    <Content Include="Content\Images\MYCart.png" />
+    <Content Include="Content\Images\officephone.png" />
+    <Content Include="Content\Images\Pay by Phone  Buttons.jpg" />
+    <Content Include="Content\Images\Pay by Phone Button.jpg" />
+    <Content Include="Content\Images\Pay now %281%29.png" />
+    <Content Include="Content\Images\Pay Now Call.jpg" />
+    <Content Include="Content\Images\Pay Now.png" />
+    <Content Include="Content\Images\Pay thru mobile.jpg" />
+    <Content Include="Content\Images\person.png" />
+    <Content Include="Content\Images\phone.png" />
+    <Content Include="Content\Images\phone1.gif" />
+    <Content Include="Content\Images\PickupPoints.jpg" />
+    <Content Include="Content\Images\Popup\bg.png" />
+    <Content Include="Content\Images\Popup\clouds.gif" />
+    <Content Include="Content\Images\Popup\columnBg.png" />
+    <Content Include="Content\Images\Popup\columnTop.gif" />
+    <Content Include="Content\Images\Popup\leftColumn.gif" />
+    <Content Include="Content\Images\Popup\notice.png" />
+    <Content Include="Content\Images\Popup\sub-bg.png" />
+    <Content Include="Content\Images\Popup\tipBtm.png" />
+    <Content Include="Content\Images\Popup\tipMid.png" />
+    <Content Include="Content\Images\Popup\tipTop.png" />
+    <Content Include="Content\Images\postedjobs.png" />
+    <Content Include="Content\Images\postjob.jpg" />
+    <Content Include="Content\Images\PostResume1.jpg" />
+    <Content Include="Content\Images\PostVacancy.jpg" />
+    <Content Include="Content\Images\referencecheck.jpg" />
+    <Content Include="Content\Images\resume_alerts.png" />
+    <Content Include="Content\Images\rupee.jpg" />
+    <Content Include="Content\Images\ruppees- nine.png" />
+    <Content Include="Content\Images\searchjobseekers.jpg" />
+    <Content Include="Content\Images\send_email.jpg" />
+    <Content Include="Content\Images\sharelandline.png" />
+    <Content Include="Content\Images\SI-candidate.png" />
+    <Content Include="Content\Images\Sign up new.png" />
+    <Content Include="Content\Images\slides\bl_16510.jpg" />
+    <Content Include="Content\Images\slides\gr_41396.jpg" />
+    <Content Include="Content\Images\slides\or_1282.jpg" />
+    <Content Include="Content\Images\slides\or_565.jpg" />
+    <Content Include="Content\Images\slides\wh_22125.jpg" />
+    <Content Include="Content\Images\special_plans.png" />
+    <Content Include="Content\Images\SS.png" />
+    <Content Include="Content\Images\star for paidemployers.jpg" />
+    <Content Include="Content\Images\submit.jpg" />
+    <Content Include="Content\Images\Subscribe now on click.png" />
+    <Content Include="Content\Images\Subscribe now.png" />
+    <Content Include="Content\Images\subscribe.jpg" />
+    <Content Include="Content\Images\Tick.png" />
+    <Content Include="Content\Images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Content\Images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\Images\ui\bg-black-70.png" />
+    <Content Include="Content\Images\Under D4j Logo 230-30.jpg" />
+    <Content Include="Content\Images\updateProfile1.jpg" />
+    <Content Include="Content\Images\updateProile.jpg" />
+    <Content Include="Content\Images\Upload Resume Btn.png" />
+    <Content Include="Content\Images\uploadify-cancel.png" />
+    <Content Include="Content\Images\validation-tick.png" />
+    <Content Include="Content\Images\VerifyCancel.png" />
+    <Content Include="Content\Images\VerifyNow.png" />
+    <Content Include="Content\Images\vertical-menu-bg.jpg" />
+    <Content Include="Content\Images\verti_menu.jpg" />
+    <Content Include="Content\Images\video.png" />
+    <Content Include="Content\Images\viewed_details.jpg" />
+    <Content Include="Content\jHtmlArea.css" />
+    <Content Include="Content\jquery-ui-1.8.4.custom.css" />
+    <Content Include="Content\jquery-ui.1.8.1.css" />
+    <Content Include="Content\jquery.fancybox-1.3.1.css" />
+    <Content Include="Content\jquery.timepicker.css" />
+    <Content Include="Content\popup.css" />
+    <Content Include="Content\recruiter_v7.css" />
+    <Content Include="Content\tabmenu.css" />
+    <Content Include="Content\ticker.css" />
+    <Content Include="Content\tipTip.css" />
+    <Content Include="Content\token-input-facebook.css" />
+    <Content Include="Content\uploadify.css" />
+    <Content Include="Content\Vas.css" />
+    <Content Include="Content\Vasprice.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\autocomplete.js" />
+    <Content Include="Scripts\bjqs-1.3-imageslidermaker.js" />
+    <Content Include="Scripts\bootstrap-multiselect-js.js" />
+    <Content Include="Scripts\captcha.js" />
+    <Content Include="Scripts\Dial4Jobz.Consultant.js" />
+    <Content Include="Scripts\Dial4Jobz.Admin.js" />
+    <Content Include="Scripts\Dial4Jobz.Auth.js" />
+    <Content Include="Scripts\Dial4Jobz.DeleteConfirmation.js" />
+    <Content Include="Scripts\Dial4Jobz.Employer.js" />
+    <Content Include="Scripts\Dial4Jobz.Home.js" />
+    <Content Include="Scripts\Dial4Jobz.JobAdmin.js" />
+    <Content Include="Scripts\hovertip.js" />
+    <Content Include="Scripts\jquery-1.3.1.min.js" />
+    <Content Include="Scripts\jquery-1.3.2.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-ui.min.1.8.1.js" />
+    <Content Include="Scripts\jquery.easing.min.js" />
+    <Content Include="Scripts\jquery.easy-ticker.min.js" />
+    <Content Include="Scripts\jquery.fancybox-1.3.1.pack.js" />
+    <Content Include="Scripts\Dial4Jobz.Candidate.js" />
+    <Content Include="Scripts\Dial4Jobz.Common.js" />
+    <Content Include="Scripts\Dial4Jobz.Job.js" />
+    <Content Include="Scripts\jquery-1.4.2.js" />
+    <Content Include="Scripts\jquery.cascadingDropDown.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.timepicker.js" />
+    <Content Include="Scripts\jquery.timepicker.min.js" />
+    <Content Include="Scripts\jquery.tipTip.js" />
+    <Content Include="Scripts\jquery.tokeninput.js" />
+    <Content Include="Scripts\jquery.uploadify.js" />
+    <Content Include="Scripts\jquery.uploadify.min.js" />
+    <Content Include="Scripts\jquery.watermark.js" />
+    <Content Include="Scripts\Dial4Jobz.Payment.js" />
+    <Content Include="Scripts\JquerySearchIt.js" />
+    <Content Include="Scripts\layout_v1.js" />
+    <Content Include="Scripts\popup.js" />
+    <Content Include="Scripts\Dial4Jobz.GoogleAnalyticsSite.js" />
+    <Content Include="Scripts\PreventDoubleSubmit.js" />
+    <Content Include="Scripts\tabmenu.js" />
+    <Content Include="Views\Account\Test.aspx" />
+    <Content Include="Views\CandidateMatchesJob\CandidateMatch.aspx" />
+    <Content Include="Views\CandidatesVas\CallUsForPickupCash.aspx" />
+    <Content Include="Views\CandidatesVas\CandidatesPayment.aspx" />
+    <Content Include="Views\CandidatesVas\CCAVRequest.ascx" />
+    <Content Include="Views\CandidatesVas\CCAVResponse.aspx" />
+    <Content Include="Views\CandidatesVas\DepositChequeDraft.aspx" />
+    <Content Include="Views\CandidatesVas\ElectronicTransfer.aspx" />
+    <Content Include="Views\CandidatesVas\ElectronicTransferDetails.ascx" />
+    <Content Include="Views\CandidatesVas\Index.aspx" />
+    <Content Include="Views\CandidatesVas\Payment.aspx" />
+    <Content Include="Views\CandidatesVas\WhoIsEmployer.aspx" />
+    <Content Include="Views\Candidates\Activation.aspx" />
+    <Content Include="Views\Candidates\ContactCandidates.aspx" />
+    <Content Include="Views\Candidates\DashBoard.aspx" />
+    <Content Include="Views\Candidates\Details.aspx" />
+    <Content Include="Views\Candidates\DPRViewedList.aspx" />
+    <Content Include="Views\Candidates\Edit.aspx" />
+    <Content Include="Views\Candidates\EmailVerification.aspx" />
+    <Content Include="Views\Candidates\Index.aspx" />
+    <Content Include="Views\Candidates\CandidatesSubscriptionBilling.aspx" />
+    <Content Include="Views\Candidates\CandidatesInvoice.aspx" />
+    <Content Include="Views\Candidates\PhoneNoVerification.aspx" />
+    <Content Include="Views\Candidates\RAJAlertSentDetails.aspx" />
+    <Content Include="Views\Candidates\ResetCount.aspx" />
+    <Content Include="Views\CCAVPayment\CCAVRequest.ascx" />
+    <Content Include="Views\CCAVPayment\Index.ascx" />
+    <Content Include="Views\Consult\Add.aspx" />
+    <Content Include="Views\Consult\AddCandidate.aspx" />
+    <Content Include="Views\Consult\CandidateReports.aspx" />
+    <Content Include="Views\Consult\Edit.aspx" />
+    <Content Include="Views\Consult\ImportData.aspx" />
+    <Content Include="Views\Consult\Index.aspx" />
+    <Content Include="Views\Consult\LogOn.aspx" />
+    <Content Include="Views\Consult\MySubscription_Billing.aspx" />
+    <Content Include="Views\Consult\Plans.aspx" />
+    <Content Include="Views\Consult\PostedJobs.aspx" />
+    <Content Include="Views\Consult\Profile.aspx" />
+    <Content Include="Views\Consult\Register.aspx" />
+    <Content Include="Views\Consult\VacancyReports.aspx" />
+    <Content Include="Views\EmployerVas\CallUsForPickupCash.aspx" />
+    <Content Include="Views\EmployerVas\CCAVRequest.ascx" />
+    <Content Include="Views\EmployerVas\CCAVResponse.aspx" />
+    <Content Include="Views\EmployerVas\DepositChequeDraft.aspx" />
+    <Content Include="Views\EmployerVas\ElectronicTransferDetails.ascx" />
+    <Content Include="Views\EmployerVas\ElectronicTransfer.aspx" />
+    <Content Include="Views\EmployerVas\EmployerPayment.aspx" />
+    <Content Include="Views\EmployerVas\Index.aspx" />
+    <Content Include="Views\EmployerVas\Payment.aspx" />
+    <Content Include="Views\EmployerVas\PaymentSuccess.aspx" />
+    <Content Include="Views\EmployerVas\PayThroughPhoneCreditCard.aspx" />
+    <Content Include="Views\Employer\Activation.aspx" />
+    <Content Include="Views\Employer\AlertSentDetails.aspx" />
+    <Content Include="Views\Employer\DashBoard.aspx" />
+    <Content Include="Views\Employer\Details.aspx" />
+    <Content Include="Views\Employer\HireCandidates.aspx" />
+    <Content Include="Views\Employer\Index.aspx" />
+    <Content Include="Views\Employer\Invoice.aspx" />
+    <Content Include="Views\Employer\MatchCandidates.aspx" />
+    <Content Include="Views\Employer\MySubscription_Billing.aspx" />
+    <Content Include="Views\Employer\PhoneNoVerification.aspx" />
+    <Content Include="Views\Employer\PostedJobs.aspx" />
+    <Content Include="Views\Employer\PricingPlans.ascx" />
+    <Content Include="Views\Employer\Profile.aspx" />
+    <Content Include="Views\Employer\SmsPurchase.aspx" />
+    <Content Include="Views\Employer\SMSSuccessfull.aspx" />
+    <Content Include="Views\Employer\ViewedCandidatesList.aspx" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Home\ChannelEarningLists.ascx" />
+    <Content Include="Views\Home\ChannelsEarningOpportunities.aspx" />
+    <Content Include="Views\Home\Contact.aspx" />
+    <Content Include="Views\Home\CreatePopupMobile.aspx" />
+    <Content Include="Views\Home\Faq.aspx" />
+    <Content Include="Views\Home\Home.aspx" />
+    <Content Include="Views\Home\HomePage.aspx" />
+    <Content Include="Views\Home\HomePageTest.aspx" />
+    <Content Include="Views\Home\HomePhoneNumber.aspx" />
+    <Content Include="Views\Home\Security.aspx" />
+    <Content Include="Views\Home\SendHomeMobileNumber.ascx" />
+    <Content Include="Views\Home\SendHomePhoneNumber.ascx" />
+    <Content Include="Views\Home\SmsTerms.aspx" />
+    <Content Include="Views\JobMatchesCandidate\emailcandidate.htm" />
+    <Content Include="Views\JobMatchesCandidate\JobMatch.aspx" />
+    <Content Include="Views\Jobs\AfterJobPost.aspx" />
+    <Content Include="Views\Jobs\Delete.aspx" />
+    <Content Include="Views\Jobs\Details.aspx" />
+    <Content Include="Views\Home\Privacy.aspx" />
+    <Content Include="Views\Home\Terms.aspx" />
+    <Content Include="Views\Jobs\Add.aspx" />
+    <Content Include="Views\Jobs\Edit.aspx" />
+    <Content Include="Views\Jobs\FindJobs.aspx" />
+    <Content Include="Views\Jobs\Index.aspx" />
+    <Content Include="Views\Jobs\JobPostVas.aspx" />
+    <Content Include="Views\Jobs\JobsViewedList.aspx" />
+    <Content Include="Views\MailTemplate\BackgroundCheckActivated.htm" />
+    <Content Include="Views\MailTemplate\BackgroundCheckSubscribed.htm" />
+    <Content Include="Views\MailTemplate\BasicPlanActivated.htm" />
+    <Content Include="Views\MailTemplate\BasicPlanSubscribed.htm" />
+    <Content Include="Views\MailTemplate\RCActivated.htm" />
+    <Content Include="Views\MailTemplate\RCSubscribed.htm" />
+    <Content Include="Views\MailTemplate\CRDSubscribed.htm" />
+    <Content Include="Views\MailTemplate\CRDActivated.htm" />
+    <Content Include="Views\MailTemplate\SpotInterviewSubscribed.htm" />
+    <Content Include="Views\MailTemplate\SendVasDetailsCandidate.htm" />
+    <Content Include="Views\MailTemplate\SendVasDetailsEmployer.htm" />
+    <Content Include="Views\MailTemplate\RAJActivated.htm" />
+    <Content Include="Views\MailTemplate\RAJSubscribed.htm" />
+    <Content Include="Views\MailTemplate\HotResumesActivated.htm" />
+    <Content Include="Views\MailTemplate\HotResumesSubscribed.htm" />
+    <Content Include="Views\MailTemplate\ResumeAlertSubscribed.htm" />
+    <Content Include="Views\MailTemplate\ResumeAlertActivated.htm" />
+    <Content Include="Views\MailTemplate\DisplayResumeActivated.htm" />
+    <Content Include="Views\MailTemplate\DisplayResumeSubscribed.htm" />
+    <Content Include="Views\MailTemplate\ResumeWritingActivated.htm" />
+    <Content Include="Views\MailTemplate\ResumeWritingSubscribed.htm" />
+    <Content Include="Views\MailTemplate\SpotSelectionActivated.htm" />
+    <Content Include="Views\MailTemplate\SpotSelectionSubscribed.htm" />
+    <Content Include="Views\MailTemplate\WhoIsEmployerActivated.htm" />
+    <Content Include="Views\MailTemplate\WhoIsEmployerSubscribed.htm" />
+    <Content Include="Views\Search\CandidateResults.aspx" />
+    <Content Include="Views\Search\CandidateSearch.aspx" />
+    <Content Include="Views\Search\JobResults.aspx" />
+    <Content Include="Views\Search\JobSearch.aspx" />
+    <Content Include="Views\Shared\CandidateInvoice.ascx" />
+    <Content Include="Views\Shared\ChangeCandidatePassword.ascx" />
+    <Content Include="Views\Shared\ChangeOrganizationPassword.ascx" />
+    <Content Include="Views\Shared\NavConsultant.ascx" />
+    <Content Include="Views\Shared\ForgotPassword.ascx" />
+    <Content Include="Views\Shared\JobEntry.ascx" />
+    <Content Include="Views\Shared\Candidates.ascx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\Jobs.ascx" />
+    <Content Include="Views\Shared\LoggedInEmployerInfo.ascx" />
+    <Content Include="Views\Shared\Login.ascx" />
+    <Content Include="Views\Shared\Main\CandidatesVas.ascx" />
+    <Content Include="Views\Shared\Main\MainVas.ascx" />
+    <Content Include="Views\Shared\MatchingCandidates.ascx" />
+    <Content Include="Views\Shared\MatchingJobs.ascx" />
+    <Content Include="Views\Shared\Nav.ascx" />
+    <Content Include="Views\Shared\NavEmployer.ascx" />
+    <Content Include="Views\Shared\PhoneVerification.ascx" />
+    <Content Include="Views\Shared\Register.ascx" />
+    <Content Include="Views\Shared\Side\GettingStarted.ascx" />
+    <Content Include="Views\Shared\Side\GettingStartedEmployer.ascx" />
+    <Content Include="Views\Shared\Side\PostedJobs.ascx" />
+    <Content Include="Views\Shared\Side\Video.ascx" />
+    <Content Include="Views\Shared\Side\Welcome.ascx" />
+    <Content Include="Views\Shared\Side\_googleAdds.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Account\ChangePassword.aspx" />
+    <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Views\Account\LogOn.aspx" />
+    <Content Include="Views\Account\SignUp.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Content\Resumes\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Channel\Models\" />
+    <Folder Include="Content\Resumes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\Dial4Jobz.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Dial4Jobz.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Areas\Admin\Content\DataTable\images\Sorting icons.psd" />
+    <None Include="Areas\Admin\Content\Data\27c73e57-fb0a-405b-8bea-a0f0eaba9f78Candidates.xls" />
+    <Content Include="Areas\Admin\Views\Shared\Admin.Master" />
+    <Content Include="Areas\Admin\Views\Web.config" />
+    <None Include="Areas\Admin\Content\Flash\uploadify.php" />
+    <None Include="Areas\Channel\Content\DataTable\images\Sorting icons.psd" />
+    <Content Include="Areas\Channel\Views\Shared\Channel.Master" />
+    <Content Include="Areas\Channel\Views\Web.config" />
+    <None Include="Content\Data\27c73e57-fb0a-405b-8bea-a0f0eaba9f78Candidates.xls" />
+    <None Include="Content\Data\43878b26-cab8-495a-b6f7-02f32098d095Candidates.xls" />
+    <None Include="Content\Data\a6620a8d-3ffe-482d-aff4-9b03e5762513Candidates.xls" />
+    <None Include="Content\Data\d86bba8a-dbc2-4865-a87d-32f8cded5ac5Candidates.xls" />
+    <None Include="Content\Data\e6b277e1-5a94-49cb-ab9c-de7feba81d79Candidates.xls" />
+    <None Include="Content\Flash\uploadify.php" />
+    <Content Include="Views\Shared\Admin.Master" />
+    <Content Include="Views\Shared\Home.Master" />
+    <None Include="Content\Invoice\InvoiceBill.docx" />
+    <None Include="Content\Invoice\Test.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49951</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

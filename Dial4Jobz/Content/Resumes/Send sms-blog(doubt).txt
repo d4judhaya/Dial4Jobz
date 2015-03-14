@@ -1,0 +1,48 @@
+How to send  SMS in asp.net :
+Samples:
+
+public String SendSms(string Message,string MobileNo)
+    {
+        String result = "";
+        if (ConfigurationManager.AppSettings["SmsFlag"] == "1")
+        {
+            DataView dvSmbcDetails = new DataView();
+            dvSmbcDetails = objUser.GetSmsDetails();
+            string SmsUserName = dvSmbcDetails[0]["SmsUserName"].ToString();
+            string FromEmail = ConfigurationManager.AppSettings["FromEmail"];
+            string SmsPassword = dvSmbcDetails[0]["SmsPassword"].ToString();
+            string SmsFrom = dvSmbcDetails[0]["SmsFrom"].ToString();
+            string SmsFlag = ConfigurationManager.AppSettings["SmsMode"];
+
+            String strPost = "uname=" + SmsUserName + "&pword=" + SmsPassword + "&message=" + Message + "&from=" + SmsFrom + "&selectednums=" + MobileNo + "&info=" + SmsFlag + "";
+            StreamWriter myWriter = null;
+            HttpWebRequest objRequest = (HttpWebRequest)WebRequest.Create("http://www.txtlocal.com/sendsmspost.php");
+
+            //add Proxy info if required
+            //objRequest.Proxy = WebProxy.GetDefaultProxy();
+            //objRequest.Proxy.Credentials = CredentialCache.DefaultCredentials; //uses logged on user
+            //objRequest.Proxy.Credentials = new System.Net.NetworkCredential("UserName", "Password"); // Alternative - specify the user and password to use
+            objRequest.Method = "POST";
+            objRequest.ContentLength = Encoding.UTF8.GetByteCount(strPost);
+            objRequest.ContentType = "application/XXXXXX";
+            try
+            {
+                myWriter = new StreamWriter(objRequest.GetRequestStream());
+                myWriter.Write(strPost);
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+            finally
+            {
+                myWriter.Close();
+            }
+
+            HttpWebResponse objResponse = (HttpWebResponse)objRequest.GetResponse();
+            using (StreamReader sr = new StreamReader(objResponse.GetResponseStream()))
+            {
+                result = sr.ReadToEnd();
+                // Close and clean up the StreamReader
+                sr.Close();
+            }

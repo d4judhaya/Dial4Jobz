@@ -1,0 +1,110 @@
+body {
+	margin-top: 50px;
+	font-family: Arial;
+}
+h2 { font-size: 20px; color: #999; padding: .5em 0;}
+h3 { font-size: 14px; }
+
+/* Structure
+------------------------------------------*/
+#coolMenu,
+#coolMenu ul {
+	list-style: none;
+}
+#coolMenu {
+	float: left;
+}
+#coolMenu > li {
+	float: left;
+}
+#coolMenu li a {
+	display: block;
+	height: 2em;
+	line-height: 2em;
+	padding: 0 1.5em;
+	text-decoration: none;
+}
+#coolMenu ul {
+	position: absolute;
+	display: none;
+	z-index: 999;
+}
+#coolMenu ul li a {
+	width: 80px;
+}
+#coolMenu li:hover ul.noJS {
+	display: block; 
+}
+
+
+/* Main menu
+------------------------------------------*/
+#coolMenu {
+	/*font-family: Arial;
+	font-size: 12px;
+	background: #2f8be8;*/
+	font-family: Arial;
+	font-size: 12px;
+	background:#1FA9F0;
+    border: 1px solid #A0BBC5;
+    border-radius: 5px;
+}
+#coolMenu > li > a {
+	color: #fff;
+	font-weight: bold;
+}
+#coolMenu > li:hover > a {
+	background: #f09d28;
+	color: #000;
+}
+
+
+/* Submenu
+------------------------------------------*/
+#coolMenu ul {
+
+	/*background:#C0BDB5;*/
+	background:#BCD4EF;
+	width: 157px;
+}
+#coolMenu ul li a {
+	color: #000;
+}
+#coolMenu ul li:hover a {
+	background: #ffc97c;
+}
+
+#adminmain
+{    
+    _height: 1px; /* only IE6 applies CSS properties starting with an underscore */   
+    clear:both; 
+    float:left;
+    display:inline-block;
+    width:538px;
+    min-height:600px;
+    
+ }
+ #adminpage
+{    
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 20px;
+    padding-bottom:0px;
+    background-color: #fff;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    
+    border:solid 1px #555;
+    border-color:#ccc #bbb #bbb #ccc;   
+    -moz-box-shadow: 0 0 5px #bbb;
+    -webkit-box-shadow: 0 0 5px #bbb;
+    box-shadow: 0 0 5px #bbb;   
+    webkit-border-radius: 8px;
+	   -moz-border-radius: 8px;
+			border-radius: 8px;
+			
+    float:left;
+    width:100%;
+    height:100%; 
+    
+}

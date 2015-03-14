@@ -1,0 +1,179 @@
+/*Added*/	
+.colL, .colR{width:667px; padding:0 0 0 10px; float:left;}	.colR{width:265px; float:right;}	label.labelSml{width:75px;}
+.colL .row label{ width:115px;}	.colL .row label.sml{ width:154px; margin:5px 5px 0 0}
+.w153{width:153px}
+.mrgnTop15{ margin-top:15px;} .noMarginPadding{margin:0; padding:0;}
+.mt0{margin-top:0;}
+.greyBdrCrt{border:1px solid #ddd; background:#fff;}	.cartContainer{background-color:#fff;}
+.cartPosition{position:absolute;  top:15px; right:0;width:265px; padding:0 0 0 10px;}
+.cartHead{background-color:#e3e3e3; padding:10px; color:#ee6724; border-bottom:#ddd solid 1px; display:block; font-size:17px;}
+.greyBdrCrt td{border-bottom:#000 dotted 1px;}	.greyBdrCrt td.noBdr{border:0;}	.greyBdrCrt td.bdrTop{border-top:#c7c6c8 solid 1px; border-bottom:0; font-weight:bold;}
+ul.qjpInfo{ padding:6px 0 0 10px; margin:0 0 0 15px;}
+.upInfo, .colL .row .upInfo{font-size:11px; margin-left:175px; color:#666; width:400px;}		.colL .row .upInfo, .redtxtMsg, .ml122{margin-left:122px;}
+.adrs{margin-left:121px}	.mtb_10{margin-bottom:5px; margin-top:5px}
+.redtxtMsg{color:#ff0000;}
+.slocation1{float:left; padding:2px 0 0 0; font-weight:bold;}
+.mrarea{width:550px}
+
+/*Registration CSS*/
+.pTop25{padding-top:25px;}	.dispBlk{display:block;}
+.enqSupHd, .callBack, .buyNowBtn .buyNowL, .confirm em, .crnrBr, .crnrBl, .crnrTr, .crnrTl, .mvd, .vdjd, .aecc, .obtcc, .cdd, .enlrge, .listDetails li, .crossLB, .printBtn{ background:url(../images/resdex-iconSprite1.png) no-repeat 0 0;}
+.enqSupHd{color: #4c4c4c; font-size: 13px; font-weight: bold; padding-bottom: 2px; padding:7px 0 4px 30px;}
+.callBack{background-position:0 -105px}
+.enqSupDet, .infoSection, #confirmMsg{border:#e1e1e1 solid 1px; zoom:1; font-size:11px; padding:5px 10px; line-height:16px;}
+#confirmMsg{font-size:13px; line-height:18px;}
+.pl37{padding:0 0 0 37px;}	.pl215{padding-left:215px}
+.w270{width:270px;}		.w192{width:192px;}		.w197{width:197px;}		.w400{width:400px;} .wAuto, .row label.wAuto{width:auto}	.w238{width:238px;}
+
+.mvd{background-position:0 -35px; height:26px; width:72px;}
+.vdjd{background-position:-75px -35px; height:23px; width:125px;}
+.aecc{background-position:0 -75px; height:23px; width:38px;}
+.obtcc{background-position:-121px -75px; height:22px; width:101px;}
+.cdd{background-position:-44px -75px; height:26px; width:75px;}
+.colL .paymentMode td{height:10px; padding:4px}
+.bdrDashed{border-bottom:#005b7f dashed 1px;}
+#breadCrumb a{padding:0 6px;}
+.navBand{ border-bottom:#095cc2 solid 10px;}
+.colL input.submitMain{ width:auto; overflow:visible; padding:0 15px;}
+.enqSupDet input.field, .enqSupDet input.fieldSml, .enqSupDet input.fieldSml1, .enqSupDet input.active{ width:238px; color:#8d8d8d; font-size:11px; margin:10px 0 0; border:#abadb3 solid 1px;}
+.enqSupDet input.active{color:#444;}
+.enqSupDet input.redBdr, .redBdr{border:#ff0000 solid 1px;}
+.enqSupDet input.fieldSml{width:150px;}
+.enqSupDet input.fieldSml1{width:74px;}
+.crnrBr, .crnrBl{ float:right; width:6px; height:6px; margin:-6px 0 0; background-position:-6px -234px; overflow:hidden;}
+.crnrTr, .crnrTl{ float:right; width:6px; height:6px;background-position:-6px -228px; overflow:hidden;}
+.crnrBl{float:left; background-position:0 -234px;}
+.crnrTl{float:left; background-position:0 -228px}
+
+/*Confirmation CSS*/
+.confirm{background-color: #ECF5CE;border: 1px solid #A7C157;font-size: 12px;padding: 6px;}
+.confirm .cnfrmIcon{float:left; width:40px; height:40px;background-position:0 -149px; margin:2px 7px 0 0; }
+.confirmTxt{color:#618207;}
+.infoSection{ clear:both; line-height:20px; padding:5px 10px; font-size:12px; overflow:hidden;}
+.ltGrey888{color:#888;}		.blueDrk{color:#014b81;}
+.font20{font-size:20px;}
+.p0{padding:0;}
+
+.resdexPack th, .resdexPack th.hotVacancy, .resdexPack th.classified, .iricCont h2, .iricCont h3, .iricCont h4, .iricCont h5, .lHead{background:#a9d0f6 url(../images/pgYn.png) repeat-x 0 -727px; padding:5px; border-top:#97bcdb solid 1px; border-bottom:#97bcdb solid 1px; border-left:#e5f1fc solid 1px;}
+.resdexPack th.hotVacancy, .resdexPack th.classified{width:423px; padding:10px;border:#97bcdb solid 1px; height:100px; overflow:hidden; background-position:0 -678px; background-color:#aad1f6; text-align:left; line-height:18px; font-size:11px;}
+.resdexPack th.classified{width:201px; background-position:0 -548px; background-color:#c4e6f7; border-left:0;}
+.resdexPack th.vacancyList{background:#fff; border-bottom:#656565 solid 1px; border-left:#ccc solid 1px; border-right:0;}
+
+.bdrTBdtd{border-top:#ccc dashed 1px; border-bottom:#ccc dashed 1px;}
+.bdrRGrey, .resdexPack th.bdrRGrey{border-right:#ccc solid 1px;}
+.resdexPack th.bdrL_blue{border-left:#97bcdb solid 1px;}
+.resdexPack th.highlight{background:#fbcd6b;border:#CCC solid 1px; border-width:1px 0 1px 1px;}
+.resdexPack th.highlight-rt{border-right:#CCC solid 1px;}
+.bdrL0{border-left:0;}
+
+.resdexPack th.bdrR_blue{border-right:#97bcdb solid 1px;}
+.resdexPack th{font-weight:normal; font-size:11px;}
+.resdexPack td{padding:10px; font-size:11px; text-align:center;border-left:#ccc solid 1px; border-bottom:#ccc dashed 1px;vertical-align:top;}
+.resdexPack td.font12{font-size:12px}
+.resdexPack tr.lastRow td{border-bottom:#ccc solid 1px; font-size:12px; line-height:20px;}
+
+a.buyNowBtn{width:80px; display:block; margin:auto; text-decoration:none; cursor:pointer}
+.buyNowBtn .buyNowL{background-position:left -203px; display:block;}
+.buyNowBtn .buyNowR{ background: #fff url(../images/resdex-iconSprite1.png) no-repeat right -203px ; color: #000;height:20px;margin:0 0 0 9px;  padding:1px 10px 2px 2px; display:block;color:#000;}
+.cartContainer .subBor{float:right;}
+.colR .submit{overflow:visible;}
+
+/*Product Page CSS*/
+.listDetails{list-style-type:none; margin:10px 0 0;}
+.listDetails li{background-position:-210px -225px; padding:0 0 0 25px; line-height:22px;}
+.listDetails li div{padding:0 0 10px}
+.listDetails a.sel{font-weight:bold; text-decoration:none;cursor:text}
+.listDetails ul{list-style-type:disc; margin:0 0 0 25px;}
+.listDetails ul li{background:none; padding:0;}
+.iricDet .listDetails{margin:5px 0 0 -10px; width:415px;}
+.iricDet .listDetails li{font-size:12px;}
+.prview{background:#ebebeb; border:#cdcdcd solid 1px; padding:10px; margin:0 14px;}
+.iricDet .prview{margin:10px 0 0;}
+.iricDet .prview a{ width:135px; height:125px;}
+.iricDet .mLR15{margin-left:15px; margin-right:15px}
+.iricDet .enlrge{margin:0 34px;}
+
+.jp, .jd, .mj, .sr, .srp, .cvPrvw, .eApp, .folders, .ques{background:#fff url(../images/previewSprite_v1.png) no-repeat 0 0; height:159px; width:171px; overflow:hidden; display:block;}
+.jd{background-position:0 -168px;}
+.mj{background-position:0 -336px;}
+.sr{background-position:-184px 0}
+.srp{background-position:-184px -170px}
+.cvPrvw{background-position:-184px -336px}
+.eApp{background-position:-364px 0}
+.folders{background-position:-364px -168px}
+.ques{background-position:-364px -337px}
+.hp, .srpNauk, .ieHome, .ieCareer, .ieJobs, .instContact, .instRec{background:#fff url(../images/brandInstaSprite.png) no-repeat 0 0; width:135px; height:125px; overflow:hidden; display:block;}
+.srpNauk{background-position:0 -134px;}
+.ieHome{background-position:0 -265px;} 
+.ieCareer{background-position:0 -396px;}
+.ieJobs{background-position:0 -529px;}
+.instContact{background-position:0 -667px;}
+.instRec{background-position:0 -792px}
+.enlrge{background-position: -212px -35px; float:left;height: 20px;margin:0 65px;padding: 4px 0 0 16px;text-decoration: none;width: 73px;}
+.bdrBtm2{border-bottom:#ffb912 solid 2px; font-size:16px; padding:0 0 3px; margin:25px 0 0 5px;}
+.iricCont{width:592px; margin:40px auto 0; font:11px; }
+.iricCont h2 {font-size:13px; background-position:0 -678px; border:#97bcdb solid 1px; padding:7px 10px; overflow:hidden; font-weight:normal;margin:0px}
+.iricCont h3 {font-size:13px; background-position:0 -678px; border:#97bcdb solid 1px; padding:2px 10px; overflow:hidden; font-weight:normal;margin:0px}
+.iricCont h4, .iricCont h5 {font-size:13px; background-position:0 -678px; border:#97bcdb solid 1px; padding:8px 10px; overflow:hidden; font-weight:normal;margin:0px}
+.iricCont .iricDet{border:#ccc solid 1px; border-top:0; padding:7px 10px; line-height:20px;overflow:hidden;}
+
+/*lightbox*/
+.row2{padding-bottom:5px; font-size:11px;}
+.row2 div.label{width:110px; margin-right:10px; float:left; text-align:right; padding-top:2px; font-size:11px;}
+.row2 div.rowRt1{width:370px; float:left;}
+.row2 input, textarea, select{font-size:12px;}
+.row2 .submit{padding:0 5px;}
+.h90L{height:90px;}
+.errCol {color: #D50000;display: block; font-size:11px;}
+.w304 {width: 304px;}
+.w180 {width: 180px;}
+.w25 {width: 25px;}
+.w50 {width: 50px;}
+.w100 {width: 100px;}
+.w350 {width: 350px;}
+.pl50{padding-left:50px}
+.pl110{padding-left:110px}
+.pl130{padding-left:130px}
+.m0{ margin:0;}
+
+#mainNav ul li a.rBdr{border-right: 1px solid #DBDBDB;}
+
+.cheque{background:url(../images/cheque.png) no-repeat; width:400px; height:142px; position:relative;}
+.date{position:absolute; right:15px; top:12px; width:88px; font-size:12px;}
+.amtW{position:absolute; left:15px; top:68px; width:350px; font-size:12px; text-indent:50px; line-height:28px;}
+.amtN{position:absolute; left:270px; top:115px; width:95px; font-size:12px;}
+
+/*lightbox*/
+.modC{filter: alpha(opacity=60);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);-moz-opacity: .6;-khtml-opacity: .6;opacity: .6; margin:auto;}
+.frm{margin:0;padding:0; position:absolute; z-index:999; background-color:#000;left:0;top:0; filter: alpha(opacity=0);filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);-moz-opacity: 0;-khtml-opacity: 0;opacity: .0;}
+.mod1{position:absolute; left:0; top:0;z-index:998;margin:auto; background:#000;}
+.alertLB{background-position:-30px -75px; height:45px; width:60px; float:left;}
+.lCont{position:absolute; z-index:1000;background:#fff;color:#000; border:2px solid #4b4b4b;display:none;}
+/*class to be change*/
+.lHead{font:bold 12px Verdana, Arial; height:25px; line-height:25px; padding:4px 10px 0; background-position:0 -297px; color:#515151; border-bottom:1px solid #AFAFAF; border-top:0; border-left:0}
+.crossLB{background-position:-24px -229px;cursor: pointer;float:right;width:8px;height:7px;overflow:hidden;}
+.lHead a{line-height:15px;margin:5px 0 0 !important;}
+.crossLB a{text-decoration:none;}
+/*class to be change*/
+.lMid{padding:10px;}
+#modal1 {z-index: 1000;}
+.lCont {z-index: 1001;}
+.lHead a{text-decoration:none;width:8px;}
+.printBtn{background-position: -42px -228px;display: block;padding: 5px 0 6px 26px;width: 118px;}
+#header #mainNav ul li{height:30px}
+.nxtMsg {padding:10px 0 0 46px;}
+.w320 {width:320px}
+.mt15{margin-top:15px;}
+.rinfo{ background: url("../images/bg_grey.gif") repeat-x scroll center bottom #FFFFFF; border: 1px solid #DE8903; color: #000000 !important; cursor: pointer; font-weight: bold; height: 22px; line-height: 22px; margin: 0 0 3px; padding: 0; text-align: center; text-decoration: none; width: 90px;}
+.rinfo a, .rinfo a:visited, .rinfo a:hover{color:#000 !important;}
+.mr10 {margin-right:10px;}
+.pgPosRel {position:relative;}
+.pgPosAbs {position:absolute; right:0px;top:-28px;}
+.pgPosAbs1 {position:absolute; right:10px;top:-22px;}
+.noBold {font-weight:normal;}
+.rc_bg{background:#E3E3E3;}
+.sp20{height:20px; overflow:hidden; clear:both;}
+.sp10{height:10px; overflow:hidden; clear:both;}
+.sp30{height:30px; overflow:hidden; clear:both;}
+.font19{font-size:19px;}
+.valignT{vertical-align:top;}

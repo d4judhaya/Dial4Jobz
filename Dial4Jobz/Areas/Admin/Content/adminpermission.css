@@ -1,0 +1,1148 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body
+{
+    background-color: #e6e6e6;
+    font-size: 12px;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height:1.6;
+}
+
+#target { padding: 5px; border: 1px solid #000; width:300px; float:right }
+
+a:link
+{
+    color: #324B81;    
+    text-decoration: none;
+}
+a:visited
+{
+    color: #324B81;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #3B5998;
+    text-decoration: underline;
+}
+a:active
+{
+    color: #3B5998;   
+    outline: none; 
+}
+a:focus
+{
+    -moz-outline-style: none;
+}
+
+p, ul
+{
+    margin:0;
+    margin-bottom: 20px;
+}
+
+.ellipsis {
+   white-space: nowrap;
+   text-overflow: ellipsis; 
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, h7
+{
+    font-size: 24px;
+    font-weight:bold;
+    padding:0;
+    margin:0;
+}
+
+h1, h2
+{
+    background:#fff;
+    border-bottom:solid 1px #ddd;
+    border-right:dotted 0px red;
+    border-top:dotted 0px red;
+    color:#333; 
+    font-size:28px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight:normal;
+    padding:10px 20px 15px 20px;
+    margin-left:-20px;
+    margin-bottom:25px;
+}
+h1
+{
+    border:0;
+    padding-bottom:3px;
+    margin-bottom:0;
+    font-weight:bold;
+}
+h3
+{
+    font-size: 14px;
+}
+h4
+{
+    font-size: 1.1em;
+}
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+#wrapper
+{
+    /*width: 800px;*/
+    width:940px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+#page
+{    
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 20px;
+    padding-bottom:0px;
+    background-color: #fff;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    
+    border:solid 1px #555;
+    border-color:#ccc #bbb #bbb #ccc;   
+    -moz-box-shadow: 0 0 5px #bbb;
+    -webkit-box-shadow: 0 0 5px #bbb;
+    box-shadow: 0 0 5px #bbb;   
+    webkit-border-radius: 8px;
+	   -moz-border-radius: 8px;
+			border-radius: 8px;
+			
+    float:left;
+    /*  width:100%;*/
+  width: 105%;
+}
+#header
+{
+    color: #000;
+}
+
+.red {
+color: #FF0000;
+}
+
+.mandatoryalign {
+width: 540px;
+margin: 0px auto;
+}
+
+.description {
+width: 418px;
+float: left;
+}
+
+/*Candidate terms and conditions*/
+.gry {
+color: #717171;
+text-decoration: none;
+}
+
+.dispblo {
+display: block;
+}
+
+.font11 {
+font-size: 11px;
+}
+
+.fright {
+float: right;
+}
+
+.w265 {
+width: 265px;
+}
+
+.w260 {
+width: 260px;
+}
+
+#main
+{    
+    _height: 1px; /* only IE6 applies CSS properties starting with an underscore */   
+    clear:both; 
+    float:left;
+    display:inline-block;
+    width:788px;
+    min-height:600px;
+   
+}
+
+div#logo
+{
+    display:block;
+    float:left;
+    text-align:left;
+    padding-top:0px;
+    padding-bottom:20px;
+}
+
+div#menu-bar
+{
+    display:inline-block;
+    float:right;
+    font-size:14px;
+}
+#menu-bar a
+{
+   /* margin-left:10px;    
+    background:#999;
+    border:solid 0px #888;
+    border-color:#999 #85CDFF #ccc #999;
+    border-right:none;
+    color:#fff;
+    padding:5px 10px;
+    font-weight:bold;
+    font-size:11px;*/
+    
+    background: none repeat scroll 0px 0px #81C4DD;
+    border: 1px solid #A0BBC5;
+    border-radius: 5px;
+    color: #666;
+    display: inline-block;
+    float: none;
+    margin: 0px 5px 4px 0px;
+    /*padding: 3px 5px;*/
+    padding:3px 23px;
+    font-size:11px;
+    color:White;
+}
+#menu-bar a:hover
+{
+    text-decoration:none;
+    background:#666;
+}
+
+#menu-bar a.nav-employer,
+#menu-bar a.nav-candidate
+{
+    background:#85CDFF;
+    margin-right:-20px;
+}
+#menu-bar a.nav-candidate
+{
+    background:#E28B2A;
+}
+
+#side
+{
+    float:left;
+    vertical-align:top;
+    padding-left:30px;
+    width:220px;
+}
+
+#footer
+{
+    float:left;
+    color: #555;
+    padding: 15px 5px;
+    font-size: 11px;
+    width:790px;
+    text-align:center;
+}
+#footer a
+{
+    margin-left:15px;
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset 
+{
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #CCC;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+.editor-field input[type="text"],
+.editor-field input[type="password"]  
+{
+    width: 200px;
+    border: 1px solid #bbb;
+    padding:5px;
+    border: 1px solid #bbb;
+    border-color:#ccc #e3e3e3 #e3e3e3 #ccc;
+}
+
+textarea
+{
+    width: 400px;
+    height:50px;
+    display:block;
+    padding:5px;
+    margin-bottom:8px;
+    border: 1px solid #bbb;
+    border-color:#ccc #e3e3e3 #e3e3e3 #ccc;
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+}
+
+
+input[type="button"],
+input[type="button"]:disabled
+{
+    background: #F6F6F6;
+    color: #222;
+    padding:2px 8px;
+    font-weight: normal;
+    font-size: 12px;
+    text-shadow: 0 1px 0 white;
+    border: 1px solid #ccc;
+    border-bottom-color: #999;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#fcfcfc,EndColorStr=#fff);
+    background-image: -moz-linear-gradient(top,#fcfcfc 0,#fff 100%);
+    background-image: -ms-linear-gradient(top,#fcfcfc 0,#fff 100%);
+    background-image: -o-linear-gradient(top,#fcfcfc 0,#fff 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fcfcfc),color-stop(100%,#fff));
+    background-image: -webkit-linear-gradient(top,#fcfcfc 0,#fff 100%);
+    background-image: linear-gradient(top,#fcfcfc 0,#fff 100%);
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: inset 0 0 1px #fff;
+    -ms-box-shadow: inset 0 0 1px #fff;
+    -o-box-shadow: inset 0 0 1px #fff;
+    -webkit-box-shadow: inset 0 0 1px #fff;
+    box-shadow: inset 0 0 1px #fff;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transtion: all 0.25s;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s; 
+    cursor:pointer;
+} 
+
+input[type="button"]:disabled
+{
+    color:#aaa;
+} 
+
+/* MAIN */
+ul#job-list,
+ul#candidate-list
+{
+    margin-top:10px;
+    margin-bottom:10px;
+    float:left;
+    list-style-type:none;
+    margin:0;
+    padding:0;  
+}
+li.candidate-list-item,
+li.job-list-item
+{
+    padding-bottom:12px;
+    padding-top:10px;
+    float:left;
+    border-bottom:solid 1px #eee;
+}
+div.candidate-select,
+div.job-select
+{
+    display:inline-block;
+    float:left;
+    width:22px;
+    border:solid 1px #fff;
+}
+div.candidate-details,
+div.job-details
+{
+    display:inline-block;
+    vertical-align:top;
+    line-height:1.4;    
+    float:left;
+}
+div.first-line,
+div.second-line,
+div.third-line,
+div.fitth-line,
+div.fourth-line
+{
+    width:480px;
+    float:left;
+}
+div.first-line
+{
+    font-size:16px;
+    font-weight:bold;
+    color:#087AB8;
+}
+div.second-line .org-name
+{
+    
+    font-size:12px;
+    font-weight:bold;
+    color:#555;
+    line-height:1.6;
+}
+
+div.fifth-line
+
+{
+    width:480px;
+    float:left;
+}
+/*div.second-line .Fun-name
+{
+    
+    font-size:12px;
+    font-weight:bold;
+    color:#555;
+    line-height:1.6;
+}*/
+.location
+{ 
+    font-size:11px;
+    font-style:italic;
+    color:#777;
+}
+div.fourth-line
+{
+    margin-top:8px;
+    
+}
+div.fourth-line a.skill 
+{
+    padding:3px 8px;
+    background: #E0E0E0;
+    border:solid 1px #ddd;
+    border-color:#eee #ccc #ccc #eee;
+    display:inline-block;
+    color: 	#202020;
+    margin-right:3px;
+}
+div.fourth-line a.skill:hover
+{
+    background: #85CDFF;    
+    color:#fff;
+    border:solid 1px #85CDFF;
+    text-decoration:none;
+}
+.job-desc,
+.candidate-desc
+{
+    margin-top:30px;
+}
+.job-desc h3,
+.candidate-desc h3
+{
+    font-size:18px;
+    color:#666;
+    margin-bottom:10px;
+}
+.job-desc p,
+.candidate-desc p
+{
+    line-height:1.8;
+}
+.job-desc-details,
+.candidate-desc-details
+{
+    margin-top:20px;
+}
+
+#moreLink 
+{
+    width:520px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight:bold;
+    padding:8px 10px;
+    background:url(Images/bg-more.png) repeat-x;
+    color:#4A6B82;
+    border:solid 1px #ddd;
+    border-color:#e9e9e9 #bbb #bbb #e9e9e9;
+    margin-top:20px;
+    margin-bottom:20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    clear:both;
+    float:left;
+}
+
+#moreLink:hover
+{
+    background:#f7f7f7;
+    border-color:#ddd #bbb #bbb #ddd;
+    text-decoration: none;
+}
+
+
+
+
+/*Privacy---------------------------------------------*/
+div.privacy
+{
+    line-height:1.5;
+    font-family:Verdana;
+    width:160%;
+   
+}
+/*Terms-------------------------------------------*/
+div.terms
+{
+    line-height:1.5;
+    font-family:Verdana;
+    
+}
+#ter
+{
+    left:30%;
+}
+
+/* SIDE
+----------------------------------------------------------*/
+.section
+{
+    font-size:11px;
+    margin-bottom:15px;
+    line-height:1.5;  
+    color:#333;
+    font-family:Arial;
+}
+
+.section h5
+{
+    border-bottom: 1px solid #ddd;
+    margin-top:0;
+    margin-bottom: 0.5em;
+    padding: 1px 0px;
+    color:#333;
+    font-size:11px;  
+}
+
+.section ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;  
+    line-height:1.5;  
+}
+
+.section ol
+{
+    margin:0;
+    margin-left:18px;
+    padding:0;  
+}
+
+.section ul li,
+.section ol li
+{
+    font-family:Arial;
+}
+.larger
+{
+    font-size:12px;
+}
+
+.padLR10 {
+padding-left: 10px;
+padding-right: 3px;
+}
+
+.cls {
+clear: both;
+}
+
+a.link-facebook-frontpage,
+a.link-twitter-frontpage,
+a.link-gamerules-frontpage,
+a.link-completeprofile-frontpage,
+a.link-ideas-frontpage,
+a.link-bugs-frontpage,
+a.link-email-frontpage,
+a.link-officephone-frontpage,
+a.link-phone-frontpage,
+a.link-video-frontpage
+{
+    background:#fff url(Images/facebook.gif) no-repeat 5px 50%;
+    padding-left:30px;
+    font-size:12px;
+    font-weight:normal;
+    height:24px;
+    display:block;
+    line-height:2.1;
+    text-decoration:none;
+}
+a.link-twitter-frontpage
+{
+    background:#fff url(Images/twitter.gif) no-repeat 5px 50%;
+}
+a.link-gamerules-frontpage
+{
+    background:#fff url(Images/book.png) no-repeat 5px 50%;
+}
+a.link-completeprofile-frontpage
+{
+    background:#fff url(Images/editprofile.png) no-repeat 5px 50%;
+}
+a.link-ideas-frontpage
+{
+    background:transparent url(Images/idea.png) no-repeat 5px 50%;
+}
+a.link-bugs-frontpage
+{
+    background:transparent url(Images/bugs.png) no-repeat 5px 50%;
+}
+a.link-email-frontpage
+{
+    background:transparent url(Images/mail.png) no-repeat 5px 50%;
+}
+a.link-officephone-frontpage
+{
+    background:transparent url(Images/officephone.png) no-repeat 5px 50%;
+}
+a.link-phone-frontpage
+{
+    background:transparent url(Images/phone1.gif) no-repeat 5px 50%;
+}
+a.link-video-frontpage
+{
+    background:transparent url(Images/video.png) no-repeat 5px 50%;
+}
+a.link-facebook-frontpage:hover,
+a.link-twitter-frontpage:hover,
+a.link-gamerules-frontpage:hover,
+a.link-completeprofile-frontpage:hover,
+a.link-ideas-frontpage:hover,
+a.link-bugs-frontpage:hover,
+a.link-email-frontpage:hover,
+a.link-phone-frontpage:hover,
+a.link-video-frontpage:hover
+{
+    color:#FF0084;
+}
+
+/* TABLE
+----------------------------------------------------------
+
+table 
+{
+  border: solid 1px #e8eef4;
+  border-collapse: collapse;
+}
+
+table td 
+{
+  padding: 5px;   
+  border: solid 1px #e8eef4;
+}
+
+table th
+{
+  padding: 6px 5px;
+  text-align: left;
+  background-color: #e8eef4; 
+  border: solid 1px #e8eef4;   
+}
+*/
+/* MISC  
+----------------------------------------------------------*/
+.clear
+{
+    clear: both;
+}
+
+.hidden
+{
+    display:none;
+}
+.error
+{
+    color:Red;
+}
+.watermark
+{
+    color: #999;    
+}
+
+.messageBar
+{  
+    display:none;  
+    position: fixed; 
+    background-color: #fff;  
+    border-bottom: 1px solid gray;  
+    font-weight:bold;  
+    font-size:22px; 
+    text-align:center;
+    padding:20px 0px; 
+    z-index: 9001;  
+    opacity:0.8;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    width:100%;
+}  
+
+/*Login and Apply button*/
+
+/*.blueBut_sml button, .blueBut_n button {
+height: 50px;
+background-color: transparent;
+cursor: pointer;
+}
+
+
+.w135 {
+width: 135px;
+}
+
+button {
+background: none;
+border: 0;
+cursor: pointer;
+}*/
+
+
+
+.small
+{
+    font-size:11px;
+    color:#777;
+}
+
+
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label,
+.editor-label,
+.display-field,
+.editor-field
+{
+    margin: 2px 0;
+}
+
+.display-field,
+.editor-field
+{
+    margin-bottom: 20px;
+}
+
+.editor-field textarea 
+{
+    width : 400px;
+    height : 100px;
+}
+
+.description
+{
+    margin-bottom: 20px;
+}
+
+.editor-label
+{
+    color:#666;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.text-box
+{
+    width: 30em;
+}
+
+.text-box.multi-line
+{
+    height: 6.5em;
+}
+
+.tri-state
+{
+    width: 6em;
+}
+
+.education-section
+{
+    
+}
+
+/* tabs */
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height:24px; /*--Set height of tabs--*/
+	border-bottom: 1px solid #eee;
+	border-left: 0px solid #eee;
+	width: 100%;
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 23px; /*--Subtract 1px from the height of the unordered list--*/
+	line-height: 23px; /*--Vertically aligns the text within the tab--*/
+	border: 1px solid #ddd;
+
+	margin-bottom: -1px; /*--Pull the list item down 1px--*/
+	margin-right:1px;
+	overflow: hidden;
+	position: relative;
+	background: #eee;
+}
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	font-size: 11px;
+	padding: 0 10px;
+	border: 0px solid #fff; /*--Gives the bevel look with a 1px white border inside the list item--*/
+	outline: none;
+}
+ul.tabs li a:hover {
+	background: #e3e3e3;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover  { /*--Makes sure that the active tab does not listen to the hover properties--*/
+	background: #fff;
+	font-weight:bold;
+	border-bottom: 1px solid #fff; /*--Makes the active tab look like it's connected with its content--*/
+}
+
+.tab_container {
+	border: 0px solid #999;
+	border-top: none;
+	overflow: hidden;
+	clear: both;
+	float: left; 
+	width: 100%;
+	background: #fff;
+}
+.tab_content {
+	padding: 10px 1px;
+}
+
+
+/* Menu with submenu */
+ul#nav {  
+    margin:0;   
+    padding:0;   
+    list-style:none;  
+    display:inline;
+}     
+      
+    /* make the LI display inline */  
+    /* it's position relative so that position absolute */  
+    /* can be used in submenu */  
+    ul#nav li {  
+        display:inline;   
+        position:relative;  
+        z-index:500;   
+        margin:0;
+        border-bottom:none;
+    }  
+          
+    /* this is the parent menu */  
+    ul#nav li a {  
+        display:inline;   
+    }  
+  
+    ul#nav li a:hover {  
+
+    }  
+      
+    /* you can make a different style for default selected value */  
+    ul#nav a.selected {  
+
+    }  
+      
+        /* submenu, it's hidden by default */  
+        ul#nav ul {  
+            position:absolute;   
+            left:0;   
+            display:none;   
+            margin:0px 0 0 7px;   
+            padding:0;   
+            list-style:none;  
+            border:solid 1px #ccc;
+            border-color:#ccc #999 #999 #ccc;
+            background:#f9f9f9;
+        }  
+          
+        ul#nav ul li {  
+            width:60px;   
+            float:left;   
+            border-top:1px solid #fff;  
+            list-style:none;
+            padding:2px 7px 5px 7px;
+        }  
+          
+        /* display block will make the link fill the whole area of LI */  
+        ul#nav ul a {  
+            display:block; 
+        }  
+          
+        ul#nav ul a:hover {  
+            text-decoration:underline;    
+        }  
+
+
+/* Modals
+----------------------------------------------------------*/
+.modal
+{
+     padding:10px;    
+     overflow:hidden;
+}
+.modal .header
+{
+    font-size: 32px;
+    margin-bottom:20px;
+    color:#333;
+}
+.modal h3
+{
+    font-size: 14px;
+    font-weight:normal;
+    margin-bottom:20px;
+}
+.modal-login-column,
+.modal-register-column,
+.modal-profile-column
+{
+    float:left;   
+    padding-right:20px;
+    padding-bottom:15px;
+    border-right:solid 1px #eee;
+    color:#777;
+}
+.modal-profile-column  
+{
+    width: 380px;
+    height:300px;
+    overflow:hidden;
+}
+.modal-3rdparty-column,
+.modal-avatar-column
+{
+    width:185px;
+    float:left;
+    padding-left:15px;
+    padding-top:10px;
+}
+.modal-avatar-column
+{
+    width:230px;
+    overflow:hidden;
+}
+.modal-login-column input[type="password"]
+{
+    width: 400px;
+    margin-right:10px;
+}
+
+.modal-login-column span input[type="text"] /* for watermark plugin */
+{
+    width: 200px;
+    border: 1px solid #bbb;
+    padding:5px;
+    border-color:#ccc #e3e3e3 #e3e3e3 #ccc;
+    margin-right: 10px;
+}
+
+.modal ul
+{
+    list-style-type:none;
+    padding-left:0;
+}
+.modal ul li
+{
+    list-style:none;
+}
+.modal a
+{
+    text-decoration:underline;
+}
+.modal .bottom
+{
+    font-size:14px;
+    margin-top:30px;
+}
+.modal .terms
+{
+    font-size:11px;
+    color:#777;
+}
+.modal-people-column
+{
+    height:270px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.modal-people-column a
+{
+    text-decoration:none;
+}
+.modal-email-column
+{
+    width:500px;    
+    height:290px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.modal-email-column textarea
+{
+    width:450px;
+    height:80px;
+}
+.modal-email-column input[type="text"]
+{
+    width:400px;
+}
+
+/*-------------------- Dashboard --------------------*/
+.layer1 {
+margin: 0;
+padding: 0;
+
+}
+ 
+.heading {
+	margin: 1px;
+	color: #fff;
+	padding: 3px 10px;
+	cursor: pointer;
+	position: relative;
+	background-color: #0475DD;
+	border-radius: 8px;
+	font-weight:bold
+	
+}
+.content {
+	padding: 5px 10px;
+	background-color: #FFFFFF;
+	border-radius: 8px;
+}
+p { padding: 5px 0; }
+
+
+A.dashboard-module, A.dashboard-module:visited
+{
+	width: 142px;
+	height: 142px;
+	display: block;
+	float: left;
+	margin: 0 8px 8px 0;
+	text-align: center;
+	color: #0063BE;
+}
+A.dashboard-module:hover, A.dashboard-module:active
+{
+	background-position: bottom left;
+	text-decoration: none;
+	color: #0063BE;
+}
+A.dashboard-module IMG
+{
+	margin-top: 20px;
+}
+A.dashboard-module SPAN
+{
+	margin-top: 10px;
+	display: block;
+}
+/*-------------------- Dashboard --------------------*/
+
+/*--------- loading ------------*/
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  display: none;  
+  opacity:0.7;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  background-color: rgb(102, 102, 102);
+  z-index: 1199;
+  text-align: center;
+}
+
+#loading-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+}
+/*--------- loading ------------*/
+
+.divscroll {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    color: #4B4B4B;
+    font: 11px Tahoma,Geneva,sans-serif;
+    height: 150px;
+    overflow: scroll;
+    padding: 5px;
+    width: 262px;
+}

@@ -1,0 +1,241 @@
+C:\Users\Swami\Documents\Visual Studio 2010\Projects\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Swami\Documents\Visual Studio 2010\Projects\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Swami\Documents\Visual Studio 2010\Projects\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Swami\Documents\Visual Studio 2010\Projects\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Swami\Documents\Visual Studio 2010\Projects\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+E:\kannan\kannandial\aprnew\april-12-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+E:\kannan\kannandial\aprnew\april-12-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+E:\kannan\kannandial\aprnew\april-12-2011\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+E:\kannan\kannandial\aprnew\april-12-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+E:\kannan\kannandial\aprnew\april-12-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+E:\april-12-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+E:\april-12-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+E:\april-12-2011\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+E:\april-12-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+E:\april-12-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\Dial4jobz\vs june23\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\Dial4jobz\vs june23\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\Dial4jobz\vs june23\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\Dial4jobz\vs june23\Dial4Jobz\bin\Dial4Jobz.dll
+D:\Dial4jobz\vs june23\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Swami\Documents\My Dropbox\kannan\jun-28-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Swami\Documents\My Dropbox\kannan\jun-28-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Swami\Documents\My Dropbox\kannan\jun-28-2011\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Swami\Documents\My Dropbox\kannan\jun-28-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Swami\Documents\My Dropbox\kannan\jun-28-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\Dial4jobz\jul13 VS\jul-13-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\Dial4jobz\jul13 VS\jul-13-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\Dial4jobz\jul13 VS\jul-13-2011\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\Dial4jobz\jul13 VS\jul-13-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\Dial4jobz\jul13 VS\jul-13-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\Dial4jobz\AugVS11\jul-13-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\Dial4jobz\AugVS11\jul-13-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\Dial4jobz\AugVS11\jul-13-2011\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\Dial4jobz\AugVS11\jul-13-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\Dial4jobz\AugVS11\jul-13-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\Dial4jobz\aug-03-2011\aug-03-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\Dial4jobz\aug-03-2011\aug-03-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\Dial4jobz\aug-03-2011\aug-03-2011\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\Dial4jobz\aug-03-2011\aug-03-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\Dial4jobz\aug-03-2011\aug-03-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+F:\aug-17-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+F:\aug-17-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+F:\aug-17-2011\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+F:\aug-17-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+F:\aug-17-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\Dial4jobz\aug-17-2011\aug-17-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\Dial4jobz\aug-17-2011\aug-17-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\Dial4jobz\aug-17-2011\aug-17-2011\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\Dial4jobz\aug-17-2011\aug-17-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\Dial4jobz\aug-17-2011\aug-17-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\Dial4jobz\nov-29-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\Dial4jobz\nov-29-2011\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\Dial4jobz\nov-29-2011\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\Dial4jobz\nov-29-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\Dial4jobz\nov-29-2011\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\Dial4jobz\feb-19-2012\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\Dial4jobz\feb-19-2012\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\Dial4jobz\feb-19-2012\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\Dial4jobz\feb-19-2012\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\Dial4jobz\feb-19-2012\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\Dial4jobz\1Mar-2012\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\Dial4jobz\1Mar-2012\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\Dial4jobz\1Mar-2012\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\Dial4jobz\1Mar-2012\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\Dial4jobz\1Mar-2012\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\work\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\work\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\work\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\work\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\work\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\work\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.cache
+D:\work\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.compiled
+C:\Users\Swami\Desktop\Dial4Jobz\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Swami\Desktop\Dial4Jobz\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Swami\Desktop\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Swami\Desktop\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.cache
+C:\Users\Swami\Desktop\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.compiled
+C:\Users\Swami\Desktop\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Swami\Desktop\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\Dial4jobz\may-3-2012\Dial4Jobz\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\Dial4jobz\may-3-2012\Dial4Jobz\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\Dial4jobz\may-3-2012\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\Dial4jobz\may-3-2012\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.cache
+D:\Dial4jobz\may-3-2012\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.compiled
+D:\Dial4jobz\may-3-2012\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\Dial4jobz\may-3-2012\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\work\Dial4Jobz\Dial4Jobz\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\work\Dial4Jobz\Dial4Jobz\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\work\Dial4Jobz\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\work\Dial4Jobz\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.cache
+D:\work\Dial4Jobz\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.compiled
+D:\work\Dial4Jobz\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\work\Dial4Jobz\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+C:\Users\Swami\Desktop\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Swami\Desktop\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Swami\Desktop\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Swami\Desktop\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.cache
+C:\Users\Swami\Desktop\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.compiled
+C:\Users\Swami\Desktop\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Swami\Desktop\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\UDHAYAPRO\SwamiDiail4Jobz\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\UDHAYAPRO\SwamiDiail4Jobz\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\UDHAYAPRO\SwamiDiail4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\UDHAYAPRO\SwamiDiail4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.cache
+D:\UDHAYAPRO\SwamiDiail4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.compiled
+D:\UDHAYAPRO\SwamiDiail4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\UDHAYAPRO\SwamiDiail4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\UDHAYAPRO\SwamiDiail4Jobz\Dial4Jobz\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\UDHAYAPRO\SwamiDiail4Jobz\Dial4Jobz\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\UDHAYAPRO\SwamiDiail4Jobz\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\UDHAYAPRO\SwamiDiail4Jobz\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.cache
+D:\UDHAYAPRO\SwamiDiail4Jobz\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.compiled
+D:\UDHAYAPRO\SwamiDiail4Jobz\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\UDHAYAPRO\SwamiDiail4Jobz\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+C:\Users\Swami\Desktop\31May-2012\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Swami\Desktop\31May-2012\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Swami\Desktop\31May-2012\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Swami\Desktop\31May-2012\Dial4Jobz\obj\Debug\RdlCompile.cache
+C:\Users\Swami\Desktop\31May-2012\Dial4Jobz\obj\Debug\RdlCompile.compiled
+C:\Users\Swami\Desktop\31May-2012\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Swami\Desktop\31May-2012\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\UDHAYAPRO\D4J\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\UDHAYAPRO\D4J\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\UDHAYAPRO\D4J\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\UDHAYAPRO\D4J\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.cache
+D:\UDHAYAPRO\D4J\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.compiled
+D:\UDHAYAPRO\D4J\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\UDHAYAPRO\D4J\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\udhaya\kannan\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\udhaya\kannan\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\udhaya\kannan\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\udhaya\kannan\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.cache
+D:\udhaya\kannan\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.compiled
+D:\udhaya\kannan\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\udhaya\kannan\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Dropbox\kannan\Udaya\Jul-18-12\Dial4Jobz\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Dropbox\kannan\Udaya\Jul-18-12\Dial4Jobz\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Dropbox\kannan\Udaya\Jul-18-12\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dial4Jobz\Dropbox\kannan\Udaya\Jul-18-12\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.cache
+C:\Users\Dial4Jobz\Dropbox\kannan\Udaya\Jul-18-12\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.compiled
+C:\Users\Dial4Jobz\Dropbox\kannan\Udaya\Jul-18-12\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Dropbox\kannan\Udaya\Jul-18-12\Dial4Jobz\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Desktop\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Desktop\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Desktop\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dial4Jobz\Desktop\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.cache
+C:\Users\Dial4Jobz\Desktop\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.compiled
+C:\Users\Dial4Jobz\Desktop\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Desktop\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Dropbox\kannan\Latest\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Dropbox\kannan\Latest\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Dropbox\kannan\Latest\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dial4Jobz\Dropbox\kannan\Latest\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.cache
+C:\Users\Dial4Jobz\Dropbox\kannan\Latest\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.compiled
+C:\Users\Dial4Jobz\Dropbox\kannan\Latest\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Dropbox\kannan\Latest\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\udhaya\backup\swami updateon21.8.12\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\udhaya\backup\swami updateon21.8.12\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\udhaya\backup\swami updateon21.8.12\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\udhaya\backup\swami updateon21.8.12\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.cache
+D:\udhaya\backup\swami updateon21.8.12\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.compiled
+D:\udhaya\backup\swami updateon21.8.12\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\udhaya\backup\swami updateon21.8.12\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Dropbox\kannan\Swami\jan-27-2013\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Dropbox\kannan\Swami\jan-27-2013\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Dropbox\kannan\Swami\jan-27-2013\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dial4Jobz\Dropbox\kannan\Swami\jan-27-2013\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.cache
+C:\Users\Dial4Jobz\Dropbox\kannan\Swami\jan-27-2013\Dial4Jobz\Dial4Jobz\obj\Debug\RdlCompile.compiled
+C:\Users\Dial4Jobz\Dropbox\kannan\Swami\jan-27-2013\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Dropbox\kannan\Swami\jan-27-2013\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Desktop\Test popup\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Desktop\Test popup\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Desktop\Test popup\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dial4Jobz\Desktop\Test popup\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Desktop\Test popup\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\Dial4Jobz\Temp\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\Dial4Jobz\Temp\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\Dial4Jobz\Temp\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\Dial4Jobz\Temp\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\Dial4Jobz\Temp\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Dropbox\kannan\Mahesh\Oct-14-2013\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Dropbox\kannan\Mahesh\Oct-14-2013\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Dropbox\kannan\Mahesh\Oct-14-2013\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dial4Jobz\Dropbox\kannan\Mahesh\Oct-14-2013\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Dropbox\kannan\Mahesh\Oct-14-2013\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Desktop\Test url\test payment\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Desktop\Test url\test payment\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Desktop\Test url\test payment\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dial4Jobz\Desktop\Test url\test payment\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Desktop\Test url\test payment\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\TestPaymentOrderNo\Nov-14-13\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\TestPaymentOrderNo\Nov-14-13\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\TestPaymentOrderNo\Nov-14-13\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.csprojResolveAssemblyReference.cache
+D:\TestPaymentOrderNo\Nov-14-13\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\TestPaymentOrderNo\Nov-14-13\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\Dial4Jobz\Task#4\Latest_Dec21\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\Dial4Jobz\Task#4\Latest_Dec21\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\Dial4Jobz\Task#4\Latest_Dec21\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\Dial4Jobz\Task#4\Latest_Dec21\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\Dial4Jobz\Task#4\Latest_Dec21\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\udhaya\ActvationVas\Latest_Dec21\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\udhaya\ActvationVas\Latest_Dec21\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\udhaya\ActvationVas\Latest_Dec21\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+D:\udhaya\ActvationVas\Latest_Dec21\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\udhaya\ActvationVas\Latest_Dec21\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Desktop\TestActivationReport\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Desktop\TestActivationReport\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Desktop\TestActivationReport\Dial4Jobz\Dial4Jobz\bin\SFA.dll
+C:\Users\Dial4Jobz\Desktop\TestActivationReport\Dial4Jobz\Dial4Jobz\bin\log4net.dll
+C:\Users\Dial4Jobz\Desktop\TestActivationReport\Dial4Jobz\Dial4Jobz\bin\Interop.NEWOBJECTSPACK1Lib.dll
+C:\Users\Dial4Jobz\Desktop\TestActivationReport\Dial4Jobz\Dial4Jobz\bin\Interop.HASHCRYPTSTREAMSLib.dll
+C:\Users\Dial4Jobz\Desktop\TestActivationReport\Dial4Jobz\Dial4Jobz\bin\log4net.xml
+C:\Users\Dial4Jobz\Desktop\TestActivationReport\Dial4Jobz\Dial4Jobz\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dial4Jobz\Desktop\TestActivationReport\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Desktop\TestActivationReport\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\bin\MCPG.CCA.Util.dll
+D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Desktop\TestTransaction\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Desktop\TestTransaction\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Desktop\TestTransaction\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.csprojResolveAssemblyReference.cache
+C:\Users\Dial4Jobz\Desktop\TestTransaction\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Desktop\TestTransaction\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\TestTransaction\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+D:\TestTransaction\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+D:\TestTransaction\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.csprojResolveAssemblyReference.cache
+D:\TestTransaction\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+D:\TestTransaction\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Desktop\Test-multi1\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Desktop\Test-multi1\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Desktop\Test-multi1\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.csprojResolveAssemblyReference.cache
+C:\Users\Dial4Jobz\Desktop\Test-multi1\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Desktop\Test-multi1\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Desktop\Ticker_test\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Desktop\Ticker_test\Dial4Jobz\Dial4Jobz\bin\Dial4Jobz.pdb
+C:\Users\Dial4Jobz\Desktop\Ticker_test\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.csprojResolveAssemblyReference.cache
+C:\Users\Dial4Jobz\Desktop\Ticker_test\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.dll
+C:\Users\Dial4Jobz\Desktop\Ticker_test\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.pdb
+D:\udhaya\kannan\latest\D4J (1)\D4J\Dial4Jobz\Dial4Jobz\obj\Debug\Dial4Jobz.csprojResolveAssemblyReference.cache
